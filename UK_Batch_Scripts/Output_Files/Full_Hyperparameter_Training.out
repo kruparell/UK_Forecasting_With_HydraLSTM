@@ -1,0 +1,151 @@
+[ECMWF-INFO -ecsbatch] - -------------------------------------------------------------------------------------
+[ECMWF-INFO -ecsbatch] -  This is the ECMWF jobfilter
+[ECMWF-INFO -ecsbatch] -  +++ Please report issues using the Support portal +++
+[ECMWF-INFO -ecsbatch] -  +++ https://support.ecmwf.int                     +++
+[ECMWF-INFO -ecsbatch] -  /usr/local/bin/ecsbatch: size: 53801, mtime: Tue Nov 25 12:35:33 2025
+[ECMWF-INFO -ecsbatch] - -------------------------------------------------------------------------------------
+[ECMWF-INFO -ecsbatch] - Time at submit: Wed Jan 14 11:22:51 2026 (1768389771.6153388) on ab6-206.bullx:/etc/ecmwf/nfs/dh2_home_a/mokr
+[ECMWF-INFO -ecsbatch] - --- SLURM VARIABLES ---
+[ECMWF-INFO -ecsbatch] - SLURM_NODEID=0
+[ECMWF-INFO -ecsbatch] - SLURM_TASK_PID=295386
+[ECMWF-INFO -ecsbatch] - SLURM_PRIO_PROCESS=0
+[ECMWF-INFO -ecsbatch] - SLURM_SUBMIT_DIR=/etc/ecmwf/nfs/dh2_home_a/mokr
+[ECMWF-INFO -ecsbatch] - SLURM_CPUS_PER_TASK=32
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_LICENSES=h2resw01
+[ECMWF-INFO -ecsbatch] - SLURM_PROCID=0
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_GID=1222
+[ECMWF-INFO -ecsbatch] - SLURMD_NODENAME=ab6-206
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_END_TIME=1768431109
+[ECMWF-INFO -ecsbatch] - SLURM_TASKS_PER_NODE=1
+[ECMWF-INFO -ecsbatch] - SLURM_NNODES=1
+[ECMWF-INFO -ecsbatch] - SLURM_GET_USER_ENV=1
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_START_TIME=1768387909
+[ECMWF-INFO -ecsbatch] - SLURM_NTASKS_PER_NODE=1
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_NODELIST=ab6-206
+[ECMWF-INFO -ecsbatch] - SLURM_CLUSTER_NAME=ab
+[ECMWF-INFO -ecsbatch] - SLURM_NODELIST=ab6-206
+[ECMWF-INFO -ecsbatch] - SLURM_NTASKS=1
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_CPUS_PER_NODE=32
+[ECMWF-INFO -ecsbatch] - SLURM_TOPOLOGY_ADDR=root_switch.gpil.isw6-b12zg-l1.ab6-206
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_NAME=mokr-jupyterhub
+[ECMWF-INFO -ecsbatch] - SLURM_JOBID=24468960
+[ECMWF-INFO -ecsbatch] - SLURM_CONF=/etc/slurm/slurm.conf
+[ECMWF-INFO -ecsbatch] - EC_CLUSTER=ab
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_QOS=ni
+[ECMWF-INFO -ecsbatch] - SLURM_TOPOLOGY_ADDR_PATTERN=switch.switch.switch.node
+[ECMWF-INFO -ecsbatch] - SLURM_CPUS_ON_NODE=32
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_NUM_NODES=1
+[ECMWF-INFO -ecsbatch] - SLURM_MEM_PER_NODE=32768
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_UID=25848
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_PARTITION=inter
+[ECMWF-INFO -ecsbatch] - SLURM_SCRIPT_CONTEXT=prolog_task
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_USER=mokr
+[ECMWF-INFO -ecsbatch] - SLURM_NPROCS=1
+[ECMWF-INFO -ecsbatch] - SLURM_SUBMIT_HOST=ac6-209.bullx
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_ACCOUNT=ecrvis
+[ECMWF-INFO -ecsbatch] - SLURM_EXPORT_ENV=ALL
+[ECMWF-INFO -ecsbatch] - SLURM_TRES_PER_TASK=cpu=32
+[ECMWF-INFO -ecsbatch] - SLURM_GTIDS=0
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_ID=24468960
+[ECMWF-INFO -ecsbatch] - SBATCH_EXPORT=NONE
+[ECMWF-INFO -ecsbatch] - SLURM_LOCALID=0
+[ECMWF-INFO -ecsbatch] - -----------------------
+[ECMWF-INFO -ecsbatch] - jobscript: /etc/ecmwf/nfs/dh2_home_a/mokr/Reservoir_Modelling/UK_Batch_Scripts/Full_Hyperparameter_Training.sh
+[ECMWF-INFO -ecsbatch] - --- SCRIPT OPTIONS ---
+[ECMWF-INFO -ecsbatch] - #SBATCH --qos=nf
+[ECMWF-INFO -ecsbatch] - #SBATCH --mem-per-cpu=62Gb
+[ECMWF-INFO -ecsbatch] - #SBATCH --time=24:00:00
+[ECMWF-INFO -ecsbatch] - #SBATCH --job-name=Full_Hyperparameter_Training
+[ECMWF-INFO -ecsbatch] - #SBATCH --output=/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Full_Hyperparameter_Training.out
+[ECMWF-INFO -ecsbatch] - #SBATCH --error=/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Full_Hyperparameter_Training_Error.out
+[ECMWF-INFO -ecsbatch] - -----------------------
+[ECMWF-INFO -ecsbatch] - --- POST-PROCESSED OPTIONS ---
+[ECMWF-INFO -ecsbatch] - ARG --positional=['/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Full_Hyperparameter_Training.sh']
+[ECMWF-INFO -ecsbatch] - ARG --error=/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Full_Hyperparameter_Training_Error.out
+[ECMWF-INFO -ecsbatch] - ARG --job_name=Full_Hyperparameter_Training
+[ECMWF-INFO -ecsbatch] - ARG --output=/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Full_Hyperparameter_Training.out
+[ECMWF-INFO -ecsbatch] - ARG --qos=nf
+[ECMWF-INFO -ecsbatch] - ARG --time=24:00:00
+[ECMWF-INFO -ecsbatch] - ARG --mem_per_cpu=62Gb
+[ECMWF-INFO -ecsbatch] - ------------------------------
+[ECMWF-INFO -ecsbatch] - jobtag: mokr-Full_Hyper_r_Training-1x2-/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Full_Hyperparameter_Training.out
+[ECMWF-INFO -ecsbatch] - ------------------------------
+[ECMWF-INFO -ecsbatch] - Average Walltime 0 with a Standard Deviation 0
+[ECMWF-INFO -ecsbatch] - Runtime history
+[ECMWF-INFO -ecsbatch] -   Date               | Cores   Cluster   Walltime       Mem
+[ECMWF-INFO -ecsbatch] - 
+[ECMWF-INFO -ecsbatch] - ['/usr/bin/sbatch', '--error=/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Full_Hyperparameter_Training_Error.out', '--job-name=Full_Hyperparameter_Training', '--output=/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Full_Hyperparameter_Training.out', '--qos=nf', '--time=24:00:00', '--mem-per-cpu=62Gb', '--licenses=h2resw01', '--export=EC_user_time_limit=24:00:00', '/etc/ecmwf/nfs/dh2_home_a/mokr/Reservoir_Modelling/UK_Batch_Scripts/Full_Hyperparameter_Training.sh']
+[ECMWF-INFO -ecsbatch] - ecsbatch executed on ab
+[ECMWF-INFO -ecsbatch] - Job queued on ab using method local
+[ECMWF-INFO -ecsbatch] - Submitted batch job 24474277
+Using device: cpu
+Static shape: torch.Size([128, 217])
+Temporal shape: torch.Size([128, 90, 16])
+Target shape: torch.Size([128, 90])
+
+Processing 100 batches...
+
+--- Testing Hyperparameters ---
+  Embedding Output Size: 8
+  Embedding Hidden Size: 64
+  Learning Rate: 0.001
+  LSTM Hidden Size: 256
+  LSTM Num Layers: 1
+  Starting training...
+End of Epoch 1/1 | Average Loss: 0.176692 | Current LR: 0.000950
+
+  Training finished.
+Model saved to /home/mokr/Reservoir_Modelling/CamelsGB_Models/Full/Full_LSTM_Numlayers1_Embhs64_Embos8.pt
+Validating
+End of Epoch 1/1 | Average Loss: 0.457053 | Current LR: 0.000902
+
+
+--- Testing Hyperparameters ---
+  Embedding Output Size: 8
+  Embedding Hidden Size: 64
+  Learning Rate: 0.001
+  LSTM Hidden Size: 256
+  LSTM Num Layers: 2
+  Starting training...
+End of Epoch 1/1 | Average Loss: 0.170380 | Current LR: 0.000950
+
+  Training finished.
+Model saved to /home/mokr/Reservoir_Modelling/CamelsGB_Models/Full/Full_LSTM_Numlayers2_Embhs64_Embos8.pt
+Validating
+End of Epoch 1/1 | Average Loss: 0.487840 | Current LR: 0.000902
+
+
+--- Testing Hyperparameters ---
+  Embedding Output Size: 8
+  Embedding Hidden Size: 64
+  Learning Rate: 0.001
+  LSTM Hidden Size: 256
+  LSTM Num Layers: 1
+  Starting training...
+End of Epoch 1/4 | Average Loss: 0.175935 | Current LR: 0.000950
+
+End of Epoch 2/4 | Average Loss: 0.105251 | Current LR: 0.000902
+
+End of Epoch 3/4 | Average Loss: 0.081692 | Current LR: 0.000857
+
+End of Epoch 4/4 | Average Loss: 0.071324 | Current LR: 0.000815
+
+  Training finished.
+Model saved to /home/mokr/Reservoir_Modelling/CamelsGB_Models/Full/Full_LSTM_Numlayers1_Embhs64_Embos8.pt
+Validating
+End of Epoch 1/1 | Average Loss: 0.574991 | Current LR: 0.000774
+
+
+--- Testing Hyperparameters ---
+  Embedding Output Size: 8
+  Embedding Hidden Size: 64
+  Learning Rate: 0.001
+  LSTM Hidden Size: 256
+  LSTM Num Layers: 2
+  Starting training...
+End of Epoch 1/4 | Average Loss: 0.167887 | Current LR: 0.000950
+
+End of Epoch 2/4 | Average Loss: 0.087641 | Current LR: 0.000902
+
+End of Epoch 3/4 | Average Loss: 0.063843 | Current LR: 0.000857
+
