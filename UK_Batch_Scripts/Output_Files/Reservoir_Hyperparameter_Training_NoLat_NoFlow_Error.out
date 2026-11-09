@@ -1,175 +1,0 @@
-[ECMWF-INFO -ecprofile] /usr/bin/bash NON_INTERACTIVE on ac6-310 at 20261108_225726.139, PID: 3644384, JOBID: 37844983
-[ECMWF-INFO -ecprofile] $SCRATCH=/ec/res4/scratch/mokr
-[ECMWF-INFO -ecprofile] $PERM=/perm/mokr
-[ECMWF-INFO -ecprofile] $HPCPERM=/ec/res4/hpcperm/mokr
-[ECMWF-INFO -ecprofile] $TMPDIR=/dev/shm/_tmpdir_.mokr.37844983
-[ECMWF-INFO -ecprofile] $SCRATCHDIR=/ec/res4/scratchdir/mokr/7/37844983
-/usr/local/apps/python3/3.13.13-01/lib/python3.13/site-packages/torch/nn/modules/rnn.py:1013: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.1 and num_layers=1
-  super().__init__("LSTM", *args, **kwargs)
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:19<?, ?batch/s, loss=0.144606]Epoch 1/1: 100%|██████████| 782/782 [00:34<00:00, 22.98batch/s, loss=0.144606]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:17<?, ?batch/s, loss=0.182893]Epoch 1/1: 100%|██████████| 680/680 [00:22<00:00, 30.35batch/s, loss=0.182893]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:21<?, ?batch/s, loss=0.074729]Epoch 1/1: 100%|██████████| 782/782 [00:35<00:00, 22.02batch/s, loss=0.074729]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:11<?, ?batch/s, loss=0.184484]Epoch 1/1: 100%|██████████| 680/680 [00:16<00:00, 40.25batch/s, loss=0.184484]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:20<?, ?batch/s, loss=0.065727]Epoch 1/1: 100%|██████████| 782/782 [00:33<00:00, 23.39batch/s, loss=0.065727]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:13<?, ?batch/s, loss=0.199980]Epoch 1/1: 100%|██████████| 680/680 [00:19<00:00, 35.45batch/s, loss=0.199980]
-/usr/local/apps/python3/3.13.13-01/lib/python3.13/site-packages/torch/nn/modules/rnn.py:1013: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.4 and num_layers=1
-  super().__init__("LSTM", *args, **kwargs)
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:17<?, ?batch/s, loss=0.157496]Epoch 1/1: 100%|██████████| 782/782 [00:33<00:00, 23.62batch/s, loss=0.157496]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:11<?, ?batch/s, loss=0.170148]Epoch 1/1: 100%|██████████| 680/680 [00:16<00:00, 41.63batch/s, loss=0.170148]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:20<?, ?batch/s, loss=0.082964]Epoch 1/1: 100%|██████████| 782/782 [00:33<00:00, 23.63batch/s, loss=0.082964]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:11<?, ?batch/s, loss=0.173121]Epoch 1/1: 100%|██████████| 680/680 [00:16<00:00, 41.19batch/s, loss=0.173121]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:18<?, ?batch/s, loss=0.074125]Epoch 1/1: 100%|██████████| 782/782 [00:28<00:00, 27.63batch/s, loss=0.074125]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:15<?, ?batch/s, loss=0.175283]Epoch 1/1: 100%|██████████| 680/680 [00:20<00:00, 32.77batch/s, loss=0.175283]
-/usr/local/apps/python3/3.13.13-01/lib/python3.13/site-packages/torch/nn/modules/rnn.py:1013: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.1 and num_layers=1
-  super().__init__("LSTM", *args, **kwargs)
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:16<?, ?batch/s, loss=0.145735]Epoch 1/1: 100%|██████████| 782/782 [00:27<00:00, 28.01batch/s, loss=0.145735]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:13<?, ?batch/s, loss=0.171334]Epoch 1/1: 100%|██████████| 680/680 [00:23<00:00, 28.89batch/s, loss=0.171334]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:23<?, ?batch/s, loss=0.072268]Epoch 1/1: 100%|██████████| 782/782 [00:36<00:00, 21.32batch/s, loss=0.072268]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:13<?, ?batch/s, loss=0.168949]Epoch 1/1: 100%|██████████| 680/680 [00:17<00:00, 38.05batch/s, loss=0.168949]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:24<?, ?batch/s, loss=0.063996]Epoch 1/1: 100%|██████████| 782/782 [00:38<00:00, 20.14batch/s, loss=0.063996]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:12<?, ?batch/s, loss=0.159931]Epoch 1/1: 100%|██████████| 680/680 [00:17<00:00, 39.89batch/s, loss=0.159931]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:22<?, ?batch/s, loss=0.058641]Epoch 1/1: 100%|██████████| 782/782 [00:35<00:00, 22.16batch/s, loss=0.058641]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:11<?, ?batch/s, loss=0.172662]Epoch 1/1: 100%|██████████| 680/680 [00:17<00:00, 38.11batch/s, loss=0.172662]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:20<?, ?batch/s, loss=0.054167]Epoch 1/1: 100%|██████████| 782/782 [00:33<00:00, 23.26batch/s, loss=0.054167]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:14<?, ?batch/s, loss=0.170823]Epoch 1/1: 100%|██████████| 680/680 [00:19<00:00, 35.27batch/s, loss=0.170823]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:18<?, ?batch/s, loss=0.154034]Epoch 1/1: 100%|██████████| 782/782 [00:30<00:00, 25.64batch/s, loss=0.154034]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:15<?, ?batch/s, loss=0.169323]Epoch 1/1: 100%|██████████| 680/680 [00:20<00:00, 33.64batch/s, loss=0.169323]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:17<?, ?batch/s, loss=0.081433]Epoch 1/1: 100%|██████████| 782/782 [00:27<00:00, 28.93batch/s, loss=0.081433]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:13<?, ?batch/s, loss=0.177037]Epoch 1/1: 100%|██████████| 680/680 [00:18<00:00, 36.99batch/s, loss=0.177037]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:20<?, ?batch/s, loss=0.073139]Epoch 1/1: 100%|██████████| 782/782 [00:33<00:00, 23.65batch/s, loss=0.073139]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:16<?, ?batch/s, loss=0.160430]Epoch 1/1: 100%|██████████| 680/680 [00:22<00:00, 30.37batch/s, loss=0.160430]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:21<?, ?batch/s, loss=0.068509]Epoch 1/1: 100%|██████████| 782/782 [00:36<00:00, 21.58batch/s, loss=0.068509]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:11<?, ?batch/s, loss=0.177654]Epoch 1/1: 100%|██████████| 680/680 [00:18<00:00, 35.88batch/s, loss=0.177654]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:27<?, ?batch/s, loss=0.065143]Epoch 1/1: 100%|██████████| 782/782 [00:40<00:00, 19.21batch/s, loss=0.065143]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:18<?, ?batch/s, loss=0.162817]Epoch 1/1: 100%|██████████| 680/680 [00:22<00:00, 29.67batch/s, loss=0.162817]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:30<?, ?batch/s, loss=0.132677]Epoch 1/1: 100%|██████████| 782/782 [00:44<00:00, 17.44batch/s, loss=0.132677]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:13<?, ?batch/s, loss=0.160991]Epoch 1/1: 100%|██████████| 680/680 [00:18<00:00, 36.03batch/s, loss=0.160991]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:27<?, ?batch/s, loss=0.066817]Epoch 1/1: 100%|██████████| 782/782 [00:43<00:00, 17.85batch/s, loss=0.066817]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:13<?, ?batch/s, loss=0.151045]Epoch 1/1: 100%|██████████| 680/680 [00:18<00:00, 35.87batch/s, loss=0.151045]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:24<?, ?batch/s, loss=0.054175]Epoch 1/1: 100%|██████████| 782/782 [00:39<00:00, 19.78batch/s, loss=0.054175]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:17<?, ?batch/s, loss=0.162205]Epoch 1/1: 100%|██████████| 680/680 [00:23<00:00, 28.37batch/s, loss=0.162205]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:33<?, ?batch/s, loss=0.044406]Epoch 1/1: 100%|██████████| 782/782 [00:51<00:00, 15.07batch/s, loss=0.044406]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:15<?, ?batch/s, loss=0.167368]Epoch 1/1: 100%|██████████| 680/680 [00:22<00:00, 30.56batch/s, loss=0.167368]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:29<?, ?batch/s, loss=0.142260]Epoch 1/1: 100%|██████████| 782/782 [00:41<00:00, 18.68batch/s, loss=0.142260]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:15<?, ?batch/s, loss=0.152651]Epoch 1/1: 100%|██████████| 680/680 [00:20<00:00, 32.97batch/s, loss=0.152651]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:28<?, ?batch/s, loss=0.074090]Epoch 1/1: 100%|██████████| 782/782 [00:47<00:00, 16.35batch/s, loss=0.074090]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:12<?, ?batch/s, loss=0.171209]Epoch 1/1: 100%|██████████| 680/680 [00:18<00:00, 37.60batch/s, loss=0.171209]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:35<?, ?batch/s, loss=0.062953]Epoch 1/1: 100%|██████████| 782/782 [00:49<00:00, 15.77batch/s, loss=0.062953]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:25<?, ?batch/s, loss=0.177757]Epoch 1/1: 100%|██████████| 680/680 [00:30<00:00, 22.12batch/s, loss=0.177757]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:24<?, ?batch/s, loss=0.131574]Epoch 1/1: 100%|██████████| 782/782 [00:43<00:00, 18.12batch/s, loss=0.131574]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:14<?, ?batch/s, loss=0.149102]Epoch 1/1: 100%|██████████| 680/680 [00:19<00:00, 35.37batch/s, loss=0.149102]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:24<?, ?batch/s, loss=0.066505]Epoch 1/1: 100%|██████████| 782/782 [00:38<00:00, 20.57batch/s, loss=0.066505]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:14<?, ?batch/s, loss=0.156783]Epoch 1/1: 100%|██████████| 680/680 [00:19<00:00, 34.23batch/s, loss=0.156783]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:30<?, ?batch/s, loss=0.054681]Epoch 1/1: 100%|██████████| 782/782 [00:46<00:00, 16.82batch/s, loss=0.054681]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:13<?, ?batch/s, loss=0.154977]Epoch 1/1: 100%|██████████| 680/680 [00:18<00:00, 37.58batch/s, loss=0.154977]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:29<?, ?batch/s, loss=0.138296]Epoch 1/1: 100%|██████████| 782/782 [00:42<00:00, 18.57batch/s, loss=0.138296]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:15<?, ?batch/s, loss=0.180689]Epoch 1/1: 100%|██████████| 680/680 [00:21<00:00, 32.24batch/s, loss=0.180689]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:34<?, ?batch/s, loss=0.072308]Epoch 1/1: 100%|██████████| 782/782 [00:50<00:00, 15.39batch/s, loss=0.072308]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:15<?, ?batch/s, loss=0.169711]Epoch 1/1: 100%|██████████| 680/680 [00:20<00:00, 33.02batch/s, loss=0.169711]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:33<?, ?batch/s, loss=0.061580]Epoch 1/1: 100%|██████████| 782/782 [00:53<00:00, 14.59batch/s, loss=0.061580]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:13<?, ?batch/s, loss=0.170028]Epoch 1/1: 100%|██████████| 680/680 [00:19<00:00, 35.30batch/s, loss=0.170028]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:31<?, ?batch/s, loss=0.053532]Epoch 1/1: 100%|██████████| 782/782 [00:50<00:00, 15.43batch/s, loss=0.053532]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:12<?, ?batch/s, loss=0.165119]Epoch 1/1: 100%|██████████| 680/680 [00:17<00:00, 38.61batch/s, loss=0.165119]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:31<?, ?batch/s, loss=0.047691]Epoch 1/1: 100%|██████████| 782/782 [00:49<00:00, 15.91batch/s, loss=0.047691]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:15<?, ?batch/s, loss=0.168275]Epoch 1/1: 100%|██████████| 680/680 [00:20<00:00, 32.92batch/s, loss=0.168275]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:23<?, ?batch/s, loss=0.042802]Epoch 1/1: 100%|██████████| 782/782 [00:38<00:00, 20.13batch/s, loss=0.042802]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:12<?, ?batch/s, loss=0.174398]Epoch 1/1: 100%|██████████| 680/680 [00:16<00:00, 40.29batch/s, loss=0.174398]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:19<?, ?batch/s, loss=0.143630]Epoch 1/1: 100%|██████████| 782/782 [00:34<00:00, 22.97batch/s, loss=0.143630]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:11<?, ?batch/s, loss=0.176722]Epoch 1/1: 100%|██████████| 680/680 [00:16<00:00, 42.40batch/s, loss=0.176722]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:22<?, ?batch/s, loss=0.069889]Epoch 1/1: 100%|██████████| 782/782 [00:35<00:00, 22.12batch/s, loss=0.069889]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:15<?, ?batch/s, loss=0.150625]Epoch 1/1: 100%|██████████| 680/680 [00:21<00:00, 32.00batch/s, loss=0.150625]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:26<?, ?batch/s, loss=0.061669]Epoch 1/1: 100%|██████████| 782/782 [00:43<00:00, 17.93batch/s, loss=0.061669]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:12<?, ?batch/s, loss=0.158871]Epoch 1/1: 100%|██████████| 680/680 [00:18<00:00, 36.91batch/s, loss=0.158871]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:21<?, ?batch/s, loss=0.055609]Epoch 1/1: 100%|██████████| 782/782 [00:36<00:00, 21.45batch/s, loss=0.055609]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:13<?, ?batch/s, loss=0.159763]Epoch 1/1: 100%|██████████| 680/680 [00:18<00:00, 37.37batch/s, loss=0.159763]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:33<?, ?batch/s, loss=0.155550]Epoch 1/1: 100%|██████████| 782/782 [00:48<00:00, 16.28batch/s, loss=0.155550]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:18<?, ?batch/s, loss=0.184037]Epoch 1/1: 100%|██████████| 680/680 [00:22<00:00, 30.11batch/s, loss=0.184037]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:32<?, ?batch/s, loss=0.081809]Epoch 1/1: 100%|██████████| 782/782 [00:49<00:00, 15.84batch/s, loss=0.081809]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:15<?, ?batch/s, loss=0.180196]Epoch 1/1: 100%|██████████| 680/680 [00:20<00:00, 32.54batch/s, loss=0.180196]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:32<?, ?batch/s, loss=0.073542]Epoch 1/1: 100%|██████████| 782/782 [00:52<00:00, 14.87batch/s, loss=0.073542]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:18<?, ?batch/s, loss=0.188175]Epoch 1/1: 100%|██████████| 680/680 [00:25<00:00, 26.43batch/s, loss=0.188175]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:26<?, ?batch/s, loss=0.068194]Epoch 1/1: 100%|██████████| 782/782 [00:40<00:00, 19.45batch/s, loss=0.068194]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:14<?, ?batch/s, loss=0.178351]Epoch 1/1: 100%|██████████| 680/680 [00:19<00:00, 34.64batch/s, loss=0.178351]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:29<?, ?batch/s, loss=0.063684]Epoch 1/1: 100%|██████████| 782/782 [00:50<00:00, 15.58batch/s, loss=0.063684]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:18<?, ?batch/s, loss=0.195109]Epoch 1/1: 100%|██████████| 680/680 [00:23<00:00, 29.31batch/s, loss=0.195109]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:38<?, ?batch/s, loss=0.060345]Epoch 1/1: 100%|██████████| 782/782 [00:59<00:00, 13.18batch/s, loss=0.060345]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:17<?, ?batch/s, loss=0.198098]Epoch 1/1: 100%|██████████| 680/680 [00:23<00:00, 28.68batch/s, loss=0.198098]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:37<?, ?batch/s, loss=0.135696]Epoch 1/1: 100%|██████████| 782/782 [01:00<00:00, 12.95batch/s, loss=0.135696]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:20<?, ?batch/s, loss=0.156628]Epoch 1/1: 100%|██████████| 680/680 [00:26<00:00, 25.50batch/s, loss=0.156628]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:28<?, ?batch/s, loss=0.068907]Epoch 1/1: 100%|██████████| 782/782 [00:45<00:00, 17.32batch/s, loss=0.068907]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:15<?, ?batch/s, loss=0.155756]Epoch 1/1: 100%|██████████| 680/680 [00:20<00:00, 33.70batch/s, loss=0.155756]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:30<?, ?batch/s, loss=0.060781]Epoch 1/1: 100%|██████████| 782/782 [00:47<00:00, 16.51batch/s, loss=0.060781]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:12<?, ?batch/s, loss=0.147660]Epoch 1/1: 100%|██████████| 680/680 [00:17<00:00, 38.30batch/s, loss=0.147660]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:25<?, ?batch/s, loss=0.054713]Epoch 1/1: 100%|██████████| 782/782 [00:39<00:00, 19.71batch/s, loss=0.054713]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:20<?, ?batch/s, loss=0.151997]Epoch 1/1: 100%|██████████| 680/680 [00:25<00:00, 26.55batch/s, loss=0.151997]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:30<?, ?batch/s, loss=0.049379]Epoch 1/1: 100%|██████████| 782/782 [00:44<00:00, 17.53batch/s, loss=0.049379]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:12<?, ?batch/s, loss=0.157595]Epoch 1/1: 100%|██████████| 680/680 [00:17<00:00, 38.33batch/s, loss=0.157595]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:24<?, ?batch/s, loss=0.152400]Epoch 1/1: 100%|██████████| 782/782 [00:37<00:00, 21.00batch/s, loss=0.152400]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:14<?, ?batch/s, loss=0.174149]Epoch 1/1: 100%|██████████| 680/680 [00:18<00:00, 36.27batch/s, loss=0.174149]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:31<?, ?batch/s, loss=0.081192]Epoch 1/1: 100%|██████████| 782/782 [00:51<00:00, 15.30batch/s, loss=0.081192]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:19<?, ?batch/s, loss=0.159767]Epoch 1/1: 100%|██████████| 680/680 [00:24<00:00, 27.73batch/s, loss=0.159767]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:27<?, ?batch/s, loss=0.073093]Epoch 1/1: 100%|██████████| 782/782 [00:45<00:00, 17.28batch/s, loss=0.073093]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:13<?, ?batch/s, loss=0.168308]Epoch 1/1: 100%|██████████| 680/680 [00:17<00:00, 37.89batch/s, loss=0.168308]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:24<?, ?batch/s, loss=0.068036]Epoch 1/1: 100%|██████████| 782/782 [00:39<00:00, 19.93batch/s, loss=0.068036]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:13<?, ?batch/s, loss=0.183051]Epoch 1/1: 100%|██████████| 680/680 [00:19<00:00, 35.20batch/s, loss=0.183051]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:25<?, ?batch/s, loss=0.125566]Epoch 1/1: 100%|██████████| 782/782 [00:43<00:00, 17.98batch/s, loss=0.125566]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:17<?, ?batch/s, loss=0.148345]Epoch 1/1: 100%|██████████| 680/680 [00:24<00:00, 28.33batch/s, loss=0.148345]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:35<?, ?batch/s, loss=0.062952]Epoch 1/1: 100%|██████████| 782/782 [00:51<00:00, 15.31batch/s, loss=0.062952]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:19<?, ?batch/s, loss=0.138599]Epoch 1/1: 100%|██████████| 680/680 [00:27<00:00, 24.65batch/s, loss=0.138599]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:42<?, ?batch/s, loss=0.048401]Epoch 1/1: 100%|██████████| 782/782 [01:07<00:00, 11.62batch/s, loss=0.048401]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:27<?, ?batch/s, loss=0.144727]Epoch 1/1: 100%|██████████| 680/680 [00:34<00:00, 19.81batch/s, loss=0.144727]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:39<?, ?batch/s, loss=0.036606]Epoch 1/1: 100%|██████████| 782/782 [00:57<00:00, 13.54batch/s, loss=0.036606]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:13<?, ?batch/s, loss=0.149700]Epoch 1/1: 100%|██████████| 680/680 [00:19<00:00, 35.69batch/s, loss=0.149700]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:31<?, ?batch/s, loss=0.135938]Epoch 1/1: 100%|██████████| 782/782 [00:48<00:00, 16.22batch/s, loss=0.135938]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:19<?, ?batch/s, loss=0.156223]Epoch 1/1: 100%|██████████| 680/680 [00:29<00:00, 22.82batch/s, loss=0.156223]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:27<?, ?batch/s, loss=0.071503]Epoch 1/1: 100%|██████████| 782/782 [00:42<00:00, 18.48batch/s, loss=0.071503]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:16<?, ?batch/s, loss=0.161823]Epoch 1/1: 100%|██████████| 680/680 [00:22<00:00, 30.47batch/s, loss=0.161823]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:36<?, ?batch/s, loss=0.060676]Epoch 1/1: 100%|██████████| 782/782 [00:56<00:00, 13.72batch/s, loss=0.060676]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:18<?, ?batch/s, loss=0.159264]Epoch 1/1: 100%|██████████| 680/680 [00:24<00:00, 27.55batch/s, loss=0.159264]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:29<?, ?batch/s, loss=0.123305]Epoch 1/1: 100%|██████████| 782/782 [00:46<00:00, 16.89batch/s, loss=0.123305]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:16<?, ?batch/s, loss=0.173809]Epoch 1/1: 100%|██████████| 680/680 [00:27<00:00, 25.13batch/s, loss=0.173809]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:37<?, ?batch/s, loss=0.061201]Epoch 1/1: 100%|██████████| 782/782 [01:02<00:00, 12.51batch/s, loss=0.061201]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:20<?, ?batch/s, loss=0.163404]Epoch 1/1: 100%|██████████| 680/680 [00:28<00:00, 23.82batch/s, loss=0.163404]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:31<?, ?batch/s, loss=0.047263]Epoch 1/1: 100%|██████████| 782/782 [00:55<00:00, 14.20batch/s, loss=0.047263]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:21<?, ?batch/s, loss=0.172403]Epoch 1/1: 100%|██████████| 680/680 [00:33<00:00, 20.16batch/s, loss=0.172403]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:36<?, ?batch/s, loss=0.035926]Epoch 1/1: 100%|██████████| 782/782 [00:58<00:00, 13.40batch/s, loss=0.035926]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:24<?, ?batch/s, loss=0.172766]Epoch 1/1: 100%|██████████| 680/680 [00:29<00:00, 22.74batch/s, loss=0.172766]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:36<?, ?batch/s, loss=0.132809]Epoch 1/1: 100%|██████████| 782/782 [00:54<00:00, 14.29batch/s, loss=0.132809]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:18<?, ?batch/s, loss=0.170189]Epoch 1/1: 100%|██████████| 680/680 [00:25<00:00, 26.57batch/s, loss=0.170189]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:30<?, ?batch/s, loss=0.071170]Epoch 1/1: 100%|██████████| 782/782 [00:51<00:00, 15.20batch/s, loss=0.071170]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:20<?, ?batch/s, loss=0.155841]Epoch 1/1: 100%|██████████| 680/680 [00:29<00:00, 23.19batch/s, loss=0.155841]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:35<?, ?batch/s, loss=0.060360]Epoch 1/1: 100%|██████████| 782/782 [00:51<00:00, 15.26batch/s, loss=0.060360]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:18<?, ?batch/s, loss=0.164252]Epoch 1/1: 100%|██████████| 680/680 [00:24<00:00, 27.80batch/s, loss=0.164252]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:33<?, ?batch/s, loss=0.051332]Epoch 1/1: 100%|██████████| 782/782 [00:54<00:00, 14.31batch/s, loss=0.051332]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:17<?, ?batch/s, loss=0.155648]Epoch 1/1: 100%|██████████| 680/680 [00:24<00:00, 28.08batch/s, loss=0.155648]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:31<?, ?batch/s, loss=0.043756]Epoch 1/1: 100%|██████████| 782/782 [00:49<00:00, 15.91batch/s, loss=0.043756]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:20<?, ?batch/s, loss=0.157068]Epoch 1/1: 100%|██████████| 680/680 [00:27<00:00, 24.70batch/s, loss=0.157068]
-Epoch 1/1:   0%|          | 0/782 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/782 [00:30<?, ?batch/s, loss=0.037700]Epoch 1/1: 100%|██████████| 782/782 [00:49<00:00, 15.80batch/s, loss=0.037700]
-Epoch 1/1:   0%|          | 0/680 [00:00<?, ?batch/s]Epoch 1/1:   0%|          | 0/680 [00:16<?, ?batch/s, loss=0.165004]Epoch 1/1: 100%|██████████| 680/680 [00:23<00:00, 29.06batch/s, loss=0.165004]
-[ECMWF-INFO -ecepilog] ----------------------------------------------------------------------------------------------------
-[ECMWF-INFO -ecepilog] This is the ECMWF job Epilogue
-[ECMWF-INFO -ecepilog] +++ Please report issues using the Support portal +++
-[ECMWF-INFO -ecepilog] +++ https://support.ecmwf.int                     +++
-[ECMWF-INFO -ecepilog] ----------------------------------------------------------------------------------------------------
-[ECMWF-INFO -ecepilog] Run at 2026-11-09T00:19:22 on ac
-[ECMWF-INFO -ecepilog] JobName                   : Reservoir_Hyperparameter_Training_NoFlow
-[ECMWF-INFO -ecepilog] JobID                     : 37844983
-[ECMWF-INFO -ecepilog] Submit                    : 2026-11-08T22:56:56
-[ECMWF-INFO -ecepilog] Start                     : 2026-11-08T22:57:23
-[ECMWF-INFO -ecepilog] End                       : 2026-11-09T00:19:22
-[ECMWF-INFO -ecepilog] QueuedTime                : 27.0
-[ECMWF-INFO -ecepilog] ElapsedRaw                : 4919
-[ECMWF-INFO -ecepilog] ExitCode                  : 0:0
-[ECMWF-INFO -ecepilog] DerivedExitCode           : 0:0
-[ECMWF-INFO -ecepilog] State                     : COMPLETED
-[ECMWF-INFO -ecepilog] Account                   : ecrvis
-[ECMWF-INFO -ecepilog] QOS                       : ng
-[ECMWF-INFO -ecepilog] User                      : mokr
-[ECMWF-INFO -ecepilog] StdOut                    : /home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Reservoir_Hyperparameter_Training_NoLat_NoFlow.out
-[ECMWF-INFO -ecepilog] StdErr                    : /home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Reservoir_Hyperparameter_Training_NoLat_NoFlow_Error.out
-[ECMWF-INFO -ecepilog] NNodes                    : 1
-[ECMWF-INFO -ecepilog] NCPUS                     : 16
-[ECMWF-INFO -ecepilog] SBU                       : 186.525
-[ECMWF-INFO -ecepilog] jobtag                    : mokr-Reservoir__ing_NoFlow-1x16-/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Reservoir_Hyperparameter_Training_NoLat_NoFlow.out
-[ECMWF-INFO -ecepilog] ----------------------------------------------------------------------------------------------------
-
