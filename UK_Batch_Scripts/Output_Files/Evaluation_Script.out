@@ -1,0 +1,77 @@
+[ECMWF-INFO -ecsbatch] - -------------------------------------------------------------------------------------
+[ECMWF-INFO -ecsbatch] -  This is the ECMWF jobfilter
+[ECMWF-INFO -ecsbatch] -  +++ Please report issues using the Support portal +++
+[ECMWF-INFO -ecsbatch] -  +++ https://support.ecmwf.int                     +++
+[ECMWF-INFO -ecsbatch] -  /usr/local/bin/ecsbatch: size: 55091, mtime: Thu Oct  8 12:05:06 2026
+[ECMWF-INFO -ecsbatch] - -------------------------------------------------------------------------------------
+[ECMWF-INFO -ecsbatch] - Time at submit: Sun Nov  8 21:53:52 2026 (1794174832.3526237) on ab6-205.bullx:/etc/ecmwf/nfs/dh2_home_a/mokr
+[ECMWF-INFO -ecsbatch] - --- SLURM VARIABLES ---
+[ECMWF-INFO -ecsbatch] - SLURM_NODEID=0
+[ECMWF-INFO -ecsbatch] - SLURM_TASK_PID=373949
+[ECMWF-INFO -ecsbatch] - SLURM_PRIO_PROCESS=0
+[ECMWF-INFO -ecsbatch] - SLURM_SUBMIT_DIR=/etc/ecmwf/nfs/dh2_home_a/mokr
+[ECMWF-INFO -ecsbatch] - SLURM_CPUS_PER_TASK=32
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_LICENSES=h2resw01
+[ECMWF-INFO -ecsbatch] - SLURM_PROCID=0
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_GID=1222
+[ECMWF-INFO -ecsbatch] - SLURMD_NODENAME=ab6-205
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_END_TIME=1794479550
+[ECMWF-INFO -ecsbatch] - SLURM_TASKS_PER_NODE=1
+[ECMWF-INFO -ecsbatch] - SLURM_NNODES=1
+[ECMWF-INFO -ecsbatch] - SLURM_GET_USER_ENV=1
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_START_TIME=1793874750
+[ECMWF-INFO -ecsbatch] - SLURM_NTASKS_PER_NODE=1
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_NODELIST=ab6-205
+[ECMWF-INFO -ecsbatch] - SLURM_CLUSTER_NAME=ab
+[ECMWF-INFO -ecsbatch] - SLURM_NODELIST=ab6-205
+[ECMWF-INFO -ecsbatch] - SLURM_NTASKS=1
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_CPUS_PER_NODE=32
+[ECMWF-INFO -ecsbatch] - SLURM_TOPOLOGY_ADDR=root_switch.gpil.isw6-b12zg-l1.ab6-205
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_NAME=mokr-jupyterhub
+[ECMWF-INFO -ecsbatch] - SLURM_JOBID=27394690
+[ECMWF-INFO -ecsbatch] - SLURM_CONF=/etc/slurm/slurm.conf
+[ECMWF-INFO -ecsbatch] - EC_CLUSTER=ab
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_QOS=ni
+[ECMWF-INFO -ecsbatch] - SLURM_TOPOLOGY_ADDR_PATTERN=switch.switch.switch.node
+[ECMWF-INFO -ecsbatch] - SLURM_CPUS_ON_NODE=32
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_NUM_NODES=1
+[ECMWF-INFO -ecsbatch] - SLURM_MEM_PER_NODE=32768
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_UID=25848
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_PARTITION=inter
+[ECMWF-INFO -ecsbatch] - SLURM_SCRIPT_CONTEXT=prolog_task
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_USER=mokr
+[ECMWF-INFO -ecsbatch] - SLURM_NPROCS=1
+[ECMWF-INFO -ecsbatch] - SLURM_SUBMIT_HOST=ac6-209.bullx
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_ACCOUNT=ecrvis
+[ECMWF-INFO -ecsbatch] - SLURM_EXPORT_ENV=ALL
+[ECMWF-INFO -ecsbatch] - SLURM_TRES_PER_TASK=cpu=32
+[ECMWF-INFO -ecsbatch] - SLURM_GTIDS=0
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_ID=27394690
+[ECMWF-INFO -ecsbatch] - SBATCH_EXPORT=NONE
+[ECMWF-INFO -ecsbatch] - SLURM_OOM_KILL_STEP=0
+[ECMWF-INFO -ecsbatch] - SLURM_LOCALID=0
+[ECMWF-INFO -ecsbatch] - -----------------------
+[ECMWF-INFO -ecsbatch] - jobscript: /etc/ecmwf/nfs/dh2_home_a/mokr/Reservoir_Modelling/UK_Batch_Scripts/Evaluation_Script.sh
+[ECMWF-INFO -ecsbatch] - --- SCRIPT OPTIONS ---
+[ECMWF-INFO -ecsbatch] - #SBATCH --job-name=Evaluation_Script
+[ECMWF-INFO -ecsbatch] - #SBATCH --output=/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Evaluation_Script.out
+[ECMWF-INFO -ecsbatch] - #SBATCH --error=/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Evaluation_Script_Error.out
+[ECMWF-INFO -ecsbatch] - -----------------------
+[ECMWF-INFO -ecsbatch] - --- POST-PROCESSED OPTIONS ---
+[ECMWF-INFO -ecsbatch] - ARG --positional=['/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Evaluation_Script.sh']
+[ECMWF-INFO -ecsbatch] - ARG --error=/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Evaluation_Script_Error.out
+[ECMWF-INFO -ecsbatch] - ARG --job_name=Evaluation_Script
+[ECMWF-INFO -ecsbatch] - ARG --output=/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Evaluation_Script.out
+[ECMWF-INFO -ecsbatch] - ------------------------------
+[ECMWF-INFO -ecsbatch] - No qos requested, assuming qos=nf
+[ECMWF-INFO -ecsbatch] - jobtag: mokr-Evaluation_Script-1x2-/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Evaluation_Script.out
+[ECMWF-INFO -ecsbatch] - ------------------------------
+[ECMWF-INFO -ecsbatch] - Average Walltime 0 with a Standard Deviation 0
+[ECMWF-INFO -ecsbatch] - Runtime history
+[ECMWF-INFO -ecsbatch] -   Date               | Cores   Cluster   Walltime       Mem
+[ECMWF-INFO -ecsbatch] - 
+[ECMWF-INFO -ecsbatch] - ['/usr/bin/sbatch', '--error=/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Evaluation_Script_Error.out', '--job-name=Evaluation_Script', '--output=/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Evaluation_Script.out', '--qos=nf', '--licenses=h2resw01', '--time=1-00:00:00', '/etc/ecmwf/nfs/dh2_home_a/mokr/Reservoir_Modelling/UK_Batch_Scripts/Evaluation_Script.sh']
+[ECMWF-INFO -ecsbatch] - ecsbatch executed on ab
+[ECMWF-INFO -ecsbatch] - Job queued on ab using method local
+[ECMWF-INFO -ecsbatch] - Submitted batch job 28243777
+Loading selected models...

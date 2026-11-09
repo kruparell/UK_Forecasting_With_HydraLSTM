@@ -1,0 +1,24 @@
+# Model weights
+*.pt
+CamelsGB_Models/
+
+# Data and scalers
+*.pkl
+*.zip
+
+# MLflow
+mlruns/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Trash
+.trash/
+
+# Output logs (optional — remove these lines if you want logs tracked)
+UK_Batch_Scripts/Output_Files/

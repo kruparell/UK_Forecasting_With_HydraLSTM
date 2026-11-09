@@ -1,0 +1,307 @@
+gauge_id,gauge_name,split,geometry,type,pair_id,source,set_id
+48011,Fowey at Restormel,val,POINT (209757.31951653122 62339.43626805695),reservoir,0,res,21
+47011,Plym at Carn Wood,train,POINT (252366.20729915073 60974.3969839575),reservoir,1,res,56
+47001,Tamar at Gunnislake,train,POINT (242756.33322866223 72380.03793219282),reservoir,2,res,16
+46014,Teign at Chudleigh,val,POINT (285447.59531801066 79062.83657502025),reservoir,3,res,57
+47008,Thrushel at Tinhay,train,POINT (239621.53251845628 85828.88719861116),reservoir,4,res,16
+45001,Exe at Thorverton,val,POINT (293685.79419834865 101136.99603511477),reservoir,5,res,28
+50011,Okement at Jacobstowe,train,POINT (259157.87794758944 101956.80523939698),reservoir,6,res,18
+41003,Cuckmere at Sherman Bridge,train,POINT (553619.4830616644 105649.73695458253),reservoir,7,res,30
+41004,Ouse at Barcombe Mills,val,POINT (543515.2212712746 114263.376206066),reservoir,8,res,14
+52006,Yeo at Pen Mill,train,POINT (357236.7248820529 115795.60189859776),reservoir,9,res,54
+50002,Torridge at Torrington,train,POINT (249776.68595158288 118911.24751981767),reservoir,10,res,18
+41005,Ouse at Gold Bridge,val,POINT (542628.7313638749 120915.38328520642),reservoir,11,res,14
+40004,Rother at Udiam,train,POINT (576953.1437342783 124200.46385878793),reservoir,12,res,7
+45009,Exe at Pixton,val,POINT (293485.08886589005 125614.34273225712),reservoir,13,res,28
+52005,Tone at Bishops Hull,val,POINT (320838.2982708261 125122.47294014593),reservoir,14,res,53
+40009,Teise at Stonebridge,train,POINT (571523.0730311611 139600.84462486228),reservoir,15,res,7
+40007,Medway at Chafford / Colliers Land Bridge,train,POINT (551900.7300485353 140097.7256689926),reservoir,16,res,7
+40010,Eden at Penshurst / Vexour Bridge,train,POINT (551802.3100212484 143433.5022882427),reservoir,17,res,7
+40003,Medway at Teston / East Farleigh,train,POINT (571078.3023419207 152943.48804671908),reservoir,18,res,7
+57005,Taff at Pontypridd,test,POINT (307979.9219036641 189855.58019140357),reservoir,19,res,13
+57007,Taff at Fiddlers Elbow,test,POINT (308773.0360320206 195403.38640414772),reservoir,20,res,13
+58002,Neath at Resolven,train,POINT (281231.76938563643 201539.6856301041),reservoir,21,res,17
+56001,Usk at Chainbridge,train,POINT (334515.1928949048 206127.39858392213),reservoir,22,res,23
+58006,Mellte at Pontneddfechan,train,POINT (291740.7879623268 207978.75960242358),reservoir,23,res,17
+55023,Wye at Redbrook,val,POINT (352516.1781207201 211486.40024197067),reservoir,24,res,6
+60010,Tywi at Capel Dewi,train,POINT (248600.63776220815 220222.58935434557),reservoir,25,res,32
+54057,Severn at Haw Bridge,test,POINT (384288.79276553233 227969.331220006),reservoir,26,res,2
+55002,Wye at Belmont,val,POINT (348665.29704549594 239332.43582175928),reservoir,27,res,6
+54032,Severn at Saxons Lode,test,POINT (386381.1946096775 239085.61931851803),reservoir,28,res,2
+55007,Wye at Erwood,val,POINT (307604.574212579 244376.1273981328),reservoir,29,res,6
+33039,Bedford Ouse at Roxton,train,POINT (515674.1388303085 253759.86480293865),reservoir,30,res,19
+55032,Elan at Caban Dam,val,POINT (292965.95256070525 264698.32677921926),reservoir,31,res,6
+33026,Bedford Ouse at Offord,train,POINT (521500.9730160086 267252.95894332475),reservoir,32,res,19
+54001,Severn at Bewdley,test,POINT (378314.444435525 275820.5034900391),reservoir,33,res,2
+28039,Rea at Calthorpe Park,train,POINT (406891.33166620886 284675.56684860383),reservoir,34,res,1
+54080,Severn at Dolwen,test,POINT (298859.79024893173 285715.19886729255),reservoir,35,res,2
+28003,Tame at Water Orton,train,POINT (417060.1147627999 291374.23442912544),reservoir,36,res,1
+28080,Tame at Lea Marston Lakes,train,POINT (421121.7501827749 293614.5869501999),reservoir,37,res,1
+54095,Severn at Buildwas,test,POINT (364232.34961037687 304825.38219778496),reservoir,38,res,2
+31006,Gwash at Belmesthorpe,train,POINT (503532.64513476205 310240.4847707751),reservoir,39,res,48
+54005,Severn at Montford,test,POINT (341332.8092909104 313947.7589952406),reservoir,40,res,2
+28093,Soar at Pillings Lock,train,POINT (456782.639228323 318372.2257553324),reservoir,41,res,1
+28012,Trent at Yoxall,train,POINT (412918.7252635908 318058.781657071),reservoir,42,res,1
+54003,Vyrnwy at Vyrnwy Reservoir,test,POINT (301573.75427782367 319041.99132800737),reservoir,43,res,2
+54028,Vyrnwy at Llanymynech,test,POINT (325208.2785129848 319732.5021777897),reservoir,44,res,2
+28074,Soar at Kegworth,train,POINT (449280.6805491204 326078.0233569548),reservoir,45,res,1
+28018,Dove at Marston on Dove,train,POINT (423662.1096449181 329223.24658729415),reservoir,46,res,1
+28067,Derwent at Church Wilne,train,POINT (443840.4764763896 331588.4195977872),reservoir,47,res,1
+67001,Dee at Bala,test,POINT (293843.21871338534 335897.6088877658),reservoir,48,res,2
+28085,Derwent at St Mary's Bridge,train,POINT (435723.8861535254 337084.2711240511),reservoir,49,res,1
+28009,Trent at Colwick,train,POINT (461910.94828801276 339573.4412581636),reservoir,50,res,1
+28008,Dove at Rocester Weir,train,POINT (411519.2969222787 339191.3581881548),reservoir,51,res,1
+65007,Dwyfor at Garndolbenmaen,train,POINT (249637.60617243292 342639.1996128064),reservoir,52,res,51
+67015,Dee at Manley Hall,test,POINT (334953.94034483493 341843.4807629168),reservoir,53,res,2
+67006,Alwen at Druid,test,POINT (304085.0782602902 343472.54258668167),reservoir,54,res,2
+28048,Amber at Wingfield Park,train,POINT (437627.7640538183 351561.18084298895),reservoir,55,res,1
+28117,Derwent at Whatstandwell,train,POINT (432913.637888121 354864.23071580555),reservoir,56,res,1
+65004,Gwyrfai at Bontnewydd,train,POINT (248151.21350032525 359385.63394133636),reservoir,57,res,24
+66011,Conwy at Cwmlanerch,test,POINT (280277.4177349166 358474.9465985742),reservoir,58,res,55
+28022,Trent at North Muskham,train,POINT (480369.60313773045 360986.5759873136),reservoir,59,res,1
+65006,Seiont at Peblic Mill,train,POINT (249594.61016857583 362680.0746822626),reservoir,60,res,24
+67033,Dee at Chester Suspension Bridge,test,POINT (341298.7934636403 366238.9957262021),reservoir,61,res,2
+28043,Derwent at Chatsworth,train,POINT (426143.84097467625 368172.85434622556),reservoir,62,res,1
+68003,Dane at Rudheath,train,POINT (366727.52915479126 371556.461373023),reservoir,63,res,52
+28001,Derwent at Yorkshire Bridge,train,POINT (420063.1282580474 384831.5093126426),reservoir,64,res,1
+69017,Goyt at Marple Bridge,train,POINT (396107.9117940008 389241.4990444062),reservoir,65,res,9
+69015,Etherow at Compstall,train,POINT (396108.8408903981 390354.0189302591),reservoir,66,res,9
+27006,Don at Sheffield Hadfields,train,POINT (438652.6591250974 390508.65736864525),reservoir,67,res,1
+69027,Tame at Portwood,train,POINT (390793.01857029507 391473.98987264355),reservoir,68,res,9
+69007,Mersey at Ashton Weir,train,POINT (377511.89563014527 393743.81880754855),reservoir,69,res,9
+69002,Irwell at Adelphi Weir,train,POINT (382182.7988587815 399286.5790502726),reservoir,70,res,10
+27021,Don at Doncaster,train,POINT (457104.3948206622 404046.2141584813),reservoir,71,res,1
+69023,Roch at Blackford Bridge,train,POINT (380892.0617286688 408192.20777048625),reservoir,72,res,10
+70002,Douglas at Wanes Blades Bridge,train,POINT (347829.4244788339 412893.5542133158),reservoir,73,res,25
+27065,Holme at Huddersfield Queens Mill,train,POINT (413981.89236446295 415961.51307596616),reservoir,74,res,1
+27029,Calder at Elland,train,POINT (412644.774569769 421520.67742078204),reservoir,75,res,1
+27003,Aire at Beal,train,POINT (452889.7705815792 425138.2276824266),reservoir,76,res,1
+27079,Calder at Methley,train,POINT (441001.9937716489 426132.2860290933),reservoir,77,res,1
+27080,Aire at Oulton Lemonroyd,train,POINT (438344.8963041131 428335.2458561397),reservoir,78,res,1
+71001,Ribble at Samlesbury,train,POINT (359232.02373998193 430583.1405007951),reservoir,79,res,10
+71008,Hodder at Hodder Place,train,POINT (370493.54043641116 439399.5640328998),reservoir,80,res,10
+72002,Wyre at St Michaels,train,POINT (346165.46150498115 440730.00572776725),reservoir,81,res,25
+27089,Wharfe at Tadcaster,train,POINT (447418.97181841405 443995.665424475),reservoir,82,res,1
+27002,Wharfe at Wetherby Flint Mill,train,POINT (442131.08401487867 447283.1687082704),reservoir,83,res,1
+27043,Wharfe at Addingham,train,POINT (409288.2525876202 449328.15958280885),reservoir,84,res,1
+27001,Nidd at Hunsingore Weir,train,POINT (442736.8805812599 452852.22217694577),reservoir,85,res,1
+27009,Ouse at Skelton,train,POINT (457141.02174419764 455232.05704071186),reservoir,86,res,1
+27062,Nidd at Skip Bridge,train,POINT (447950.29774415237 456241.11245751556),reservoir,87,res,1
+27007,Ure at Westwick,train,POINT (435410.8720494127 467255.9933292137),reservoir,88,res,1
+74001,Duddon at Duddon Hall,train,POINT (319401.5680303845 490085.0376876079),reservoir,89,res,46
+74005,Ehen at Braystones,train,POINT (300868.4365560238 506031.5742041528),reservoir,90,res,47
+25001,Tees at Darlington Broken Scar,train,POINT (425991.1270794796 513928.47314478224),reservoir,91,res,37
+75004,Cocker at Southwaite Bridge,train,POINT (312969.1204468545 528045.8136551693),reservoir,92,res,42
+76003,Eamont at Udford,train,POINT (357532.30509802536 530746.7180783779),reservoir,93,res,8
+75003,Derwent at Ouse Bridge,val,POINT (320146.8058633919 532365.5958126573),reservoir,94,res,43
+24001,Wear at Sunderland Bridge,train,POINT (426502.2375865176 537299.9848021672),reservoir,95,res,20
+24003,Wear at Stanhope,train,POINT (398167.5117023352 539449.1454323655),reservoir,96,res,20
+76007,Eden at Sheepmount,train,POINT (339176.23783091403 556554.1724098035),reservoir,97,res,8
+81003,Luce at Airyhemming,train,POINT (217994.3802782862 559834.7045800167),reservoir,98,res,35
+23007,Derwent at Rowlands Gill,val,POINT (416764.12886284105 558397.1115818054),reservoir,99,res,39
+23001,Tyne at Bywell,train,POINT (403941.6652524743 561706.3155080508),reservoir,100,res,8
+80002,Dee at Glenlochar,train,POINT (273318.76078487316 564611.8443487189),reservoir,101,res,34
+77002,Esk at Canonbie,test,POINT (339433.15859583445 575471.3912506134),reservoir,102,res,45
+79005,Cluden Water at Fiddlers Ford,train,POINT (292900.2721705516 579686.8625193131),reservoir,103,res,12
+23008,Rede at Rede Bridge,train,POINT (386711.71159897075 582868.9360626636),reservoir,104,res,8
+79002,Nith at Friars Carse,train,POINT (292396.9022244966 585265.7261464705),reservoir,105,res,12
+22007,Wansbeck at Mitford,train,POINT (417297.85310399433 586220.528635637),reservoir,106,res,38
+82001,Girvan at Robstone,train,POINT (221529.17261362265 599803.2683098426),reservoir,107,res,59
+79006,Nith at Drumlanrig,train,POINT (285732.04192235845 598793.1221205294),reservoir,108,res,12
+79003,Nith at Hall Bridge,train,POINT (268343.0667371265 612639.9210378353),reservoir,109,res,12
+21011,Yarrow Water at Philiphaugh,train,POINT (343932.75754681707 627724.5967211453),reservoir,110,res,4
+21008,Teviot at Ormiston Mill,train,POINT (370445.3178000246 628578.0679548623),reservoir,111,res,4
+21006,Tweed at Boleside,train,POINT (349676.4708290215 633219.9976450689),reservoir,112,res,4
+84018,Clyde at Tulliford Mill,val,POINT (289315.2097831227 639899.3101965346),reservoir,113,res,5
+21018,Lyne Water at Lyne Station,train,POINT (320806.1083177484 640327.1365616111),reservoir,114,res,4
+83009,Garnock at Kilwinning,test,POINT (230832.16811756534 642889.4022535977),reservoir,115,res,58
+21003,Tweed at Peebles,train,POINT (325840.3013679468 640238.6226339716),reservoir,116,res,4
+84004,Clyde at Sills of Clyde,val,POINT (292517.01842679805 642046.1384531733),reservoir,117,res,5
+21009,Tweed at Norham,train,POINT (390047.724446847 647409.5590682232),reservoir,118,res,4
+21022,Whiteadder Water at Hutton Castle,train,POINT (388184.463950268 655205.0641942768),reservoir,119,res,4
+84030,White Cart Water at Overlee,val,POINT (257765.37038951513 657521.557909693),reservoir,120,res,5
+84005,Clyde at Blairston,val,POINT (270336.88391980063 658241.2447876554),reservoir,121,res,5
+84013,Clyde at Daldowie,val,POINT (267305.2702324572 661674.1989805017),reservoir,122,res,5
+84012,White Cart Water at Hawkhead,val,POINT (249808.71265043019 663359.5386508096),reservoir,123,res,5
+84019,North Calder Water at Calderpark,val,POINT (267965.48904837144 662767.772122895),reservoir,124,res,5
+84001,Kelvin at Killermont,val,POINT (255703.48403645272 670956.4057161855),reservoir,125,res,5
+20007,Gifford Water at Lennoxlove,train,POINT (351375.5972810944 672158.4353589147),reservoir,126,res,41
+19006,Water of Leith at Murrayfield,train,POINT (322662.53699131147 673691.1537958847),reservoir,127,res,40
+19001,Almond at Craigiehall,val,POINT (316439.5558307166 674920.7341898973),reservoir,128,res,27
+85001,Leven at Linnbrane,train,POINT (239162.48657845624 680453.8459281409),reservoir,129,res,11
+17001,Carron at Headswood,val,POINT (282911.54385925835 682382.6173514915),reservoir,130,res,50
+85002,Endrick Water at Gaidrew,train,POINT (248752.14773363297 686790.3471419212),reservoir,131,res,11
+18014,Bannock Burn at Bannockburn,train,POINT (281288.1656831681 691336.3490882699),reservoir,132,res,11
+18002,Devon at Glenochil,train,POINT (285760.5494552283 695669.2230306392),reservoir,133,res,49
+18003,Teith at Bridge of Teith,train,POINT (272258.0511515992 701619.6274093576),reservoir,134,res,11
+16001,Earn at Kinkell Bridge,test,POINT (293126.29056491604 716636.7976619183),reservoir,135,res,31
+16004,Earn at Forteviot Bridge,test,POINT (304305.46095667745 718597.3980554191),reservoir,136,res,31
+15006,Tay at Ballathie,train,POINT (314553.22255358874 736193.5708211593),reservoir,137,res,3
+15016,Tay at Kenmore,train,POINT (277922.1979146776 747117.9748747319),reservoir,138,res,3
+15010,Isla at Wester Cardean,train,POINT (329509.5148870852 747050.7482735675),reservoir,139,res,3
+15011,Lyon at Comrie Bridge,train,POINT (278568.18716192193 748213.0686570497),reservoir,140,res,3
+15007,Tay at Pitnacree,train,POINT (292212.7346075284 753409.5163697432),reservoir,141,res,3
+15012,Tummel at Pitlochry,train,POINT (294776.14634393 757799.0283409066),reservoir,142,res,3
+13007,North Esk at Logie Mill,train,POINT (370148.57987223746 764376.3031557878),reservoir,143,res,60
+8005,Spey at Boat of Garten,test,POINT (294507.7582267313 819059.3411198251),reservoir,144,res,15
+5003,Glass at Kerrow Wood,test,POINT (235236.7612564405 832156.0868394383),reservoir,145,res,22
+6007,Ness at Ness-side,test,POINT (264480.9450341253 842223.2241291481),reservoir,146,res,22
+8006,Spey at Boat o Brig,test,POINT (331871.2616305298 851673.4177071278),reservoir,147,res,15
+4001,Conon at Moy Bridge,train,POINT (248141.12913623964 855057.8439641354),reservoir,148,res,29
+7003,Lossie at Sheriffmills,train,POINT (319525.25934276055 863035.5431149509),reservoir,149,res,26
+2001,Helmsdale at Kilphedir,train,POINT (300010.0891646871 918048.7867925229),reservoir,150,res,44
+1001,Wick at Tarroul,train,POINT (326039.00256577483 955343.3246696829),reservoir,151,res,36
+97002,Thurso at Halkirk,train,POINT (313309.60207495507 960059.8911659506),reservoir,152,res,33
+48004,Warleggan at Trengoffe,val,POINT (215632.92220421953 67696.2114977747),non_reservoir,0,nonres,21
+47014,Walkham at Horrabridge,train,POINT (251197.40292892413 69908.79678840173),non_reservoir,1,nonres,56
+47004,Lynher at Pillaton Mill,train,POINT (236777.0288535181 62546.721204746544),non_reservoir,2,nonres,16
+45012,Creedy at Cowley,val,POINT (290068.59157973714 96762.46181819728),non_reservoir,3,nonres,57
+47018,Thrushel at Hayne Bridge,train,POINT (241775.73502525152 86876.13363699851),non_reservoir,4,nonres,16
+45003,Culm at Woodmill,val,POINT (302225.5760903258 105418.90510757221),non_reservoir,5,nonres,28
+50008,Lew at Gribbleford Bridge,train,POINT (252784.74348177895 101020.3788323318),non_reservoir,6,nonres,18
+41029,Bull at Lealands,train,POINT (557608.377404924 113559.19570252218),non_reservoir,7,nonres,30
+41020,Bevern Stream at Clappers Bridge,val,POINT (542048.4064073762 116448.5034002361),non_reservoir,8,nonres,14
+52007,Parrett at Chiselborough,train,POINT (345983.510509109 114788.78158058907),non_reservoir,9,nonres,54
+50001,Taw at Umberleigh,train,POINT (260462.26293689248 124175.75604959473),non_reservoir,10,nonres,18
+41006,Uck at Isfield,val,POINT (546201.8062428803 118789.40398053225),non_reservoir,11,nonres,14
+40021,Hexden Channel at Hopemill,train,POINT (581007.7219157086 128793.43010709345),non_reservoir,12,nonres,7
+51001,Doniford Stream at Swill Bridge,val,POINT (308530.3102754698 143123.74864173084),non_reservoir,13,nonres,28
+52016,Currypool Stream at Currypool Farm,val,POINT (322442.2879128734 138445.51001147978),non_reservoir,14,nonres,53
+40005,Beult at Stilebridge,train,POINT (576153.5458592277 147549.35979605146),non_reservoir,15,nonres,7
+40020,Eridge Stream at Hendal Bridge,train,POINT (551999.0810384407 136761.96510397817),non_reservoir,16,nonres,7
+40006,Bourne at Hadlow,train,POINT (563508.7676857018 149357.46941274474),non_reservoir,17,nonres,7
+40017,Dudwell at Burwash,train,POINT (567830.7016095355 123896.6440539929),non_reservoir,18,nonres,7
+57006,Rhondda at Trehafod,test,POINT (305230.2990669699 191018.86776301212),non_reservoir,19,nonres,13
+57004,Cynon at Abercynon,test,POINT (308081.20140650216 195415.94544318353),non_reservoir,20,nonres,13
+58008,Dulais at Cilfrew,train,POINT (277749.58392944606 200510.21645845915),non_reservoir,21,nonres,17
+56012,Grwyne at Millbrook,train,POINT (324328.37658678164 217394.4520160167),non_reservoir,22,nonres,23
+58010,Hepste at Esgair Carnau,train,POINT (296686.0783929474 213437.68207606266),non_reservoir,23,nonres,17
+55029,Monnow at Grosmont,val,POINT (341638.95759209804 224949.23916601023),non_reservoir,24,nonres,6
+60002,Cothi at Felin Mynachdy,train,POINT (250732.52724205313 222384.68242438417),non_reservoir,25,nonres,32
+54017,Leadon at Wedderburn Bridge,test,POINT (377395.96237050515 223546.8165793044),non_reservoir,26,nonres,2
+55018,Frome at Yarkhill,val,POINT (361720.07212287455 242551.56963568466),non_reservoir,27,nonres,6
+54015,Bow Brook at Besford Bridge,test,POINT (392563.14143746684 245745.88904800673),non_reservoir,28,nonres,2
+55025,Llynfi at Three Cocks,val,POINT (316398.74817525013 237545.37362431549),non_reservoir,29,nonres,6
+33022,Ivel at Blunham,train,POINT (515067.5325930312 250407.5237854565),non_reservoir,30,nonres,19
+55026,Wye at Ddol Farm,val,POINT (297811.3344444554 267933.69793208485),non_reservoir,31,nonres,6
+33020,Alconbury Brook at Brampton,train,POINT (520710.2699771165 271684.9616771742),non_reservoir,32,nonres,19
+54034,Dowles Brook at Oak Cottage,test,POINT (376958.30424493685 276939.04550527467),non_reservoir,33,nonres,2
+28066,Cole at Coleshill,train,POINT (418433.80924709025 286929.74572835275),non_reservoir,34,nonres,1
+54025,Dulas at Rhos-y-pentref,test,POINT (294711.8400422406 282464.2877880873),non_reservoir,35,nonres,2
+28026,Anker at Polesworth,train,POINT (426493.54421048256 303652.0797708533),non_reservoir,36,nonres,1
+28081,Tame at Bescot,train,POINT (401452.54465171776 295794.55168614315),non_reservoir,37,nonres,1
+54012,Tern at Walcot,test,POINT (358884.8560658657 312654.78567854443),non_reservoir,38,nonres,2
+31002,Glen at Kates Br & King St Br,train,POINT (510867.3838511769 314853.12397091027),non_reservoir,39,nonres,48
+54020,Perry at Yeaton,test,POINT (343424.0295431936 319485.540726891),non_reservoir,40,nonres,2
+28056,Rothley Brook at Rothley,train,POINT (458211.9770570494 311714.0148883194),non_reservoir,41,nonres,1
+28031,Manifold at Ilam,train,POINT (414174.3129005804 350322.93454775773),non_reservoir,42,nonres,1
+67018,Dee at New Inn,test,POINT (287662.0054093947 330473.10834438546),non_reservoir,43,nonres,2
+54038,Tanat at Llanyblodwel,test,POINT (325242.6333404201 321957.2086408685),non_reservoir,44,nonres,2
+28024,Wreake at Syston Mill,train,POINT (461576.67782744655 312867.8420379496),non_reservoir,45,nonres,1
+28055,Ecclesbourne at Duffield,train,POINT (431639.7219516804 344843.22766303027),non_reservoir,46,nonres,1
+28115,Maun at Mansfield the Dykes,train,POINT (456249.34125129844 363981.1918916564),non_reservoir,47,nonres,1
+67010,Gelyn at Cynefail,test,POINT (284562.35352854885 341675.42090824654),non_reservoir,48,nonres,2
+28046,Dove at Izaak Walton,train,POINT (414841.2425737054 351437.39815948246),non_reservoir,49,nonres,1
+30001,Witham at Claypole Mill,train,POINT (483946.7817022345 347694.97104583227),non_reservoir,50,nonres,1
+28040,Trent at Stoke-On-Trent,train,POINT (389364.1710671545 346977.06576752773),non_reservoir,51,nonres,1
+65005,Erch at Pencaenewydd,train,POINT (240161.54246326652 340717.51486932894),non_reservoir,52,nonres,51
+67005,Ceiriog at Brynkinalt Weir,test,POINT (329516.31269771256 337469.66586088215),non_reservoir,53,nonres,2
+66001,Clwyd at Pont-y-Cambwll,test,POINT (307310.2669591956 371229.18285719905),non_reservoir,54,nonres,2
+27026,Rother at Whittington,train,POINT (439445.83507260843 374939.1011371871),non_reservoir,55,nonres,1
+28023,Wye at Ashford,train,POINT (418125.3393723424 369248.48366923997),non_reservoir,56,nonres,1
+65008,Peris at Nant Peris,train,POINT (260835.20719081836 357887.1598621774),non_reservoir,57,nonres,24
+66006,Elwy at Pont-y-Gwyddel,test,POINT (295295.57346309524 371477.85326584027),non_reservoir,58,nonres,55
+28044,Poulter at Cuckney,train,POINT (456825.3563316957 371776.12433617306),non_reservoir,59,nonres,1
+102001,Cefni at Bodffordd,train,POINT (242715.01090098888 377375.94847253774),non_reservoir,60,nonres,24
+68020,Gowy at Bridge Trafford,test,POINT (344691.0817523249 370648.907018832),non_reservoir,61,nonres,2
+28033,Dove at Hollinsclough,train,POINT (406109.25128752406 366993.1656851049),non_reservoir,62,nonres,1
+68001,Weaver at Ashbrook,train,POINT (367341.5876659388 363764.48484195466),non_reservoir,63,nonres,52
+27025,Rother at Woodhouse Mill,train,POINT (443346.3375867067 386098.66928263044),non_reservoir,64,nonres,1
+69012,Bollin at Wilmslow,train,POINT (384779.43937775434 381476.85334415856),non_reservoir,65,nonres,9
+69043,Irk at Collyhurst Weir,train,POINT (384836.7715487329 399277.3156231522),non_reservoir,66,nonres,9
+27030,Dearne at Adwick,train,POINT (447846.7941732365 401718.3821901005),non_reservoir,67,nonres,1
+69030,Sankey Brook at Causey Bridges,train,POINT (358902.51543735684 392756.5565642497),non_reservoir,68,nonres,9
+69032,Alt at Kirkby,train,POINT (339041.682705848 398534.27679905656),non_reservoir,69,nonres,9
+71004,Calder at Whalley Weir,train,POINT (373105.72148916416 436045.8132193447),non_reservoir,70,nonres,10
+28050,Torne at Auckley,train,POINT (464441.1587919658 400802.28204498324),non_reservoir,71,nonres,1
+71006,Ribble at Henthorn,train,POINT (372467.15969830536 439387.46169881965),non_reservoir,72,nonres,10
+72007,Brock at upstream of A6,train,POINT (351427.0990243355 440672.1134029514),non_reservoir,73,nonres,25
+27077,Bradford Beck at Shipley,train,POINT (415236.00161526416 437104.7620110238),non_reservoir,74,nonres,1
+27084,Eastburn Beck at Crosshills,train,POINT (402069.0874299162 444869.0751927651),non_reservoir,75,nonres,1
+27064,Went at Walden Stubbs,train,POINT (454973.24475088046 416260.61760321725),non_reservoir,76,nonres,1
+27023,Dearne at Barnsley Weir,train,POINT (435205.0600508933 407170.69793293905),non_reservoir,77,nonres,1
+27051,Crimple at Burn Bridge,train,POINT (428312.06672082073 451629.7938464382),non_reservoir,78,nonres,1
+72014,Conder at Galgate,train,POINT (348299.7726485506 455171.630383646),non_reservoir,79,nonres,10
+72004,Lune at Caton,train,POINT (352991.3988716187 465136.35315275216),non_reservoir,80,nonres,10
+73015,Keer at High Keer Weir,train,POINT (352406.1689403432 471818.8567574384),non_reservoir,81,nonres,25
+27071,Swale at Crakehill,train,POINT (442553.1048100775 472879.7130725925),non_reservoir,82,nonres,1
+27041,Derwent at Buttercrambe,train,POINT (472824.16722188593 458789.6349744748),non_reservoir,83,nonres,1
+27035,Aire at Kildwick Bridge,train,POINT (401411.692910994 445981.46328889206),non_reservoir,84,nonres,1
+27049,Rye at Ness,train,POINT (469248.3906398812 478766.43370024615),non_reservoir,85,nonres,1
+27042,Dove at Kirkby Mills,train,POINT (470450.96415465715 485461.9802996381),non_reservoir,86,nonres,1
+27087,Derwent at Low Marishes,train,POINT (482967.29817926686 477879.6157278422),non_reservoir,87,nonres,1
+27034,Ure at Kilgram Bridge,train,POINT (418984.8865997232 486075.9023164484),non_reservoir,88,nonres,1
+74007,Esk at Cropple How,train,POINT (313042.2857358848 497992.2218120777),non_reservoir,89,nonres,46
+74006,Calder at Calder Hall,train,POINT (303439.04257664445 504863.33908641),non_reservoir,90,nonres,47
+25020,Skerne at Preston le Skerne,train,POINT (429163.68619189545 523962.67164853634),non_reservoir,91,nonres,37
+75017,Ellen at Bullgill,train,POINT (309298.06089553185 538135.8855330205),non_reservoir,92,nonres,42
+76005,Eden at Temple Sowerby,train,POINT (360737.65113576624 528492.0371525295),non_reservoir,93,nonres,8
+77004,Kirtle Water at Mossknowe,val,POINT (328470.7446192455 568955.6386294417),non_reservoir,94,nonres,43
+24005,Browney at Burnhall,train,POINT (425851.916197343 538409.0442168858),non_reservoir,95,nonres,20
+24004,Bedburn Beck at Bedburn,train,POINT (411704.6590501273 531674.0881844917),non_reservoir,96,nonres,20
+76008,Irthing at Greenholme,train,POINT (348808.0325319774 557546.6863042789),non_reservoir,97,nonres,8
+81004,Bladnoch at Low Malzie,train,POINT (238348.33074356348 554599.1602543073),non_reservoir,98,nonres,35
+23016,Ouse Burn at Crag Hall,val,POINT (425687.1199828216 567341.8682376246),non_reservoir,99,nonres,39
+23004,South Tyne at Haydon Bridge,train,POINT (385378.08883598365 565067.5407069182),non_reservoir,100,nonres,8
+80001,Urr at Dalbeattie,train,POINT (282194.20146202657 561029.2179411117),non_reservoir,101,nonres,34
+77003,Liddel Water at Rowanburnfoot,test,POINT (341348.8539121059 575445.758715051),non_reservoir,102,nonres,45
+78004,Kinnel Water at Redhall,train,POINT (307736.7755667801 587147.1113364695),non_reservoir,103,nonres,12
+76011,Coal Burn at Coalburn,train,POINT (369461.6636984428 577389.940162289),non_reservoir,104,nonres,8
+79004,Scar Water at Capenoch,train,POINT (284345.28068272804 594375.4108193419),non_reservoir,105,nonres,12
+22006,Blyth at Hartford Bridge,train,POINT (424341.22424658167 579575.8955623067),non_reservoir,106,nonres,38
+82003,Stinchar at Balnowlart,train,POINT (210653.88218253417 583539.7002327378),non_reservoir,107,nonres,59
+78006,Annan at Woodfoot,train,POINT (309919.53593176743 600460.8619470657),non_reservoir,108,nonres,12
+83004,Lugar Water at Langholm,train,POINT (250911.99021211316 622106.4348666753),non_reservoir,109,nonres,12
+21013,Gala Water at Galashiels,train,POINT (347838.9213444759 637693.8092616637),non_reservoir,110,nonres,4
+21024,Jed Water at Jedburgh,train,POINT (365336.35358717013 620824.719449109),non_reservoir,111,nonres,4
+21015,Leader Water at Earlston,train,POINT (356664.7518546773 638710.2282174117),non_reservoir,112,nonres,4
+84009,Nethan at Kirkmuirhill,val,POINT (281224.3018897228 643452.7819273012),non_reservoir,113,nonres,5
+21017,Ettrick Water at Brockhoperig,train,POINT (323487.2913681007 613562.9714817528),non_reservoir,114,nonres,4
+83007,Lugton Water at Eglinton Castle,test,POINT (231418.2448400752 641752.5231617758),non_reservoir,115,nonres,58
+21026,Tima Water at Deephope,train,POINT (327919.1782041121 613488.1564522589),non_reservoir,116,nonres,4
+84022,Duneaton at Maidencots,val,POINT (292764.7775993864 626451.9134559014),non_reservoir,117,nonres,5
+21027,Blackadder Water at Mouth Bridge,train,POINT (382531.77610750985 652998.2815156813),non_reservoir,118,nonres,4
+21016,Eye Water at Eyemouth Mill,train,POINT (394466.7045739057 664096.1954253361),non_reservoir,119,nonres,4
+84008,Rotten Calder Water at Redlees,val,POINT (267897.6211245756 660542.3587356673),non_reservoir,120,nonres,5
+84014,Avon Water at Fairholm,val,POINT (275159.2397414531 651417.8299238061),non_reservoir,121,nonres,5
+84016,Luggie Water at Condorrat,val,POINT (273893.27058441204 672614.2502339018),non_reservoir,122,nonres,5
+84017,Black Cart Water at Milliken Park,val,POINT (241002.93718844105 662559.8406826667),non_reservoir,123,nonres,5
+84020,Glazert Water at Milton of Campsie,val,POINT (265876.2319187196 676197.3168439629),non_reservoir,124,nonres,5
+84026,Allander Water at Milngavie,val,POINT (255777.82884855632 673181.7488373253),non_reservoir,125,nonres,5
+20003,Tyne at Spilmersford,train,POINT (345711.8476674735 668886.6684457988),non_reservoir,126,nonres,41
+19010,Braid Burn at Liberton,train,POINT (326977.2169941528 670276.2653404995),non_reservoir,127,nonres,40
+19017,Gogar Burn at Turnhouse,val,POINT (315793.52720446815 673819.9763991145),non_reservoir,128,nonres,27
+85004,Luss Water at Luss,train,POINT (235888.9483476315 692833.6497008916),non_reservoir,129,nonres,11
+17003,Bonny Water at Bonnybridge,val,POINT (282227.3545522713 680174.106150606),non_reservoir,130,nonres,50
+18010,Forth at Gargunnock,train,POINT (271437.0648020819 694961.5806917296),non_reservoir,131,nonres,11
+18011,Forth at Craigforth,train,POINT (277683.4979129903 695892.3351579776),non_reservoir,132,nonres,11
+18001,Allan Water at Kinbuck,train,POINT (279209.4896727385 705872.3102899038),non_reservoir,133,nonres,49
+18008,Leny at Anie,train,POINT (258246.18206677312 709859.1222704856),non_reservoir,134,nonres,11
+15013,Almond at Almondbank,test,POINT (306948.402988355 726332.9557519612),non_reservoir,135,nonres,31
+17015,North Queich at Lathro,test,POINT (311420.6851224742 703968.6659308887),non_reservoir,136,nonres,31
+15021,Lunan Burn at Mill Bank,train,POINT (318331.846731333 740572.4409868368),non_reservoir,137,nonres,3
+15023,Braan at Hermitage,train,POINT (301145.33799759566 742053.9659600251),non_reservoir,138,nonres,3
+15030,Dean Water at Dean Bridge,train,POINT (329490.85068270133 745937.7124248144),non_reservoir,139,nonres,3
+15039,Tilt at Marble Lodge,train,POINT (289008.5375117173 771312.3119488292),non_reservoir,140,nonres,3
+15014,Ardle at Kindrogan,train,POINT (305922.3347559344 763101.7414985236),non_reservoir,141,nonres,3
+15025,Ericht at Craighall,train,POINT (317233.74794324185 747274.4808631543),non_reservoir,142,nonres,3
+13008,South Esk at Brechin,train,POINT (359714.8496417661 760011.0900883756),non_reservoir,143,nonres,60
+8009,Dulnain at Balnaan Bridge,test,POINT (297663.24699698325 824548.0786005192),non_reservoir,144,nonres,15
+6008,Enrick at Mill of Tore,test,POINT (244776.5135966723 829553.9402010386),non_reservoir,145,nonres,22
+7001,Findhorn at Shenachie,test,POINT (282856.75165111764 833855.8646520898),non_reservoir,146,nonres,22
+9003,Isla at Grange,test,POINT (349213.0116141685 850305.8070974078),non_reservoir,147,nonres,15
+4005,Meig at Glenmeanie,train,POINT (228862.358270986 852481.6229708635),non_reservoir,148,nonres,29
+7006,Lossie at Torwinny,train,POINT (313248.2011240587 848687.9599491874),non_reservoir,149,nonres,26
+2002,Brora at Bruachrobie,train,POINT (289010.70292619173 903859.7452366865),non_reservoir,150,nonres,44
+96001,Halladale at Halladale,train,POINT (289305.27757647936 956209.9908385931),non_reservoir,151,nonres,36
+96002,Naver at Apigill,train,POINT (271231.9765815615 956762.9189325883),non_reservoir,152,nonres,33

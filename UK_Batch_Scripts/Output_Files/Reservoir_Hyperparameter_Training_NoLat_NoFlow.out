@@ -1,0 +1,286 @@
+[ECMWF-INFO -ecsbatch] - -------------------------------------------------------------------------------------
+[ECMWF-INFO -ecsbatch] -  This is the ECMWF jobfilter
+[ECMWF-INFO -ecsbatch] -  +++ Please report issues using the Support portal +++
+[ECMWF-INFO -ecsbatch] -  +++ https://support.ecmwf.int                     +++
+[ECMWF-INFO -ecsbatch] -  /usr/local/bin/ecsbatch: size: 55091, mtime: Thu Oct  8 12:05:06 2026
+[ECMWF-INFO -ecsbatch] - -------------------------------------------------------------------------------------
+[ECMWF-INFO -ecsbatch] - Time at submit: Sun Nov  8 22:56:56 2026 (1794178616.6763897) on ab6-205.bullx:/etc/ecmwf/nfs/dh2_home_a/mokr
+[ECMWF-INFO -ecsbatch] - --- SLURM VARIABLES ---
+[ECMWF-INFO -ecsbatch] - SLURM_NODEID=0
+[ECMWF-INFO -ecsbatch] - SLURM_TASK_PID=373949
+[ECMWF-INFO -ecsbatch] - SLURM_PRIO_PROCESS=0
+[ECMWF-INFO -ecsbatch] - SLURM_SUBMIT_DIR=/etc/ecmwf/nfs/dh2_home_a/mokr
+[ECMWF-INFO -ecsbatch] - SLURM_CPUS_PER_TASK=32
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_LICENSES=h2resw01
+[ECMWF-INFO -ecsbatch] - SLURM_PROCID=0
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_GID=1222
+[ECMWF-INFO -ecsbatch] - SLURMD_NODENAME=ab6-205
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_END_TIME=1794479550
+[ECMWF-INFO -ecsbatch] - SLURM_TASKS_PER_NODE=1
+[ECMWF-INFO -ecsbatch] - SLURM_NNODES=1
+[ECMWF-INFO -ecsbatch] - SLURM_GET_USER_ENV=1
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_START_TIME=1793874750
+[ECMWF-INFO -ecsbatch] - SLURM_NTASKS_PER_NODE=1
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_NODELIST=ab6-205
+[ECMWF-INFO -ecsbatch] - SLURM_CLUSTER_NAME=ab
+[ECMWF-INFO -ecsbatch] - SLURM_NODELIST=ab6-205
+[ECMWF-INFO -ecsbatch] - SLURM_NTASKS=1
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_CPUS_PER_NODE=32
+[ECMWF-INFO -ecsbatch] - SLURM_TOPOLOGY_ADDR=root_switch.gpil.isw6-b12zg-l1.ab6-205
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_NAME=mokr-jupyterhub
+[ECMWF-INFO -ecsbatch] - SLURM_JOBID=27394690
+[ECMWF-INFO -ecsbatch] - SLURM_CONF=/etc/slurm/slurm.conf
+[ECMWF-INFO -ecsbatch] - EC_CLUSTER=ab
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_QOS=ni
+[ECMWF-INFO -ecsbatch] - SLURM_TOPOLOGY_ADDR_PATTERN=switch.switch.switch.node
+[ECMWF-INFO -ecsbatch] - SLURM_CPUS_ON_NODE=32
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_NUM_NODES=1
+[ECMWF-INFO -ecsbatch] - SLURM_MEM_PER_NODE=32768
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_UID=25848
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_PARTITION=inter
+[ECMWF-INFO -ecsbatch] - SLURM_SCRIPT_CONTEXT=prolog_task
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_USER=mokr
+[ECMWF-INFO -ecsbatch] - SLURM_NPROCS=1
+[ECMWF-INFO -ecsbatch] - SLURM_SUBMIT_HOST=ac6-209.bullx
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_ACCOUNT=ecrvis
+[ECMWF-INFO -ecsbatch] - SLURM_EXPORT_ENV=ALL
+[ECMWF-INFO -ecsbatch] - SLURM_TRES_PER_TASK=cpu=32
+[ECMWF-INFO -ecsbatch] - SLURM_GTIDS=0
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_ID=27394690
+[ECMWF-INFO -ecsbatch] - SBATCH_EXPORT=NONE
+[ECMWF-INFO -ecsbatch] - SLURM_OOM_KILL_STEP=0
+[ECMWF-INFO -ecsbatch] - SLURM_LOCALID=0
+[ECMWF-INFO -ecsbatch] - -----------------------
+[ECMWF-INFO -ecsbatch] - jobscript: /etc/ecmwf/nfs/dh2_home_a/mokr/Reservoir_Modelling/UK_Batch_Scripts/Reservoir_Hyperparameter_Training.sh
+[ECMWF-INFO -ecsbatch] - --- SCRIPT OPTIONS ---
+[ECMWF-INFO -ecsbatch] - #SBATCH --qos=ng
+[ECMWF-INFO -ecsbatch] - #SBATCH --nodes=1
+[ECMWF-INFO -ecsbatch] - #SBATCH --ntasks-per-node=1
+[ECMWF-INFO -ecsbatch] - #SBATCH --gpus-per-node=1
+[ECMWF-INFO -ecsbatch] - #SBATCH --cpus-per-task=16
+[ECMWF-INFO -ecsbatch] - #SBATCH --mem=64G
+[ECMWF-INFO -ecsbatch] - #SBATCH --time=12:00:00
+[ECMWF-INFO -ecsbatch] - #SBATCH --job-name=Reservoir_Hyperparameter_Training_NoFlow
+[ECMWF-INFO -ecsbatch] - #SBATCH --output=/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Reservoir_Hyperparameter_Training_NoLat_NoFlow.out
+[ECMWF-INFO -ecsbatch] - #SBATCH --error=/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Reservoir_Hyperparameter_Training_NoLat_NoFlow_Error.out
+[ECMWF-INFO -ecsbatch] - -----------------------
+[ECMWF-INFO -ecsbatch] - --- POST-PROCESSED OPTIONS ---
+[ECMWF-INFO -ecsbatch] - ARG --positional=['/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Reservoir_Hyperparameter_Training.sh']
+[ECMWF-INFO -ecsbatch] - ARG --cpus_per_task=16
+[ECMWF-INFO -ecsbatch] - ARG --error=/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Reservoir_Hyperparameter_Training_NoLat_NoFlow_Error.out
+[ECMWF-INFO -ecsbatch] - ARG --job_name=Reservoir_Hyperparameter_Training_NoFlow
+[ECMWF-INFO -ecsbatch] - ARG --ntasks_per_node=1
+[ECMWF-INFO -ecsbatch] - ARG --nodes=1
+[ECMWF-INFO -ecsbatch] - ARG --output=/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Reservoir_Hyperparameter_Training_NoLat_NoFlow.out
+[ECMWF-INFO -ecsbatch] - ARG --qos=ng
+[ECMWF-INFO -ecsbatch] - ARG --time=12:00:00
+[ECMWF-INFO -ecsbatch] - ARG --mem=64G
+[ECMWF-INFO -ecsbatch] - ARG --gpus_per_node=1
+[ECMWF-INFO -ecsbatch] - ------------------------------
+[ECMWF-INFO -ecsbatch] - jobtag: mokr-Reservoir__ing_NoFlow-1x16-/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Reservoir_Hyperparameter_Training_NoLat_NoFlow.out
+[ECMWF-INFO -ecsbatch] - ------------------------------
+[ECMWF-INFO -ecsbatch] - Average Walltime 7210 with a Standard Deviation 6834
+[ECMWF-INFO -ecsbatch] - Runtime history
+[ECMWF-INFO -ecsbatch] -   Date               | Cores   Cluster   Walltime       Mem
+[ECMWF-INFO -ecsbatch] -   06.11.2026 - 12:37 | 16         ac         13570      64G       
+[ECMWF-INFO -ecsbatch] -   18.09.2026 - 19:23 | 16         ac         336        64G       
+[ECMWF-INFO -ecsbatch] -   18.09.2026 - 17:40 | 16         ac         433        64G       
+[ECMWF-INFO -ecsbatch] -   17.09.2026 - 13:34 | 16         ac         14501      64G       
+[ECMWF-INFO -ecsbatch] - ['/usr/bin/sbatch', '--cpus-per-task=16', '--error=/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Reservoir_Hyperparameter_Training_NoLat_NoFlow_Error.out', '--job-name=Reservoir_Hyperparameter_Training_NoFlow', '--ntasks-per-node=1', '--nodes=1', '--output=/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Reservoir_Hyperparameter_Training_NoLat_NoFlow.out', '--qos=ng', '--time=12:00:00', '--mem=64G', '--gpus-per-node=1', '--licenses=h2resw01', '--export=EC_user_time_limit=12:00:00', '/etc/ecmwf/nfs/dh2_home_a/mokr/Reservoir_Modelling/UK_Batch_Scripts/Reservoir_Hyperparameter_Training.sh']
+[ECMWF-INFO -ecsbatch] - ecsbatch executed on ab
+[ECMWF-INFO -ecsbatch] - Job queued on ac using method local
+[ECMWF-INFO -ecsbatch] - Submitted batch job 37844983
+Dropped 3836/873231 samples containing NaN targets.
+Dropped 940/175019 samples containing NaN targets.
+[Reservoir] Total combinations to test: 16
+  Epoch 1/8
+  Validation Loss: 0.183625
+  Epoch 2/8
+  Validation Loss: 0.184998
+  Epoch 3/8
+  Validation Loss: 0.199462
+  Early stopping triggered at epoch 3
+  Epoch 1/8
+  Validation Loss: 0.170552
+  Epoch 2/8
+  Validation Loss: 0.173200
+  Epoch 3/8
+  Validation Loss: 0.175146
+  Early stopping triggered at epoch 3
+  Epoch 1/8
+  Validation Loss: 0.170697
+  Epoch 2/8
+  Validation Loss: 0.169182
+  Epoch 3/8
+  Validation Loss: 0.159993
+  Epoch 4/8
+  Validation Loss: 0.172403
+  Epoch 5/8
+  Validation Loss: 0.170162
+  Early stopping triggered at epoch 5
+  Epoch 1/8
+  Validation Loss: 0.168611
+  Epoch 2/8
+  Validation Loss: 0.176882
+  Epoch 3/8
+  Validation Loss: 0.160704
+  Epoch 4/8
+  Validation Loss: 0.177412
+  Epoch 5/8
+  Validation Loss: 0.162633
+  Early stopping triggered at epoch 5
+  Epoch 1/8
+  Validation Loss: 0.161149
+  Epoch 2/8
+  Validation Loss: 0.151423
+  Epoch 3/8
+  Validation Loss: 0.161754
+  Epoch 4/8
+  Validation Loss: 0.167289
+  Early stopping triggered at epoch 4
+  Epoch 1/8
+  Validation Loss: 0.152685
+  Epoch 2/8
+  Validation Loss: 0.171429
+  Epoch 3/8
+  Validation Loss: 0.177560
+  Early stopping triggered at epoch 3
+  Epoch 1/8
+  Validation Loss: 0.149260
+  Epoch 2/8
+  Validation Loss: 0.157101
+  Epoch 3/8
+  Validation Loss: 0.154565
+  Early stopping triggered at epoch 3
+  Epoch 1/8
+  Validation Loss: 0.180420
+  Epoch 2/8
+  Validation Loss: 0.169792
+  Epoch 3/8
+  Validation Loss: 0.170110
+  Epoch 4/8
+  Validation Loss: 0.164923
+  Epoch 5/8
+  Validation Loss: 0.168205
+  Epoch 6/8
+  Validation Loss: 0.174358
+  Early stopping triggered at epoch 6
+  Epoch 1/8
+  Validation Loss: 0.177127
+  Epoch 2/8
+  Validation Loss: 0.150753
+  Epoch 3/8
+  Validation Loss: 0.158606
+  Epoch 4/8
+  Validation Loss: 0.160435
+  Early stopping triggered at epoch 4
+  Epoch 1/8
+  Validation Loss: 0.183663
+  Epoch 2/8
+  Validation Loss: 0.180418
+  Epoch 3/8
+  Validation Loss: 0.188353
+  Epoch 4/8
+  Validation Loss: 0.178884
+  Epoch 5/8
+  Validation Loss: 0.195335
+  Epoch 6/8
+  Validation Loss: 0.198278
+  Early stopping triggered at epoch 6
+  Epoch 1/8
+  Validation Loss: 0.156481
+  Epoch 2/8
+  Validation Loss: 0.155340
+  Epoch 3/8
+  Validation Loss: 0.147604
+  Epoch 4/8
+  Validation Loss: 0.152258
+  Epoch 5/8
+  Validation Loss: 0.157745
+  Early stopping triggered at epoch 5
+  Epoch 1/8
+  Validation Loss: 0.174015
+  Epoch 2/8
+  Validation Loss: 0.159536
+  Epoch 3/8
+  Validation Loss: 0.168252
+  Epoch 4/8
+  Validation Loss: 0.183022
+  Early stopping triggered at epoch 4
+  Epoch 1/8
+  Validation Loss: 0.148323
+  Epoch 2/8
+  Validation Loss: 0.138335
+  Epoch 3/8
+  Validation Loss: 0.144545
+  Epoch 4/8
+  Validation Loss: 0.149060
+  Early stopping triggered at epoch 4
+  Epoch 1/8
+  Validation Loss: 0.156182
+  Epoch 2/8
+  Validation Loss: 0.161840
+  Epoch 3/8
+  Validation Loss: 0.159736
+  Early stopping triggered at epoch 3
+  Epoch 1/8
+  Validation Loss: 0.173435
+  Epoch 2/8
+  Validation Loss: 0.163293
+  Epoch 3/8
+  Validation Loss: 0.172777
+  Epoch 4/8
+  Validation Loss: 0.172447
+  Early stopping triggered at epoch 4
+  Epoch 1/8
+  Validation Loss: 0.170155
+  Epoch 2/8
+  Validation Loss: 0.156695
+  Epoch 3/8
+  Validation Loss: 0.163959
+  Epoch 4/8
+  Validation Loss: 0.156285
+  Epoch 5/8
+  Validation Loss: 0.157481
+  Epoch 6/8
+  Validation Loss: 0.165480
+  Early stopping triggered at epoch 6
+
+================================================================================
+HYPERPARAMETER SEARCH RESULTS
+================================================================================
+ gamma  lstm_num_layers  embedding_output_size  lstm_hidden_size  embedding_hidden_size  dropout  learning_rate  num_epochs  train_loss  val_loss                                                                                                                                                   model_path  status
+  0.95                2                     16               256                     64      0.1          0.001           2    0.035148  0.138335  /home/mokr/Reservoir_Modelling/CamelsGB_Models/Reservoir/365_0209_No_Lat_Reservoir_LSTM_Numlayers2_LSTMhs256_Embhs64_Embos16_Epochs2_Gamma0.95_0.001_0.1.pt success
+  0.95                2                     16               128                    128      0.1          0.001           3    0.048565  0.147604 /home/mokr/Reservoir_Modelling/CamelsGB_Models/Reservoir/365_0209_No_Lat_Reservoir_LSTM_Numlayers2_LSTMhs128_Embhs128_Embos16_Epochs3_Gamma0.95_0.001_0.1.pt success
+  0.95                1                     16               256                    128      0.1          0.001           1    0.052968  0.149260 /home/mokr/Reservoir_Modelling/CamelsGB_Models/Reservoir/365_0209_No_Lat_Reservoir_LSTM_Numlayers1_LSTMhs256_Embhs128_Embos16_Epochs1_Gamma0.95_0.001_0.1.pt success
+  0.95                2                     16               128                     64      0.1          0.001           2    0.054809  0.150753  /home/mokr/Reservoir_Modelling/CamelsGB_Models/Reservoir/365_0209_No_Lat_Reservoir_LSTM_Numlayers2_LSTMhs128_Embhs64_Embos16_Epochs2_Gamma0.95_0.001_0.1.pt success
+  0.95                1                     16               256                     64      0.1          0.001           2    0.043032  0.151423  /home/mokr/Reservoir_Modelling/CamelsGB_Models/Reservoir/365_0209_No_Lat_Reservoir_LSTM_Numlayers1_LSTMhs256_Embhs64_Embos16_Epochs2_Gamma0.95_0.001_0.1.pt success
+  0.95                1                     16               256                     64      0.4          0.001           1    0.061376  0.152685  /home/mokr/Reservoir_Modelling/CamelsGB_Models/Reservoir/365_0209_No_Lat_Reservoir_LSTM_Numlayers1_LSTMhs256_Embhs64_Embos16_Epochs1_Gamma0.95_0.001_0.4.pt success
+  0.95                2                     16               256                     64      0.4          0.001           1    0.059082  0.156182  /home/mokr/Reservoir_Modelling/CamelsGB_Models/Reservoir/365_0209_No_Lat_Reservoir_LSTM_Numlayers2_LSTMhs256_Embhs64_Embos16_Epochs1_Gamma0.95_0.001_0.4.pt success
+  0.95                2                     16               256                    128      0.4          0.001           4    0.036900  0.156285 /home/mokr/Reservoir_Modelling/CamelsGB_Models/Reservoir/365_0209_No_Lat_Reservoir_LSTM_Numlayers2_LSTMhs256_Embhs128_Embos16_Epochs4_Gamma0.95_0.001_0.4.pt success
+  0.95                2                     16               128                    128      0.4          0.001           2    0.067392  0.159536 /home/mokr/Reservoir_Modelling/CamelsGB_Models/Reservoir/365_0209_No_Lat_Reservoir_LSTM_Numlayers2_LSTMhs128_Embhs128_Embos16_Epochs2_Gamma0.95_0.001_0.4.pt success
+  0.95                1                     16               128                    128      0.1          0.001           3    0.053636  0.159993 /home/mokr/Reservoir_Modelling/CamelsGB_Models/Reservoir/365_0209_No_Lat_Reservoir_LSTM_Numlayers1_LSTMhs128_Embhs128_Embos16_Epochs3_Gamma0.95_0.001_0.1.pt success
+  0.95                1                     16               128                    128      0.4          0.001           3    0.064636  0.160704 /home/mokr/Reservoir_Modelling/CamelsGB_Models/Reservoir/365_0209_No_Lat_Reservoir_LSTM_Numlayers1_LSTMhs128_Embhs128_Embos16_Epochs3_Gamma0.95_0.001_0.4.pt success
+  0.95                2                     16               256                    128      0.1          0.001           2    0.034392  0.163293 /home/mokr/Reservoir_Modelling/CamelsGB_Models/Reservoir/365_0209_No_Lat_Reservoir_LSTM_Numlayers2_LSTMhs256_Embhs128_Embos16_Epochs2_Gamma0.95_0.001_0.1.pt success
+  0.95                1                     16               256                    128      0.4          0.001           4    0.042070  0.164923 /home/mokr/Reservoir_Modelling/CamelsGB_Models/Reservoir/365_0209_No_Lat_Reservoir_LSTM_Numlayers1_LSTMhs256_Embhs128_Embos16_Epochs4_Gamma0.95_0.001_0.4.pt success
+  0.95                1                     16               128                     64      0.4          0.001           1    0.073213  0.170552  /home/mokr/Reservoir_Modelling/CamelsGB_Models/Reservoir/365_0209_No_Lat_Reservoir_LSTM_Numlayers1_LSTMhs128_Embhs64_Embos16_Epochs1_Gamma0.95_0.001_0.4.pt success
+  0.95                2                     16               128                     64      0.4          0.001           4    0.059858  0.178884  /home/mokr/Reservoir_Modelling/CamelsGB_Models/Reservoir/365_0209_No_Lat_Reservoir_LSTM_Numlayers2_LSTMhs128_Embhs64_Embos16_Epochs4_Gamma0.95_0.001_0.4.pt success
+  0.95                1                     16               128                     64      0.1          0.001           1    0.064713  0.183625  /home/mokr/Reservoir_Modelling/CamelsGB_Models/Reservoir/365_0209_No_Lat_Reservoir_LSTM_Numlayers1_LSTMhs128_Embhs64_Embos16_Epochs1_Gamma0.95_0.001_0.1.pt success
+
+✓ Results saved to: /home/mokr/Reservoir_Modelling/CamelsGB_Models/Reservoir/365_0209_False_flow_hyperparameter_search_results.csv
+
+================================================================================
+BEST HYPERPARAMETERS
+================================================================================
+gamma: 0.95
+lstm_num_layers: 2
+embedding_output_size: 16
+lstm_hidden_size: 256
+embedding_hidden_size: 64
+dropout: 0.1
+learning_rate: 0.001
+num_epochs: 2
+train_loss: 0.03514751380361864
+val_loss: 0.13833461728166133
+model_path: /home/mokr/Reservoir_Modelling/CamelsGB_Models/Reservoir/365_0209_No_Lat_Reservoir_LSTM_Numlayers2_LSTMhs256_Embhs64_Embos16_Epochs2_Gamma0.95_0.001_0.1.pt
+status: success

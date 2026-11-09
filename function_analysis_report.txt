@@ -1,0 +1,4238 @@
+PYTHON PROJECT FUNCTION USAGE ANALYSIS
+================================================================================
+
+SUMMARY:
+--------------------------------------------------------------------------------
+Total files analyzed: 26
+Total unique functions defined: 77
+Total unique classes defined: 17
+Total unique functions called: 371
+Total class instantiations tracked: 23
+
+
+DUPLICATE CLASS NAMES (0):
+================================================================================
+No duplicate class names found.
+
+
+POTENTIALLY UNUSED CLASSES (11):
+================================================================================
+(Classes defined but not instantiated from other files)
+
+'CombinedHydraModel':
+  - ML_Functions/ML_Models.py:487
+  Methods: __init__, forward
+'Forecast_LSTM_Block':
+  - ML_Functions/ML_Models.py:199
+  Methods: __init__, forward
+'FunctionUsageAnalyzer':
+  - Cleaning_Code.ipynb#cell1:9
+  Methods: __init__, _should_ignore, analyze_directory, _analyze_python_file, _analyze_notebook, _extract_imports, _extract_functions_and_calls, _get_call_name, find_duplicate_function_names, find_duplicate_class_names, find_unused_functions, find_unused_classes, generate_report, print_summary
+'Google_LSTMModel':
+  - ML_Functions/ML_Models.py:243
+  Methods: __init__, forward
+'Hindcast_LSTM_Block':
+  - ML_Functions/ML_Models.py:138
+  Methods: __init__, forward
+'HydraBody':
+  - ML_Functions/ML_Models.py:324
+  Methods: __init__, forward
+'HydraHead':
+  - ML_Functions/ML_Models.py:399
+  Methods: __init__, forward
+'Hydra_LSTM_Block':
+  - ML_Functions/ML_Models.py:260
+  Methods: __init__, forward
+'KGELoss':
+  - ML_Functions/ML_functions.py:262
+  Methods: __init__, forward
+'NNSELoss':
+  - ML_Functions/ML_functions.py:246
+  Methods: __init__, forward
+'Static_Embedding':
+  - ML_Functions/ML_Models.py:71
+  Methods: __init__, forward
+
+DUPLICATE FUNCTION NAMES (9):
+================================================================================
+
+'__getitem__' defined in 2 places:
+  - ML_Functions/ML_functions.py::TensorCatchmentDataset:159
+  - ML_Functions/ML_functions.py::CatchmentDataset:198
+  ⚠️  Not called anywhere!
+
+'__init__' defined in 17 places:
+  - ML_Functions/ML_Models.py::LSTMModel:15
+  - ML_Functions/ML_Models.py::Static_Embedding:74
+  - ML_Functions/ML_Models.py::LSTM_With_Embedding:88
+  - ML_Functions/ML_Models.py::Hindcast_LSTM_Block:140
+  - ML_Functions/ML_Models.py::Forecast_LSTM_Block:201
+  - ML_Functions/ML_Models.py::Google_LSTMModel:244
+  - ML_Functions/ML_Models.py::Hydra_LSTM_Block:261
+  - ML_Functions/ML_Models.py::HydraBody:333
+  - ML_Functions/ML_Models.py::HydraHead:404
+  - ML_Functions/ML_Models.py::HydraModel:472
+  - ML_Functions/ML_Models.py::CombinedHydraModel:488
+  - ML_Functions/ML_functions.py::TensorCatchmentDataset:143
+  - ML_Functions/ML_functions.py::CatchmentDataset:171
+  - ML_Functions/ML_functions.py::NSELoss:231
+  - ML_Functions/ML_functions.py::NNSELoss:247
+  - ML_Functions/ML_functions.py::KGELoss:274
+  - Cleaning_Code.ipynb#cell1::FunctionUsageAnalyzer:12
+  Called in 14 place(s):
+    • ML_Functions/ML_Models.py:25
+    • ML_Functions/ML_Models.py:75
+    • ML_Functions/ML_Models.py:101
+    • ML_Functions/ML_Models.py:149
+    • ML_Functions/ML_Models.py:210
+    ... and 9 more
+
+'__len__' defined in 2 places:
+  - ML_Functions/ML_functions.py::TensorCatchmentDataset:156
+  - ML_Functions/ML_functions.py::CatchmentDataset:195
+  ⚠️  Not called anywhere!
+
+'aggregate_by_gauge_id' defined in 2 places:
+  - 3Training_LSTMs.ipynb#cell19:1
+  - 3Training_LSTMs.ipynb#cell20:1
+  Called in 2 place(s):
+    • 3Training_LSTMs.ipynb#cell19:41
+    • 3Training_LSTMs.ipynb#cell20:41
+
+'calculate_kge' defined in 2 places:
+  - ML_Functions/ML_functions.py:336
+  - 3Training_LSTMs.ipynb#cell31:1
+  Called in 5 place(s):
+    • 3Training_LSTMs.ipynb#cell33:97
+    • 3Training_LSTMs.ipynb#cell33:100
+    • 3Training_LSTMs.ipynb#cell33:103
+    • 3Training_LSTMs.ipynb#cell33:104
+    • 3Training_LSTMs.ipynb#cell34:104
+
+'calculate_nse' defined in 2 places:
+  - ML_Functions/ML_Metrics.py:7
+  - 3Training_LSTMs.ipynb#cell31:25
+  Called in 6 place(s):
+    • ML_Functions/ML_Training.py:423
+    • 3Training_LSTMs.ipynb#cell33:108
+    • 3Training_LSTMs.ipynb#cell33:111
+    • 3Training_LSTMs.ipynb#cell33:114
+    • 3Training_LSTMs.ipynb#cell33:115
+    ... and 1 more
+
+'forward' defined in 14 places:
+  - ML_Functions/ML_Models.py::LSTMModel:43
+  - ML_Functions/ML_Models.py::Static_Embedding:82
+  - ML_Functions/ML_Models.py::LSTM_With_Embedding:116
+  - ML_Functions/ML_Models.py::Hindcast_LSTM_Block:171
+  - ML_Functions/ML_Models.py::Forecast_LSTM_Block:233
+  - ML_Functions/ML_Models.py::Google_LSTMModel:249
+  - ML_Functions/ML_Models.py::Hydra_LSTM_Block:299
+  - ML_Functions/ML_Models.py::HydraBody:367
+  - ML_Functions/ML_Models.py::HydraHead:442
+  - ML_Functions/ML_Models.py::HydraModel:477
+  - ML_Functions/ML_Models.py::CombinedHydraModel:494
+  - ML_Functions/ML_functions.py::NSELoss:235
+  - ML_Functions/ML_functions.py::NNSELoss:251
+  - ML_Functions/ML_functions.py::KGELoss:278
+  ⚠️  Not called anywhere!
+
+'get_basin_name' defined in 3 places:
+  - ML_Functions/ML_Metrics.py:66
+  - ML_Functions/ML_Training.py:445
+  - 3Training_LSTMs.ipynb#cell24:1
+  Called in 1 place(s):
+    • 3Training_LSTMs.ipynb#cell29:7
+
+'sample_batch' defined in 2 places:
+  - ML_Functions/ML_functions.py:38
+  - 1Exploring_Reservoirs.ipynb#cell30:1
+  Called in 2 place(s):
+    • 1Exploring_Reservoirs.ipynb#cell30:17
+    • 1Exploring_Reservoirs.ipynb#cell34:2
+
+
+POTENTIALLY UNUSED FUNCTIONS (45):
+================================================================================
+(Functions defined but not called from other files)
+
+'aggregate_by_gauge_id':
+  - 3Training_LSTMs.ipynb#cell19:1
+  - 3Training_LSTMs.ipynb#cell20:1
+'analyze_directory':
+  - Cleaning_Code.ipynb#cell1::FunctionUsageAnalyzer:41
+'assign_gauges_to_catchments':
+  - ML_Functions/ML_Plots.py:712
+'calculate_kge':
+  - ML_Functions/ML_functions.py:336
+  - 3Training_LSTMs.ipynb#cell31:1
+'categorize_reservoir_area':
+  - 1Exploring_Reservoirs.ipynb#cell5:16
+'categorize_reservoirs':
+  - 1Exploring_Reservoirs.ipynb#cell4:22
+'check_and_consolidate_duplicate_columns':
+  - 2Normalising_Temporal_Data.ipynb#cell7:1
+'check_for_nans_in_range':
+  - 1Exploring_Reservoirs.ipynb#cell22:16
+'create_catchment_splits':
+  - 1Exploring_Reservoirs.ipynb#cell19:1
+'create_cdf_plots':
+  - Evaluation.ipynb#cell5:24
+'create_dataloader':
+  - ML_Functions/ML_Training.py:64
+'define_models':
+  - ML_Functions/ML_Models.py:502
+'determine_valid_period':
+  - 1Exploring_Reservoirs.ipynb#cell22:92
+'extract_functions_from_file':
+  - Cleaning_Code.ipynb#cell0:5
+'filter_by_gauge_date':
+  - 6Comparing_Catchment_Splits.ipynb#cell4:1
+'find_catchment':
+  - ML_Functions/ML_Plots.py:718
+'find_duplicate_class_names':
+  - Cleaning_Code.ipynb#cell1::FunctionUsageAnalyzer:219
+'find_duplicate_function_names':
+  - Cleaning_Code.ipynb#cell1::FunctionUsageAnalyzer:211
+'find_longest_consecutive_period':
+  - 1Exploring_Reservoirs.ipynb#cell22:42
+'find_nearest_area_info':
+  - Evaluation.ipynb#cell13:10
+'find_unused_classes':
+  - Cleaning_Code.ipynb#cell1::FunctionUsageAnalyzer:260
+'find_unused_functions':
+  - Cleaning_Code.ipynb#cell1::FunctionUsageAnalyzer:227
+'forward':
+  - ML_Functions/ML_Models.py::LSTMModel:43
+  - ML_Functions/ML_Models.py::Static_Embedding:82
+  - ML_Functions/ML_Models.py::LSTM_With_Embedding:116
+  - ML_Functions/ML_Models.py::Hindcast_LSTM_Block:171
+  - ML_Functions/ML_Models.py::Forecast_LSTM_Block:233
+  - ML_Functions/ML_Models.py::Google_LSTMModel:249
+  - ML_Functions/ML_Models.py::Hydra_LSTM_Block:299
+  - ML_Functions/ML_Models.py::HydraBody:367
+  - ML_Functions/ML_Models.py::HydraHead:442
+  - ML_Functions/ML_Models.py::HydraModel:477
+  - ML_Functions/ML_Models.py::CombinedHydraModel:494
+  - ML_Functions/ML_functions.py::NSELoss:235
+  - ML_Functions/ML_functions.py::NNSELoss:251
+  - ML_Functions/ML_functions.py::KGELoss:278
+'free_memory':
+  - ML_Functions/ML_Training.py:98
+'generate_report':
+  - Cleaning_Code.ipynb#cell1::FunctionUsageAnalyzer:291
+'get_actual_data_range':
+  - 1Exploring_Reservoirs.ipynb#cell22:1
+'get_avg_gradient_magnitude':
+  - ML_Functions/ML_Training.py:273
+'get_basin_name':
+  - ML_Functions/ML_Metrics.py:66
+  - ML_Functions/ML_Training.py:445
+  - 3Training_LSTMs.ipynb#cell24:1
+'get_closest_landcover_year':
+  - ML_Functions/ML_functions.py:59
+'get_gauge_date_range':
+  - 6Comparing_Catchment_Splits.ipynb#cell9:1
+'get_gauge_date_set':
+  - 6Comparing_Catchment_Splits.ipynb#cell3:1
+'get_metadata':
+  - UK_Batch_Scripts/Getting_tensor_metadata.py:35
+'highlight_best':
+  - ML_Functions/ML_Plots.py:60
+'highlight_best_scores':
+  - Evaluation.ipynb#cell10:32
+'highlight_best_scores_inverse':
+  - Evaluation.ipynb#cell10:41
+'is_extreme':
+  - Evaluation.ipynb#cell8:12
+'load_data_tensors':
+  - ML_Functions/ML_Training.py:28
+'load_list':
+  - Evaluation.ipynb#cell11:5
+'load_scalers':
+  - ML_Functions/ML_functions.py:47
+'plot_catchment_sets':
+  - ML_Functions/ML_Plots.py:564
+'plot_catchments_with_gauges':
+  - ML_Functions/ML_Plots.py:733
+'plot_geographic_network':
+  - ML_Functions/ML_Plots.py:259
+'plot_model_comparison_timeseries':
+  - 3Training_LSTMs.ipynb#cell27:14
+'print_summary':
+  - Cleaning_Code.ipynb#cell1::FunctionUsageAnalyzer:474
+'sample_batch':
+  - ML_Functions/ML_functions.py:38
+  - 1Exploring_Reservoirs.ipynb#cell30:1
+
+
+FUNCTIONS AND CLASSES DEFINED PER FILE:
+================================================================================
+
+1Exploring_Reservoirs.ipynb#cell19:
+  Functions (1):
+    - create_catchment_splits
+
+1Exploring_Reservoirs.ipynb#cell22:
+  Functions (4):
+    - check_for_nans_in_range
+    - determine_valid_period
+    - find_longest_consecutive_period
+    - get_actual_data_range
+
+1Exploring_Reservoirs.ipynb#cell30:
+  Functions (1):
+    - sample_batch
+
+1Exploring_Reservoirs.ipynb#cell4:
+  Functions (1):
+    - categorize_reservoirs
+
+1Exploring_Reservoirs.ipynb#cell5:
+  Functions (1):
+    - categorize_reservoir_area
+
+2Normalising_Temporal_Data.ipynb#cell7:
+  Functions (1):
+    - check_and_consolidate_duplicate_columns
+
+3Training_LSTMs.ipynb#cell19:
+  Functions (1):
+    - aggregate_by_gauge_id
+
+3Training_LSTMs.ipynb#cell20:
+  Functions (1):
+    - aggregate_by_gauge_id
+
+3Training_LSTMs.ipynb#cell24:
+  Functions (1):
+    - get_basin_name
+
+3Training_LSTMs.ipynb#cell27:
+  Functions (1):
+    - plot_model_comparison_timeseries
+
+3Training_LSTMs.ipynb#cell31:
+  Functions (2):
+    - calculate_kge
+    - calculate_nse
+
+6Comparing_Catchment_Splits.ipynb#cell3:
+  Functions (1):
+    - get_gauge_date_set
+
+6Comparing_Catchment_Splits.ipynb#cell4:
+  Functions (1):
+    - filter_by_gauge_date
+
+6Comparing_Catchment_Splits.ipynb#cell9:
+  Functions (1):
+    - get_gauge_date_range
+
+Cleaning_Code.ipynb#cell0:
+  Functions (1):
+    - extract_functions_from_file
+
+Cleaning_Code.ipynb#cell1:
+  Classes (1):
+    - FunctionUsageAnalyzer (methods: __init__, _should_ignore, analyze_directory, _analyze_python_file, _analyze_notebook, _extract_imports, _extract_functions_and_calls, _get_call_name, find_duplicate_function_names, find_duplicate_class_names, find_unused_functions, find_unused_classes, generate_report, print_summary)
+
+Evaluation.ipynb#cell10:
+  Functions (2):
+    - highlight_best_scores
+    - highlight_best_scores_inverse
+
+Evaluation.ipynb#cell11:
+  Functions (1):
+    - load_list
+
+Evaluation.ipynb#cell13:
+  Functions (1):
+    - find_nearest_area_info
+
+Evaluation.ipynb#cell5:
+  Functions (1):
+    - create_cdf_plots
+
+Evaluation.ipynb#cell8:
+  Functions (1):
+    - is_extreme
+
+ML_Functions/ML_Metrics.py:
+  Functions (6):
+    - calculate_bias
+    - calculate_kge_components
+    - calculate_nnse
+    - calculate_nse
+    - get_basin_name
+    - get_consecutive_gauge_indices
+
+ML_Functions/ML_Models.py:
+  Classes (11):
+    - CombinedHydraModel (methods: __init__, forward)
+    - Forecast_LSTM_Block (methods: __init__, forward)
+    - Google_LSTMModel (methods: __init__, forward)
+    - Hindcast_LSTM_Block (methods: __init__, forward)
+    - HydraBody (methods: __init__, forward)
+    - HydraHead (methods: __init__, forward)
+    - HydraModel (methods: __init__, forward)
+    - Hydra_LSTM_Block (methods: __init__, forward)
+    - LSTMModel (methods: __init__, forward)
+    - LSTM_With_Embedding (methods: __init__, forward)
+    - Static_Embedding (methods: __init__, forward)
+  Functions (1):
+    - define_models
+
+ML_Functions/ML_Plots.py:
+  Functions (17):
+    - assign_gauges_to_catchments
+    - assign_splits_greedy
+    - count_gauges_per_catchment
+    - create_geographic_split
+    - display_results_table
+    - find_catchment
+    - get_component_stats
+    - get_component_stats_distance
+    - highlight_best
+    - load_and_filter_catchments
+    - plot_catchment_sets
+    - plot_catchment_sets_distance
+    - plot_catchments_only
+    - plot_catchments_with_gauges
+    - plot_geographic_network
+    - plot_score_cdfs
+    - prepare_gauge_data
+
+ML_Functions/ML_Training.py:
+  Functions (9):
+    - create_dataloader
+    - free_memory
+    - get_avg_gradient_magnitude
+    - get_basin_name
+    - load_data_tensors
+    - process_validation_batches
+    - run_model_pipeline
+    - train_model
+    - validate_model_scores
+
+ML_Functions/ML_functions.py:
+  Classes (5):
+    - CatchmentDataset (methods: __init__, __len__, __getitem__)
+    - KGELoss (methods: __init__, forward)
+    - NNSELoss (methods: __init__, forward)
+    - NSELoss (methods: __init__, forward)
+    - TensorCatchmentDataset (methods: __init__, __len__, __getitem__)
+  Functions (7):
+    - calculate_kge
+    - generate_all_catchment_date_pairs
+    - get_closest_landcover_year
+    - haversine_distance
+    - load_scalers
+    - preprocess_to_tensors
+    - sample_batch
+
+UK_Batch_Scripts/Getting_tensor_metadata.py:
+  Functions (1):
+    - get_metadata
+
+
+IMPORTS PER FILE:
+================================================================================
+
+1Exploring_Reservoirs.ipynb#cell0 (46 imports):
+  - from ML_Plots import assign_gauges_to_catchments
+  - from ML_Plots import assign_splits_greedy
+  - from ML_Plots import count_gauges_per_catchment
+  - from ML_Plots import create_geographic_split
+  - from ML_Plots import get_component_stats
+  - from ML_Plots import get_component_stats_distance
+  - from ML_Plots import load_and_filter_catchments
+  - from ML_Plots import plot_catchment_sets
+  - from ML_Plots import plot_catchment_sets_distance
+  - from ML_Plots import plot_catchments_only
+  - from ML_Plots import plot_catchments_with_gauges
+  - from ML_Plots import plot_geographic_network
+  - from ML_Plots import prepare_gauge_data
+  - from ML_functions import generate_all_catchment_date_pairs
+  - from ML_functions import haversine_distance
+  - from itertools import combinations
+  - from itertools import product
+  - from math import atan2
+  - from math import cos
+  - from math import radians
+  - from math import sin
+  - from math import sqrt
+  - from matplotlib.collections import LineCollection
+  - from matplotlib.colors import ListedColormap
+  - from matplotlib.patches import Patch
+  - from pathlib import Path
+  - from scipy import stats
+  - from scipy.spatial.distance import cdist
+  - from shapely.geometry import Point
+  - from sklearn.cluster import KMeans
+  - from sklearn.preprocessing import MinMaxScaler
+  - from sklearn.preprocessing import StandardScaler
+  - import ML_functions
+  - import geopandas as gpd
+  - import joblib
+  - import matplotlib.cm as cm
+  - import matplotlib.pyplot as plt
+  - import networkx as nx
+  - import numpy as np
+  - import os
+  - import pandas as pd
+  - import pickle
+  - import random
+  - import seaborn as sns
+  - import sys
+  - import time
+
+2Normalising_Temporal_Data.ipynb#cell0 (16 imports):
+  - from matplotlib import cm
+  - from pathlib import Path
+  - from sklearn.preprocessing import StandardScaler
+  - import gc
+  - import geopandas as gpd
+  - import glob
+  - import itertools
+  - import matplotlib.pyplot as plt
+  - import numpy as np
+  - import os
+  - import pandas as pd
+  - import pickle
+  - import re
+  - import xarray as xr
+
+2Normalising_Temporal_Data.ipynb#cell2 (1 imports):
+  - import joblib
+
+3Training_LSTMs.ipynb#cell0 (37 imports):
+  - from ML_Metrics import calculate_bias
+  - from ML_Metrics import calculate_kge_components
+  - from ML_Metrics import calculate_nnse
+  - from ML_Metrics import calculate_nse
+  - from ML_Metrics import get_basin_name
+  - from ML_Metrics import get_consecutive_gauge_indices
+  - from ML_Models import HydraModel
+  - from ML_Models import LSTMModel
+  - from ML_Models import LSTM_With_Embedding
+  - from ML_Plots import display_results_table
+  - from ML_Plots import plot_score_cdfs
+  - from ML_Training import get_basin_name
+  - from ML_Training import process_validation_batches
+  - from ML_Training import run_model_pipeline
+  - from ML_Training import train_model
+  - from ML_Training import validate_model_scores
+  - from ML_functions import NSELoss
+  - from ML_functions import TensorCatchmentDataset
+  - from datetime import datetime
+  - from itertools import groupby
+  - from pathlib import Path
+  - from torch.utils.data import DataLoader
+  - from torch.utils.data import Subset
+  - from tqdm import tqdm
+  - import ML_functions
+  - import joblib
+  - import matplotlib.pyplot as plt
+  - import numpy as np
+  - import os
+  - import pandas as pd
+  - import pickle
+  - import random
+  - import sys
+  - import torch
+  - import torch.nn as nn
+  - import torch.optim as optim
+  - import warnings
+
+3Training_LSTMs.ipynb#cell10 (1 imports):
+  - import warnings
+
+3Training_LSTMs.ipynb#cell33 (2 imports):
+  - import matplotlib.pyplot as plt
+  - import warnings
+
+3Training_LSTMs.ipynb#cell9 (1 imports):
+  - from sklearn.preprocessing import StandardScaler
+
+5Hyperparameter_Statistics.ipynb#cell0 (2 imports):
+  - import numpy as np
+  - import pandas as pd
+
+5Hyperparameter_Statistics.ipynb#cell5 (2 imports):
+  - import matplotlib.pyplot as plt
+  - import seaborn as sns
+
+6Comparing_Catchment_Splits.ipynb#cell0 (7 imports):
+  - import gc
+  - import itertools
+  - import numpy as np
+  - import os
+  - import pandas as pd
+  - import pickle
+  - import torch
+
+6Comparing_Catchment_Splits.ipynb#cell10 (1 imports):
+  - import matplotlib.pyplot as plt
+
+Cleaning_Code.ipynb#cell0 (2 imports):
+  - import ast
+  - import os
+
+Cleaning_Code.ipynb#cell1 (9 imports):
+  - from collections import defaultdict
+  - from pathlib import Path
+  - from typing import Dict
+  - from typing import List
+  - from typing import Set
+  - from typing import Tuple
+  - import ast
+  - import json
+  - import os
+
+Evaluation.ipynb#cell0 (8 imports):
+  - from matplotlib.colors import SymLogNorm
+  - import joblib
+  - import matplotlib.pyplot as plt
+  - import numpy as np
+  - import pandas as pd
+  - import pickle as pkl
+  - import seaborn as sns
+  - import xarray as xr
+
+Evaluation.ipynb#cell11 (2 imports):
+  - import os
+  - import pandas as pd
+
+Evaluation.ipynb#cell5 (3 imports):
+  - import matplotlib.pyplot as plt
+  - import numpy as np
+  - import seaborn as sns
+
+ML_Functions/ML_Metrics.py (5 imports):
+  - from itertools import groupby
+  - import matplotlib.pyplot as plt
+  - import numpy as np
+  - import pandas as pd
+  - import torch
+
+ML_Functions/ML_Models.py (8 imports):
+  - from collections import defaultdict
+  - import numpy as np
+  - import pandas as pd
+  - import random
+  - import torch
+  - import torch.nn as nn
+  - import torch.nn.functional as F
+  - import torch.optim.lr_scheduler as lr_scheduler
+
+ML_Functions/ML_Plots.py (30 imports):
+  - from itertools import combinations
+  - from itertools import product
+  - from math import atan2
+  - from math import cos
+  - from math import radians
+  - from math import sin
+  - from math import sqrt
+  - from matplotlib.collections import LineCollection
+  - from matplotlib.colors import ListedColormap
+  - from matplotlib.patches import Patch
+  - from pathlib import Path
+  - from scipy import stats
+  - from scipy.spatial.distance import cdist
+  - from shapely.geometry import Point
+  - from sklearn.cluster import KMeans
+  - from sklearn.preprocessing import MinMaxScaler
+  - from sklearn.preprocessing import StandardScaler
+  - import geopandas as gpd
+  - import joblib
+  - import matplotlib.cm as cm
+  - import matplotlib.pyplot as plt
+  - import networkx as nx
+  - import numpy as np
+  - import os
+  - import pandas as pd
+  - import pickle
+  - import random
+  - import seaborn as sns
+  - import sys
+  - import time
+
+ML_Functions/ML_Training.py (24 imports):
+  - from ML_Metrics import calculate_bias
+  - from ML_Metrics import calculate_kge_components
+  - from ML_Metrics import calculate_nnse
+  - from ML_Metrics import calculate_nse
+  - from datetime import datetime
+  - from pathlib import Path
+  - from torch.utils.data import ConcatDataset
+  - from torch.utils.data import DataLoader
+  - from torch.utils.data import Dataset
+  - from torch.utils.data import TensorDataset
+  - from tqdm import tqdm
+  - import ML_functions
+  - import gc
+  - import itertools
+  - import joblib
+  - import numpy as np
+  - import os
+  - import sys
+  - import torch
+  - import torch.nn as nn
+  - import torch.optim as optim
+  - import warnings
+  - import xarray as xr
+
+ML_Functions/ML_functions.py (27 imports):
+  - from collections import defaultdict
+  - from datetime import datetime
+  - from math import atan2
+  - from math import cos
+  - from math import radians
+  - from math import sin
+  - from math import sqrt
+  - from pathlib import Path
+  - from torch.utils.data import DataLoader
+  - from torch.utils.data import Dataset
+  - from tqdm import tqdm
+  - import gc
+  - import itertools
+  - import joblib
+  - import numpy as np
+  - import os
+  - import pandas as pd
+  - import pickle
+  - import random
+  - import sys
+  - import time
+  - import torch
+  - import torch.nn as nn
+  - import torch.nn.functional as F
+  - import warnings
+  - import xarray as xr
+
+UK_Batch_Scripts/Evaluation_Script.py (36 imports):
+  - from ML_Metrics import calculate_bias
+  - from ML_Metrics import calculate_kge_components
+  - from ML_Metrics import calculate_nnse
+  - from ML_Metrics import calculate_nse
+  - from ML_Models import HydraModel
+  - from ML_Models import LSTMModel
+  - from ML_Models import LSTM_With_Embedding
+  - from ML_Plots import display_results_table
+  - from ML_Plots import plot_score_cdfs
+  - from ML_Training import get_basin_name
+  - from ML_Training import process_validation_batches
+  - from ML_Training import run_model_pipeline
+  - from ML_Training import validate_model_scores
+  - from ML_functions import NSELoss
+  - from ML_functions import TensorCatchmentDataset
+  - from datetime import datetime
+  - from itertools import groupby
+  - from pathlib import Path
+  - from sklearn.preprocessing import StandardScaler
+  - from torch.utils.data import DataLoader
+  - from torch.utils.data import Subset
+  - from tqdm import tqdm
+  - import ML_functions
+  - import joblib
+  - import matplotlib.pyplot as plt
+  - import numpy as np
+  - import os
+  - import pandas as pd
+  - import pickle
+  - import random
+  - import sys
+  - import torch
+  - import torch.nn as nn
+  - import torch.optim as optim
+  - import warnings
+
+UK_Batch_Scripts/Full_Hyperparameter_Training.py (13 imports):
+  - from ML_Models import LSTM_With_Embedding
+  - from ML_Training import train_model
+  - from ML_functions import TensorCatchmentDataset
+  - from itertools import product
+  - from pathlib import Path
+  - from torch.utils.data import ConcatDataset
+  - from torch.utils.data import DataLoader
+  - import ML_functions
+  - import numpy as np
+  - import pandas as pd
+  - import sys
+  - import torch
+  - import torch.optim as optim
+
+UK_Batch_Scripts/Getting_tensor_metadata.py (8 imports):
+  - from tqdm import tqdm
+  - import gc
+  - import numpy as np
+  - import os
+  - import pandas as pd
+  - import pickle
+  - import torch
+
+UK_Batch_Scripts/Hydra_Hyperparameter_Training.py (16 imports):
+  - from ML_Models import HydraModel
+  - from ML_Models import LSTMModel
+  - from ML_Models import LSTM_With_Embedding
+  - from ML_Training import train_model
+  - from ML_functions import NSELoss
+  - from ML_functions import TensorCatchmentDataset
+  - from itertools import product
+  - from pathlib import Path
+  - from torch.utils.data import DataLoader
+  - import ML_Models
+  - import numpy as np
+  - import os
+  - import pandas as pd
+  - import sys
+  - import torch
+  - import torch.optim as optim
+
+UK_Batch_Scripts/Making_Tensors.py (24 imports):
+  - from ML_Models import LSTM_With_Embedding
+  - from ML_functions import CatchmentDataset
+  - from ML_functions import TensorCatchmentDataset
+  - from ML_functions import preprocess_to_tensors
+  - from datetime import datetime
+  - from pathlib import Path
+  - from torch.utils.data import ConcatDataset
+  - from torch.utils.data import DataLoader
+  - from torch.utils.data import TensorDataset
+  - from tqdm import tqdm
+  - import gc
+  - import itertools
+  - import joblib
+  - import numpy as np
+  - import os
+  - import pandas as pd
+  - import pickle
+  - import random
+  - import sys
+  - import time
+  - import torch
+  - import torch.nn as nn
+  - import torch.optim as optim
+
+UK_Batch_Scripts/Natural_Hyperparameter_Training.py (12 imports):
+  - from ML_Models import LSTM_With_Embedding
+  - from ML_Training import train_model
+  - from ML_functions import TensorCatchmentDataset
+  - from itertools import product
+  - from pathlib import Path
+  - from torch.utils.data import DataLoader
+  - import ML_functions
+  - import numpy as np
+  - import pandas as pd
+  - import sys
+  - import torch
+  - import torch.optim as optim
+
+UK_Batch_Scripts/Reservoir_Hyperparameter_Training.py (12 imports):
+  - from ML_Models import LSTM_With_Embedding
+  - from ML_Training import train_model
+  - from ML_functions import TensorCatchmentDataset
+  - from itertools import product
+  - from pathlib import Path
+  - from torch.utils.data import DataLoader
+  - import ML_functions
+  - import numpy as np
+  - import pandas as pd
+  - import sys
+  - import torch
+  - import torch.optim as optim
+
+UK_Batch_Scripts/Training_LSTM.py (23 imports):
+  - from ML_Models import LSTM_With_Embedding
+  - from ML_functions import TensorCatchmentDataset
+  - from datetime import datetime
+  - from pathlib import Path
+  - from torch.utils.data import ConcatDataset
+  - from torch.utils.data import DataLoader
+  - from torch.utils.data import TensorDataset
+  - from tqdm import tqdm
+  - import ML_Models
+  - import ML_Training
+  - import itertools
+  - import joblib
+  - import numpy as np
+  - import os
+  - import pandas as pd
+  - import pickle
+  - import random
+  - import sys
+  - import time
+  - import torch
+  - import torch.nn as nn
+  - import torch.optim as optim
+
+UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py (13 imports):
+  - from ML_Models import LSTM_With_Embedding
+  - from ML_Training import train_model
+  - from ML_functions import TensorCatchmentDataset
+  - from itertools import product
+  - from pathlib import Path
+  - from torch.utils.data import DataLoader
+  - import ML_functions
+  - import mlflow
+  - import numpy as np
+  - import pandas as pd
+  - import sys
+  - import torch
+  - import torch.optim as optim
+
+
+CLASS INSTANTIATION DETAILS:
+================================================================================
+
+'CatchmentDataset':
+  Defined in:
+    - ML_Functions/ML_functions.py:170
+  Methods: __init__, __len__, __getitem__
+  Instantiated from (3 locations):
+    - UK_Batch_Scripts/Making_Tensors.py:153
+    - UK_Batch_Scripts/Making_Tensors.py:154
+    - UK_Batch_Scripts/Making_Tensors.py:155
+
+'CombinedHydraModel':
+  Defined in:
+    - ML_Functions/ML_Models.py:487
+  Methods: __init__, forward
+  ⚠️  Not instantiated (or instantiation not detected)
+
+'Forecast_LSTM_Block':
+  Defined in:
+    - ML_Functions/ML_Models.py:199
+  Methods: __init__, forward
+  ⚠️  Not instantiated (or instantiation not detected)
+
+'FunctionUsageAnalyzer':
+  Defined in:
+    - Cleaning_Code.ipynb#cell1:9
+  Methods: __init__, _should_ignore, analyze_directory, _analyze_python_file, _analyze_notebook, _extract_imports, _extract_functions_and_calls, _get_call_name, find_duplicate_function_names, find_duplicate_class_names, find_unused_functions, find_unused_classes, generate_report, print_summary
+  Instantiated from (1 locations):
+    - Cleaning_Code.ipynb#cell1:545
+
+'Google_LSTMModel':
+  Defined in:
+    - ML_Functions/ML_Models.py:243
+  Methods: __init__, forward
+  ⚠️  Not instantiated (or instantiation not detected)
+
+'Hindcast_LSTM_Block':
+  Defined in:
+    - ML_Functions/ML_Models.py:138
+  Methods: __init__, forward
+  ⚠️  Not instantiated (or instantiation not detected)
+
+'HydraBody':
+  Defined in:
+    - ML_Functions/ML_Models.py:324
+  Methods: __init__, forward
+  Instantiated from (1 locations):
+    - ML_Functions/ML_Models.py:491
+
+'HydraHead':
+  Defined in:
+    - ML_Functions/ML_Models.py:399
+  Methods: __init__, forward
+  Instantiated from (1 locations):
+    - ML_Functions/ML_Models.py:492
+
+'HydraModel':
+  Defined in:
+    - ML_Functions/ML_Models.py:471
+  Methods: __init__, forward
+  Instantiated from (7 locations):
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:155
+    - UK_Batch_Scripts/Evaluation_Script.py:115
+    - UK_Batch_Scripts/Evaluation_Script.py:147
+    - 3Training_LSTMs.ipynb#cell5:31
+    - 3Training_LSTMs.ipynb#cell5:68
+    - 3Training_LSTMs.ipynb#cell6:31
+    - 3Training_LSTMs.ipynb#cell6:66
+
+'Hydra_LSTM_Block':
+  Defined in:
+    - ML_Functions/ML_Models.py:260
+  Methods: __init__, forward
+  ⚠️  Not instantiated (or instantiation not detected)
+
+'KGELoss':
+  Defined in:
+    - ML_Functions/ML_functions.py:262
+  Methods: __init__, forward
+  ⚠️  Not instantiated (or instantiation not detected)
+
+'LSTMModel':
+  Defined in:
+    - ML_Functions/ML_Models.py:14
+  Methods: __init__, forward
+  Instantiated from (3 locations):
+    - ML_Functions/ML_Models.py:106
+    - ML_Functions/ML_Models.py:357
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:132
+
+'LSTM_With_Embedding':
+  Defined in:
+    - ML_Functions/ML_Models.py:86
+  Methods: __init__, forward
+  Instantiated from (6 locations):
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:115
+    - UK_Batch_Scripts/Reservoir_Hyperparameter_Training.py:118
+    - UK_Batch_Scripts/Natural_Hyperparameter_Training.py:107
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:119
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:142
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:135
+
+'NNSELoss':
+  Defined in:
+    - ML_Functions/ML_functions.py:246
+  Methods: __init__, forward
+  ⚠️  Not instantiated (or instantiation not detected)
+
+'NSELoss':
+  Defined in:
+    - ML_Functions/ML_functions.py:230
+  Methods: __init__, forward
+  Instantiated from (1 locations):
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:162
+
+'Static_Embedding':
+  Defined in:
+    - ML_Functions/ML_Models.py:71
+  Methods: __init__, forward
+  Instantiated from (2 locations):
+    - ML_Functions/ML_Models.py:103
+    - ML_Functions/ML_Models.py:349
+
+'TensorCatchmentDataset':
+  Defined in:
+    - ML_Functions/ML_functions.py:142
+  Methods: __init__, __len__, __getitem__
+  Instantiated from (21 locations):
+    - UK_Batch_Scripts/Making_Tensors.py:136
+    - UK_Batch_Scripts/Making_Tensors.py:142
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:23
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:29
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:32
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:35
+    - UK_Batch_Scripts/Training_LSTM.py:38
+    - UK_Batch_Scripts/Reservoir_Hyperparameter_Training.py:22
+    - UK_Batch_Scripts/Reservoir_Hyperparameter_Training.py:26
+    - UK_Batch_Scripts/Natural_Hyperparameter_Training.py:24
+    ... and 11 more
+
+
+FUNCTION CALL DETAILS:
+================================================================================
+
+'Adam':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (8 locations):
+    - ML_Functions/ML_Models.py:536
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:131
+    - UK_Batch_Scripts/Training_LSTM.py:99
+    - UK_Batch_Scripts/Reservoir_Hyperparameter_Training.py:134
+    - UK_Batch_Scripts/Natural_Hyperparameter_Training.py:123
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:165
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:172
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:151
+
+'CatchmentDataset':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (3 locations):
+    - UK_Batch_Scripts/Making_Tensors.py:153
+    - UK_Batch_Scripts/Making_Tensors.py:154
+    - UK_Batch_Scripts/Making_Tensors.py:155
+
+'Categorical':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - Evaluation.ipynb#cell4:28
+    - Evaluation.ipynb#cell10:19
+
+'ConcatDataset':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:38
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:39
+
+'DataFrame':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (17 locations):
+    - ML_Functions/ML_Plots.py:377
+    - ML_Functions/ML_Plots.py:562
+    - ML_Functions/ML_Plots.py:47
+    - ML_Functions/ML_Plots.py:649
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:224
+    - UK_Batch_Scripts/Reservoir_Hyperparameter_Training.py:225
+    - UK_Batch_Scripts/Natural_Hyperparameter_Training.py:216
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:375
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:245
+    - 1Exploring_Reservoirs.ipynb#cell1:4
+    ... and 7 more
+
+'DataLoader':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (24 locations):
+    - ML_Functions/ML_Training.py:86
+    - UK_Batch_Scripts/Making_Tensors.py:144
+    - UK_Batch_Scripts/Making_Tensors.py:149
+    - UK_Batch_Scripts/Making_Tensors.py:157
+    - UK_Batch_Scripts/Making_Tensors.py:158
+    - UK_Batch_Scripts/Making_Tensors.py:159
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:53
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:57
+    - UK_Batch_Scripts/Training_LSTM.py:41
+    - UK_Batch_Scripts/Reservoir_Hyperparameter_Training.py:46
+    ... and 14 more
+
+'Dropout':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (5 locations):
+    - ML_Functions/ML_Models.py:40
+    - ML_Functions/ML_Models.py:166
+    - ML_Functions/ML_Models.py:228
+    - ML_Functions/ML_Models.py:290
+    - ML_Functions/ML_Models.py:433
+
+'ExponentialLR':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (7 locations):
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:132
+    - UK_Batch_Scripts/Training_LSTM.py:100
+    - UK_Batch_Scripts/Reservoir_Hyperparameter_Training.py:135
+    - UK_Batch_Scripts/Natural_Hyperparameter_Training.py:124
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:177
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:180
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:152
+
+'FileNotFoundError':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Plots.py:793
+
+'FloatTensor':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (6 locations):
+    - ML_Functions/ML_functions.py:111
+    - ML_Functions/ML_functions.py:112
+    - ML_Functions/ML_functions.py:113
+    - ML_Functions/ML_functions.py:217
+    - ML_Functions/ML_functions.py:218
+    - ML_Functions/ML_functions.py:219
+
+'FunctionUsageAnalyzer':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - Cleaning_Code.ipynb#cell1:545
+
+'GeoDataFrame':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (7 locations):
+    - ML_Functions/ML_Plots.py:672
+    - ML_Functions/ML_Plots.py:692
+    - 1Exploring_Reservoirs.ipynb#cell4:8
+    - 1Exploring_Reservoirs.ipynb#cell5:2
+    - 1Exploring_Reservoirs.ipynb#cell15:7
+    - 1Exploring_Reservoirs.ipynb#cell16:7
+    - 1Exploring_Reservoirs.ipynb#cell16:22
+
+'Google_Model_Block':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Models.py:521
+
+'Graph':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (5 locations):
+    - ML_Functions/ML_Plots.py:264
+    - ML_Functions/ML_Plots.py:331
+    - ML_Functions/ML_Plots.py:397
+    - ML_Functions/ML_Plots.py:496
+    - ML_Functions/ML_Plots.py:565
+
+'HydraBody':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Models.py:491
+
+'HydraHead':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Models.py:492
+
+'HydraModel':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (7 locations):
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:155
+    - UK_Batch_Scripts/Evaluation_Script.py:115
+    - UK_Batch_Scripts/Evaluation_Script.py:147
+    - 3Training_LSTMs.ipynb#cell5:31
+    - 3Training_LSTMs.ipynb#cell5:68
+    - 3Training_LSTMs.ipynb#cell6:31
+    - 3Training_LSTMs.ipynb#cell6:66
+
+'KMeans':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Plots.py:861
+
+'LSTM':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (5 locations):
+    - ML_Functions/ML_Models.py:32
+    - ML_Functions/ML_Models.py:158
+    - ML_Functions/ML_Models.py:220
+    - ML_Functions/ML_Models.py:282
+    - ML_Functions/ML_Models.py:425
+
+'LSTMModel':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (3 locations):
+    - ML_Functions/ML_Models.py:106
+    - ML_Functions/ML_Models.py:357
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:132
+
+'LSTM_With_Embedding':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (7 locations):
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:115
+    - UK_Batch_Scripts/Training_LSTM.py:83
+    - UK_Batch_Scripts/Reservoir_Hyperparameter_Training.py:118
+    - UK_Batch_Scripts/Natural_Hyperparameter_Training.py:107
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:119
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:142
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:135
+
+'LineCollection':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - 1Exploring_Reservoirs.ipynb#cell47:70
+
+'Linear':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (9 locations):
+    - ML_Functions/ML_Models.py:41
+    - ML_Functions/ML_Models.py:167
+    - ML_Functions/ML_Models.py:229
+    - ML_Functions/ML_Models.py:291
+    - ML_Functions/ML_Models.py:295
+    - ML_Functions/ML_Models.py:434
+    - ML_Functions/ML_Models.py:438
+    - ML_Functions/ML_Models.py:77
+    - ML_Functions/ML_Models.py:79
+
+'MSELoss':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - UK_Batch_Scripts/Training_LSTM.py:98
+
+'NSELoss':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (5 locations):
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:130
+    - UK_Batch_Scripts/Reservoir_Hyperparameter_Training.py:133
+    - UK_Batch_Scripts/Natural_Hyperparameter_Training.py:122
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:162
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:150
+
+'Normalize':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - 6Comparing_Catchment_Splits.ipynb#cell10:31
+
+'Patch':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (10 locations):
+    - 1Exploring_Reservoirs.ipynb#cell4:69
+    - 1Exploring_Reservoirs.ipynb#cell4:70
+    - 1Exploring_Reservoirs.ipynb#cell4:71
+    - 1Exploring_Reservoirs.ipynb#cell4:72
+    - 1Exploring_Reservoirs.ipynb#cell4:73
+    - 1Exploring_Reservoirs.ipynb#cell5:63
+    - 1Exploring_Reservoirs.ipynb#cell5:64
+    - 1Exploring_Reservoirs.ipynb#cell5:65
+    - 1Exploring_Reservoirs.ipynb#cell5:66
+    - 1Exploring_Reservoirs.ipynb#cell5:67
+
+'Path':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (15 locations):
+    - ML_Functions/ML_Training.py:22
+    - ML_Functions/ML_Plots.py:785
+    - UK_Batch_Scripts/Making_Tensors.py:23
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:11
+    - UK_Batch_Scripts/Training_LSTM.py:22
+    - UK_Batch_Scripts/Reservoir_Hyperparameter_Training.py:12
+    - UK_Batch_Scripts/Natural_Hyperparameter_Training.py:12
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:13
+    - UK_Batch_Scripts/Evaluation_Script.py:27
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:13
+    ... and 5 more
+
+'Point':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (5 locations):
+    - ML_Functions/ML_Plots.py:663
+    - ML_Functions/ML_Plots.py:684
+    - 1Exploring_Reservoirs.ipynb#cell15:4
+    - 1Exploring_Reservoirs.ipynb#cell16:4
+    - 1Exploring_Reservoirs.ipynb#cell16:19
+
+'ReLU':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Models.py:78
+
+'ScalarMappable':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - 6Comparing_Catchment_Splits.ipynb#cell10:30
+
+'Sequential':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Models.py:76
+
+'Series':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Plots.py:865
+
+'StandardScaler':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (5 locations):
+    - UK_Batch_Scripts/Evaluation_Script.py:152
+    - 2Normalising_Temporal_Data.ipynb#cell1:12
+    - 2Normalising_Temporal_Data.ipynb#cell6:11
+    - 1Exploring_Reservoirs.ipynb#cell9:18
+    - 3Training_LSTMs.ipynb#cell9:5
+
+'Static_Embedding':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - ML_Functions/ML_Models.py:103
+    - ML_Functions/ML_Models.py:349
+
+'StepLR':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Models.py:539
+
+'Subset':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - 3Training_LSTMs.ipynb#cell3:16
+
+'TensorCatchmentDataset':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (21 locations):
+    - UK_Batch_Scripts/Making_Tensors.py:136
+    - UK_Batch_Scripts/Making_Tensors.py:142
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:23
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:29
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:32
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:35
+    - UK_Batch_Scripts/Training_LSTM.py:38
+    - UK_Batch_Scripts/Reservoir_Hyperparameter_Training.py:22
+    - UK_Batch_Scripts/Reservoir_Hyperparameter_Training.py:26
+    - UK_Batch_Scripts/Natural_Hyperparameter_Training.py:24
+    ... and 11 more
+
+'TensorDataset':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Training.py:83
+
+'Timedelta':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (9 locations):
+    - ML_Functions/ML_functions.py:409
+    - ML_Functions/ML_functions.py:94
+    - ML_Functions/ML_functions.py:202
+    - ML_Functions/ML_functions.py:442
+    - UK_Batch_Scripts/Making_Tensors.py:119
+    - UK_Batch_Scripts/Getting_tensor_metadata.py:47
+    - 1Exploring_Reservoirs.ipynb#cell22:75
+    - 1Exploring_Reservoirs.ipynb#cell37:12
+    - 3Training_LSTMs.ipynb#cell34:35
+
+'Timestamp':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (6 locations):
+    - ML_Functions/ML_functions.py:415
+    - ML_Functions/ML_functions.py:416
+    - ML_Functions/ML_functions.py:422
+    - ML_Functions/ML_functions.py:423
+    - 1Exploring_Reservoirs.ipynb#cell22:110
+    - 6Comparing_Catchment_Splits.ipynb#cell4:11
+
+'ValueError':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Training.py:129
+
+'__init__':
+  Defined in:
+    - ML_Functions/ML_Models.py::LSTMModel:15
+    - ML_Functions/ML_Models.py::Static_Embedding:74
+    - ML_Functions/ML_Models.py::LSTM_With_Embedding:88
+    - ML_Functions/ML_Models.py::Hindcast_LSTM_Block:140
+    - ML_Functions/ML_Models.py::Forecast_LSTM_Block:201
+    - ML_Functions/ML_Models.py::Google_LSTMModel:244
+    - ML_Functions/ML_Models.py::Hydra_LSTM_Block:261
+    - ML_Functions/ML_Models.py::HydraBody:333
+    - ML_Functions/ML_Models.py::HydraHead:404
+    - ML_Functions/ML_Models.py::HydraModel:472
+    - ML_Functions/ML_Models.py::CombinedHydraModel:488
+    - ML_Functions/ML_functions.py::TensorCatchmentDataset:143
+    - ML_Functions/ML_functions.py::CatchmentDataset:171
+    - ML_Functions/ML_functions.py::NSELoss:231
+    - ML_Functions/ML_functions.py::NNSELoss:247
+    - ML_Functions/ML_functions.py::KGELoss:274
+    - Cleaning_Code.ipynb#cell1::FunctionUsageAnalyzer:12
+  Called from (14 locations):
+    - ML_Functions/ML_Models.py:25
+    - ML_Functions/ML_Models.py:75
+    - ML_Functions/ML_Models.py:101
+    - ML_Functions/ML_Models.py:149
+    - ML_Functions/ML_Models.py:210
+    - ML_Functions/ML_Models.py:245
+    - ML_Functions/ML_Models.py:271
+    - ML_Functions/ML_Models.py:346
+    - ML_Functions/ML_Models.py:422
+    - ML_Functions/ML_Models.py:473
+    ... and 4 more
+
+'_analyze_notebook':
+  Defined in:
+    - Cleaning_Code.ipynb#cell1::FunctionUsageAnalyzer:92
+  Called from (1 locations):
+    - Cleaning_Code.ipynb#cell1:70
+
+'_analyze_python_file':
+  Defined in:
+    - Cleaning_Code.ipynb#cell1::FunctionUsageAnalyzer:72
+  Called from (1 locations):
+    - Cleaning_Code.ipynb#cell1:66
+
+'_extract_functions_and_calls':
+  Defined in:
+    - Cleaning_Code.ipynb#cell1::FunctionUsageAnalyzer:148
+  Called from (2 locations):
+    - Cleaning_Code.ipynb#cell1:85
+    - Cleaning_Code.ipynb#cell1:118
+
+'_extract_imports':
+  Defined in:
+    - Cleaning_Code.ipynb#cell1::FunctionUsageAnalyzer:130
+  Called from (2 locations):
+    - Cleaning_Code.ipynb#cell1:82
+    - Cleaning_Code.ipynb#cell1:115
+
+'_get_call_name':
+  Defined in:
+    - Cleaning_Code.ipynb#cell1::FunctionUsageAnalyzer:202
+  Called from (1 locations):
+    - Cleaning_Code.ipynb#cell1:190
+
+'_should_ignore':
+  Defined in:
+    - Cleaning_Code.ipynb#cell1::FunctionUsageAnalyzer:24
+  Called from (2 locations):
+    - Cleaning_Code.ipynb#cell1:53
+    - Cleaning_Code.ipynb#cell1:54
+
+'abs':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (13 locations):
+    - ML_Functions/ML_functions.py:60
+    - ML_Functions/ML_Training.py:283
+    - ML_Functions/ML_Plots.py:55
+    - ML_Functions/ML_Plots.py:56
+    - ML_Functions/ML_Plots.py:887
+    - ML_Functions/ML_Plots.py:885
+    - ML_Functions/ML_Plots.py:886
+    - 1Exploring_Reservoirs.ipynb#cell14:48
+    - 1Exploring_Reservoirs.ipynb#cell14:50
+    - 1Exploring_Reservoirs.ipynb#cell14:52
+    ... and 3 more
+
+'add':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (3 locations):
+    - Evaluation.ipynb#cell11:35
+    - Cleaning_Code.ipynb#cell1:156
+    - Cleaning_Code.ipynb#cell1:186
+
+'add_collection':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - 1Exploring_Reservoirs.ipynb#cell47:72
+
+'add_edge':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (7 locations):
+    - ML_Functions/ML_Plots.py:279
+    - ML_Functions/ML_Plots.py:343
+    - ML_Functions/ML_Plots.py:414
+    - ML_Functions/ML_Plots.py:453
+    - ML_Functions/ML_Plots.py:509
+    - ML_Functions/ML_Plots.py:539
+    - ML_Functions/ML_Plots.py:584
+
+'add_node':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (5 locations):
+    - ML_Functions/ML_Plots.py:268
+    - ML_Functions/ML_Plots.py:333
+    - ML_Functions/ML_Plots.py:402
+    - ML_Functions/ML_Plots.py:498
+    - ML_Functions/ML_Plots.py:570
+
+'agg':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - ML_Functions/ML_Plots.py:640
+    - 6Comparing_Catchment_Splits.ipynb#cell9:4
+
+'aggregate_by_gauge_id':
+  Defined in:
+    - 3Training_LSTMs.ipynb#cell19:1
+    - 3Training_LSTMs.ipynb#cell20:1
+  Called from (2 locations):
+    - 3Training_LSTMs.ipynb#cell19:41
+    - 3Training_LSTMs.ipynb#cell20:41
+
+'all':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - 2Normalising_Temporal_Data.ipynb#cell7:33
+    - Evaluation.ipynb#cell5:84
+
+'analyze_directory':
+  Defined in:
+    - Cleaning_Code.ipynb#cell1::FunctionUsageAnalyzer:41
+  Called from (1 locations):
+    - Cleaning_Code.ipynb#cell1:548
+
+'any':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (10 locations):
+    - ML_Functions/ML_functions.py:84
+    - 1Exploring_Reservoirs.ipynb#cell22:28
+    - 1Exploring_Reservoirs.ipynb#cell22:55
+    - 1Exploring_Reservoirs.ipynb#cell22:60
+    - 1Exploring_Reservoirs.ipynb#cell22:62
+    - 1Exploring_Reservoirs.ipynb#cell22:28
+    - 1Exploring_Reservoirs.ipynb#cell22:55
+    - 1Exploring_Reservoirs.ipynb#cell57:123
+    - Evaluation.ipynb#cell5:43
+    - Evaluation.ipynb#cell5:44
+
+'append':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (71 locations):
+    - ML_Functions/ML_functions.py:133
+    - ML_Functions/ML_functions.py:134
+    - ML_Functions/ML_functions.py:135
+    - ML_Functions/ML_functions.py:450
+    - ML_Functions/ML_Training.py:23
+    - ML_Functions/ML_Training.py:434
+    - ML_Functions/ML_Training.py:435
+    - ML_Functions/ML_Training.py:436
+    - ML_Functions/ML_Training.py:437
+    - ML_Functions/ML_Training.py:438
+    ... and 61 more
+
+'apply':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (22 locations):
+    - ML_Functions/ML_Plots.py:272
+    - ML_Functions/ML_Plots.py:336
+    - ML_Functions/ML_Plots.py:407
+    - ML_Functions/ML_Plots.py:502
+    - ML_Functions/ML_Plots.py:577
+    - ML_Functions/ML_Plots.py:650
+    - ML_Functions/ML_Plots.py:724
+    - ML_Functions/ML_Plots.py:727
+    - ML_Functions/ML_Plots.py:55
+    - ML_Functions/ML_Plots.py:56
+    ... and 12 more
+
+'arange':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (9 locations):
+    - ML_Functions/ML_Plots.py:130
+    - 1Exploring_Reservoirs.ipynb#cell57:28
+    - 1Exploring_Reservoirs.ipynb#cell57:96
+    - 1Exploring_Reservoirs.ipynb#cell57:128
+    - 1Exploring_Reservoirs.ipynb#cell61:55
+    - 1Exploring_Reservoirs.ipynb#cell62:68
+    - 1Exploring_Reservoirs.ipynb#cell62:106
+    - Evaluation.ipynb#cell5:108
+    - Evaluation.ipynb#cell5:57
+
+'argmin':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - 1Exploring_Reservoirs.ipynb#cell11:37
+
+'array':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (8 locations):
+    - ML_Functions/ML_functions.py:353
+    - ML_Functions/ML_functions.py:354
+    - ML_Functions/ML_Plots.py:120
+    - 1Exploring_Reservoirs.ipynb#cell12:79
+    - 1Exploring_Reservoirs.ipynb#cell47:59
+    - 1Exploring_Reservoirs.ipynb#cell47:60
+    - 1Exploring_Reservoirs.ipynb#cell47:61
+    - 1Exploring_Reservoirs.ipynb#cell47:62
+
+'assign_splits_greedy':
+  Defined in:
+    - ML_Functions/ML_Plots.py:170
+  Called from (1 locations):
+    - 1Exploring_Reservoirs.ipynb#cell45:4
+
+'astype':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (10 locations):
+    - ML_Functions/ML_functions.py:99
+    - ML_Functions/ML_functions.py:107
+    - ML_Functions/ML_functions.py:108
+    - ML_Functions/ML_functions.py:205
+    - 1Exploring_Reservoirs.ipynb#cell19:7
+    - 1Exploring_Reservoirs.ipynb#cell19:10
+    - 1Exploring_Reservoirs.ipynb#cell19:7
+    - 1Exploring_Reservoirs.ipynb#cell19:10
+    - 6Comparing_Catchment_Splits.ipynb#cell9:34
+    - 6Comparing_Catchment_Splits.ipynb#cell9:35
+
+'atan2':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_functions.py:468
+
+'autolog':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:25
+
+'axhline':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - Evaluation.ipynb#cell5:112
+
+'axis':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (3 locations):
+    - ML_Functions/ML_Plots.py:311
+    - ML_Functions/ML_Plots.py:489
+    - ML_Functions/ML_Plots.py:617
+
+'backward':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Training.py:247
+
+'bar':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (9 locations):
+    - 1Exploring_Reservoirs.ipynb#cell57:34
+    - 1Exploring_Reservoirs.ipynb#cell57:102
+    - 1Exploring_Reservoirs.ipynb#cell57:133
+    - 1Exploring_Reservoirs.ipynb#cell61:58
+    - 1Exploring_Reservoirs.ipynb#cell61:60
+    - 1Exploring_Reservoirs.ipynb#cell62:71
+    - 1Exploring_Reservoirs.ipynb#cell62:73
+    - 1Exploring_Reservoirs.ipynb#cell62:112
+    - 1Exploring_Reservoirs.ipynb#cell62:114
+
+'basename':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - Cleaning_Code.ipynb#cell0:9
+
+'body':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - ML_Functions/ML_Models.py:482
+    - ML_Functions/ML_Models.py:496
+
+'boxplot':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (7 locations):
+    - 1Exploring_Reservoirs.ipynb#cell54:9
+    - 1Exploring_Reservoirs.ipynb#cell54:34
+    - 1Exploring_Reservoirs.ipynb#cell55:12
+    - 1Exploring_Reservoirs.ipynb#cell55:33
+    - 1Exploring_Reservoirs.ipynb#cell60:17
+    - 5Hyperparameter_Statistics.ipynb#cell5:5
+    - 5Hyperparameter_Statistics.ipynb#cell6:2
+
+'calculate_bias':
+  Defined in:
+    - ML_Functions/ML_Metrics.py:44
+  Called from (1 locations):
+    - ML_Functions/ML_Training.py:425
+
+'calculate_kge':
+  Defined in:
+    - ML_Functions/ML_functions.py:336
+    - 3Training_LSTMs.ipynb#cell31:1
+  Called from (5 locations):
+    - 3Training_LSTMs.ipynb#cell33:97
+    - 3Training_LSTMs.ipynb#cell33:100
+    - 3Training_LSTMs.ipynb#cell33:103
+    - 3Training_LSTMs.ipynb#cell33:104
+    - 3Training_LSTMs.ipynb#cell34:104
+
+'calculate_kge_components':
+  Defined in:
+    - ML_Functions/ML_Metrics.py:22
+  Called from (1 locations):
+    - ML_Functions/ML_Training.py:426
+
+'calculate_nnse':
+  Defined in:
+    - ML_Functions/ML_Metrics.py:14
+  Called from (1 locations):
+    - ML_Functions/ML_Training.py:424
+
+'calculate_nse':
+  Defined in:
+    - ML_Functions/ML_Metrics.py:7
+    - 3Training_LSTMs.ipynb#cell31:25
+  Called from (6 locations):
+    - ML_Functions/ML_Training.py:423
+    - 3Training_LSTMs.ipynb#cell33:108
+    - 3Training_LSTMs.ipynb#cell33:111
+    - 3Training_LSTMs.ipynb#cell33:114
+    - 3Training_LSTMs.ipynb#cell33:115
+    - 3Training_LSTMs.ipynb#cell34:103
+
+'capitalize':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (9 locations):
+    - 1Exploring_Reservoirs.ipynb#cell47:96
+    - 1Exploring_Reservoirs.ipynb#cell47:49
+    - 1Exploring_Reservoirs.ipynb#cell57:35
+    - 1Exploring_Reservoirs.ipynb#cell57:103
+    - 1Exploring_Reservoirs.ipynb#cell57:20
+    - 1Exploring_Reservoirs.ipynb#cell57:54
+    - 1Exploring_Reservoirs.ipynb#cell57:89
+    - 1Exploring_Reservoirs.ipynb#cell57:134
+    - 1Exploring_Reservoirs.ipynb#cell57:154
+
+'cat':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (4 locations):
+    - ML_Functions/ML_Models.py:131
+    - ML_Functions/ML_Models.py:391
+    - ML_Functions/ML_Training.py:220
+    - ML_Functions/ML_Training.py:323
+
+'catch_warnings':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - 3Training_LSTMs.ipynb#cell33:8
+
+'cdist':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - 1Exploring_Reservoirs.ipynb#cell11:34
+
+'check_and_consolidate_duplicate_columns':
+  Defined in:
+    - 2Normalising_Temporal_Data.ipynb#cell7:1
+  Called from (2 locations):
+    - 2Normalising_Temporal_Data.ipynb#cell7:116
+    - 2Normalising_Temporal_Data.ipynb#cell7:121
+
+'choice':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (3 locations):
+    - ML_Functions/ML_functions.py:43
+    - 1Exploring_Reservoirs.ipynb#cell30:6
+    - 3Training_LSTMs.ipynb#cell29:6
+
+'clip':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (6 locations):
+    - ML_Functions/ML_Training.py:349
+    - 3Training_LSTMs.ipynb#cell33:27
+    - 3Training_LSTMs.ipynb#cell33:46
+    - 3Training_LSTMs.ipynb#cell33:64
+    - 3Training_LSTMs.ipynb#cell33:82
+    - 3Training_LSTMs.ipynb#cell34:100
+
+'clone':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Models.py:313
+
+'cmap':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - 6Comparing_Catchment_Splits.ipynb#cell10:18
+
+'collect':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (11 locations):
+    - ML_Functions/ML_Training.py:106
+    - UK_Batch_Scripts/Getting_tensor_metadata.py:71
+    - UK_Batch_Scripts/Getting_tensor_metadata.py:81
+    - UK_Batch_Scripts/Getting_tensor_metadata.py:91
+    - 2Normalising_Temporal_Data.ipynb#cell1:28
+    - 2Normalising_Temporal_Data.ipynb#cell3:23
+    - 2Normalising_Temporal_Data.ipynb#cell6:36
+    - 2Normalising_Temporal_Data.ipynb#cell6:70
+    - 6Comparing_Catchment_Splits.ipynb#cell6:17
+    - 6Comparing_Catchment_Splits.ipynb#cell6:19
+    ... and 1 more
+
+'colorbar':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - 6Comparing_Catchment_Splits.ipynb#cell10:34
+
+'column_stack':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (4 locations):
+    - 1Exploring_Reservoirs.ipynb#cell11:11
+    - 1Exploring_Reservoirs.ipynb#cell11:14
+    - 1Exploring_Reservoirs.ipynb#cell47:66
+    - 1Exploring_Reservoirs.ipynb#cell47:67
+
+'combinations':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (4 locations):
+    - ML_Functions/ML_Plots.py:874
+    - ML_Functions/ML_Plots.py:878
+    - 1Exploring_Reservoirs.ipynb#cell56:4
+    - 1Exploring_Reservoirs.ipynb#cell56:11
+
+'concat':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (11 locations):
+    - ML_Functions/ML_functions.py:99
+    - ML_Functions/ML_Plots.py:202
+    - ML_Functions/ML_Plots.py:626
+    - 1Exploring_Reservoirs.ipynb#cell1:13
+    - 1Exploring_Reservoirs.ipynb#cell42:4
+    - 1Exploring_Reservoirs.ipynb#cell48:5
+    - Evaluation.ipynb#cell11:73
+    - Evaluation.ipynb#cell13:5
+    - 3Training_LSTMs.ipynb#cell34:20
+    - 6Comparing_Catchment_Splits.ipynb#cell7:11
+    ... and 1 more
+
+'connected_components':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (5 locations):
+    - ML_Functions/ML_Plots.py:282
+    - ML_Functions/ML_Plots.py:346
+    - ML_Functions/ML_Plots.py:458
+    - ML_Functions/ML_Plots.py:542
+    - ML_Functions/ML_Plots.py:587
+
+'copy':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (36 locations):
+    - ML_Functions/ML_Plots.py:195
+    - ML_Functions/ML_Plots.py:200
+    - ML_Functions/ML_Plots.py:240
+    - ML_Functions/ML_Plots.py:261
+    - ML_Functions/ML_Plots.py:330
+    - ML_Functions/ML_Plots.py:398
+    - ML_Functions/ML_Plots.py:495
+    - ML_Functions/ML_Plots.py:566
+    - ML_Functions/ML_Plots.py:813
+    - ML_Functions/ML_Plots.py:673
+    ... and 26 more
+
+'corr':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - 2Normalising_Temporal_Data.ipynb#cell7:58
+    - 1Exploring_Reservoirs.ipynb#cell14:41
+
+'corrcoef':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_functions.py:366
+
+'cos':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - ML_Functions/ML_functions.py:467
+    - ML_Functions/ML_functions.py:467
+
+'count_gauges_per_catchment':
+  Defined in:
+    - ML_Functions/ML_Plots.py:625
+  Called from (1 locations):
+    - 1Exploring_Reservoirs.ipynb#cell42:6
+
+'cpu':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (4 locations):
+    - ML_Functions/ML_Training.py:332
+    - ML_Functions/ML_Training.py:343
+    - 3Training_LSTMs.ipynb#cell27:62
+    - 3Training_LSTMs.ipynb#cell27:69
+
+'create_catchment_splits':
+  Defined in:
+    - 1Exploring_Reservoirs.ipynb#cell19:1
+  Called from (1 locations):
+    - 1Exploring_Reservoirs.ipynb#cell19:51
+
+'create_cdf_plots':
+  Defined in:
+    - Evaluation.ipynb#cell5:24
+  Called from (1 locations):
+    - Evaluation.ipynb#cell5:122
+
+'create_geographic_split':
+  Defined in:
+    - ML_Functions/ML_Plots.py:843
+  Called from (1 locations):
+    - 1Exploring_Reservoirs.ipynb#cell13:1
+
+'criterion':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Training.py:244
+
+'cumsum':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - 1Exploring_Reservoirs.ipynb#cell22:68
+
+'date':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - 1Exploring_Reservoirs.ipynb#cell24:72
+    - 1Exploring_Reservoirs.ipynb#cell24:72
+
+'default_rng':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Plots.py:194
+
+'defaultdict':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (8 locations):
+    - Cleaning_Code.ipynb#cell1:15
+    - Cleaning_Code.ipynb#cell1:16
+    - Cleaning_Code.ipynb#cell1:17
+    - Cleaning_Code.ipynb#cell1:18
+    - Cleaning_Code.ipynb#cell1:19
+    - Cleaning_Code.ipynb#cell1:20
+    - Cleaning_Code.ipynb#cell1:21
+    - Cleaning_Code.ipynb#cell1:22
+
+'describe':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - 1Exploring_Reservoirs.ipynb#cell9:30
+    - 1Exploring_Reservoirs.ipynb#cell9:33
+
+'detach':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (6 locations):
+    - 3Training_LSTMs.ipynb#cell33:25
+    - 3Training_LSTMs.ipynb#cell33:30
+    - 3Training_LSTMs.ipynb#cell33:44
+    - 3Training_LSTMs.ipynb#cell33:62
+    - 3Training_LSTMs.ipynb#cell33:80
+    - 3Training_LSTMs.ipynb#cell34:98
+
+'determine_valid_period':
+  Defined in:
+    - 1Exploring_Reservoirs.ipynb#cell22:92
+  Called from (3 locations):
+    - 1Exploring_Reservoirs.ipynb#cell23:10
+    - 1Exploring_Reservoirs.ipynb#cell23:22
+    - 1Exploring_Reservoirs.ipynb#cell23:74
+
+'device':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (50 locations):
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:49
+    - UK_Batch_Scripts/Training_LSTM.py:81
+    - UK_Batch_Scripts/Reservoir_Hyperparameter_Training.py:42
+    - UK_Batch_Scripts/Natural_Hyperparameter_Training.py:40
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:48
+    - UK_Batch_Scripts/Evaluation_Script.py:61
+    - UK_Batch_Scripts/Evaluation_Script.py:89
+    - UK_Batch_Scripts/Evaluation_Script.py:94
+    - UK_Batch_Scripts/Evaluation_Script.py:99
+    - UK_Batch_Scripts/Evaluation_Script.py:105
+    ... and 40 more
+
+'dict':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (8 locations):
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:103
+    - UK_Batch_Scripts/Reservoir_Hyperparameter_Training.py:106
+    - UK_Batch_Scripts/Natural_Hyperparameter_Training.py:95
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:107
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:110
+    - 1Exploring_Reservoirs.ipynb#cell19:13
+    - 1Exploring_Reservoirs.ipynb#cell19:14
+    - Evaluation.ipynb#cell5:21
+
+'display_results_table':
+  Defined in:
+    - ML_Functions/ML_Plots.py:29
+  Called from (4 locations):
+    - 3Training_LSTMs.ipynb#cell14:2
+    - 3Training_LSTMs.ipynb#cell15:2
+    - 3Training_LSTMs.ipynb#cell16:2
+    - 3Training_LSTMs.ipynb#cell17:2
+
+'distance':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (3 locations):
+    - ML_Functions/ML_Plots.py:534
+    - ML_Functions/ML_Plots.py:447
+    - 1Exploring_Reservoirs.ipynb#cell48:16
+
+'draw_networkx_edges':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (4 locations):
+    - ML_Functions/ML_Plots.py:297
+    - ML_Functions/ML_Plots.py:476
+    - ML_Functions/ML_Plots.py:478
+    - ML_Functions/ML_Plots.py:610
+
+'draw_networkx_labels':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (3 locations):
+    - ML_Functions/ML_Plots.py:308
+    - ML_Functions/ML_Plots.py:481
+    - ML_Functions/ML_Plots.py:614
+
+'draw_networkx_nodes':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (3 locations):
+    - ML_Functions/ML_Plots.py:300
+    - ML_Functions/ML_Plots.py:475
+    - ML_Functions/ML_Plots.py:604
+
+'drop':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (5 locations):
+    - ML_Functions/ML_functions.py:214
+    - ML_Functions/ML_functions.py:108
+    - 2Normalising_Temporal_Data.ipynb#cell7:76
+    - 1Exploring_Reservoirs.ipynb#cell22:60
+    - Evaluation.ipynb#cell13:38
+
+'dropna':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (22 locations):
+    - ML_Functions/ML_Plots.py:271
+    - ML_Functions/ML_Plots.py:335
+    - ML_Functions/ML_Plots.py:405
+    - ML_Functions/ML_Plots.py:501
+    - ML_Functions/ML_Plots.py:573
+    - 1Exploring_Reservoirs.ipynb#cell22:31
+    - 1Exploring_Reservoirs.ipynb#cell24:21
+    - 1Exploring_Reservoirs.ipynb#cell24:22
+    - 1Exploring_Reservoirs.ipynb#cell24:23
+    - 1Exploring_Reservoirs.ipynb#cell24:49
+    ... and 12 more
+
+'dropout':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (5 locations):
+    - ML_Functions/ML_Models.py:59
+    - ML_Functions/ML_Models.py:194
+    - ML_Functions/ML_Models.py:238
+    - ML_Functions/ML_Models.py:316
+    - ML_Functions/ML_Models.py:457
+
+'dump':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (3 locations):
+    - UK_Batch_Scripts/Evaluation_Script.py:259
+    - 2Normalising_Temporal_Data.ipynb#cell2:3
+    - 1Exploring_Reservoirs.ipynb#cell29:42
+
+'edges':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - ML_Functions/ML_Plots.py:467
+    - ML_Functions/ML_Plots.py:469
+
+'empty_cache':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - ML_Functions/ML_Training.py:108
+    - ML_Functions/ML_Training.py:361
+
+'enable_system_metrics_logging':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:107
+
+'endswith':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - 1Exploring_Reservoirs.ipynb#cell1:6
+    - 6Comparing_Catchment_Splits.ipynb#cell7:4
+
+'enumerate':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (30 locations):
+    - ML_Functions/ML_functions.py:88
+    - ML_Functions/ML_Training.py:311
+    - ML_Functions/ML_Plots.py:350
+    - ML_Functions/ML_Plots.py:461
+    - ML_Functions/ML_Plots.py:544
+    - ML_Functions/ML_Plots.py:592
+    - ML_Functions/ML_Plots.py:804
+    - ML_Functions/ML_Plots.py:806
+    - ML_Functions/ML_Plots.py:284
+    - ML_Functions/ML_Plots.py:902
+    ... and 20 more
+
+'eval':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - ML_Functions/ML_Training.py:383
+    - ML_Functions/ML_Training.py:381
+
+'exists':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - Evaluation.ipynb#cell17:11
+    - Cleaning_Code.ipynb#cell0:42
+
+'explode':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (5 locations):
+    - ML_Functions/ML_Plots.py:271
+    - ML_Functions/ML_Plots.py:335
+    - ML_Functions/ML_Plots.py:405
+    - ML_Functions/ML_Plots.py:501
+    - ML_Functions/ML_Plots.py:573
+
+'extend':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - ML_Functions/ML_Plots.py:362
+    - ML_Functions/ML_Plots.py:550
+
+'extract_functions_from_file':
+  Defined in:
+    - Cleaning_Code.ipynb#cell0:5
+  Called from (1 locations):
+    - Cleaning_Code.ipynb#cell0:43
+
+'fc':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (4 locations):
+    - ML_Functions/ML_Models.py:67
+    - ML_Functions/ML_Models.py:195
+    - ML_Functions/ML_Models.py:239
+    - ML_Functions/ML_Models.py:317
+
+'figure':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (9 locations):
+    - ML_Functions/ML_Plots.py:472
+    - ML_Functions/ML_Plots.py:599
+    - ML_Functions/ML_Plots.py:117
+    - Evaluation.ipynb#cell19:8
+    - Evaluation.ipynb#cell21:7
+    - Evaluation.ipynb#cell22:7
+    - Evaluation.ipynb#cell23:7
+    - 3Training_LSTMs.ipynb#cell33:95
+    - 3Training_LSTMs.ipynb#cell34:82
+
+'fillna':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Plots.py:649
+
+'filter':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - Evaluation.ipynb#cell8:21
+
+'filter_by_gauge_date':
+  Defined in:
+    - 6Comparing_Catchment_Splits.ipynb#cell4:1
+  Called from (4 locations):
+    - 6Comparing_Catchment_Splits.ipynb#cell5:14
+    - 6Comparing_Catchment_Splits.ipynb#cell6:2
+    - 6Comparing_Catchment_Splits.ipynb#cell6:35
+    - 6Comparing_Catchment_Splits.ipynb#cell6:51
+
+'filterwarnings':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (3 locations):
+    - ML_Functions/ML_functions.py:31
+    - UK_Batch_Scripts/Evaluation_Script.py:24
+    - 3Training_LSTMs.ipynb#cell10:4
+
+'find_catchment':
+  Defined in:
+    - ML_Functions/ML_Plots.py:718
+  Called from (2 locations):
+    - ML_Functions/ML_Plots.py:725
+    - ML_Functions/ML_Plots.py:728
+
+'find_duplicate_class_names':
+  Defined in:
+    - Cleaning_Code.ipynb#cell1::FunctionUsageAnalyzer:219
+  Called from (3 locations):
+    - Cleaning_Code.ipynb#cell1:558
+    - Cleaning_Code.ipynb#cell1:478
+    - Cleaning_Code.ipynb#cell1:311
+
+'find_duplicate_function_names':
+  Defined in:
+    - Cleaning_Code.ipynb#cell1::FunctionUsageAnalyzer:211
+  Called from (3 locations):
+    - Cleaning_Code.ipynb#cell1:565
+    - Cleaning_Code.ipynb#cell1:476
+    - Cleaning_Code.ipynb#cell1:355
+
+'find_longest_consecutive_period':
+  Defined in:
+    - 1Exploring_Reservoirs.ipynb#cell22:42
+  Called from (1 locations):
+    - 1Exploring_Reservoirs.ipynb#cell22:121
+
+'find_nearest_area_info':
+  Defined in:
+    - Evaluation.ipynb#cell13:10
+  Called from (2 locations):
+    - Evaluation.ipynb#cell13:45
+    - Evaluation.ipynb#cell14:16
+
+'find_unused_classes':
+  Defined in:
+    - Cleaning_Code.ipynb#cell1::FunctionUsageAnalyzer:260
+  Called from (2 locations):
+    - Cleaning_Code.ipynb#cell1:479
+    - Cleaning_Code.ipynb#cell1:339
+
+'find_unused_functions':
+  Defined in:
+    - Cleaning_Code.ipynb#cell1::FunctionUsageAnalyzer:227
+  Called from (2 locations):
+    - Cleaning_Code.ipynb#cell1:477
+    - Cleaning_Code.ipynb#cell1:378
+
+'fit_predict':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Plots.py:862
+
+'fit_transform':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - 1Exploring_Reservoirs.ipynb#cell9:19
+
+'flatten':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - Evaluation.ipynb#cell4:41
+
+'float':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (4 locations):
+    - ML_Functions/ML_functions.py:287
+    - ML_Functions/ML_functions.py:288
+    - ML_Functions/ML_Plots.py:858
+    - ML_Functions/ML_Plots.py:872
+
+'format':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Plots.py:64
+
+'from_numpy':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - ML_Functions/ML_Training.py:333
+    - ML_Functions/ML_Training.py:344
+
+'fromkeys':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - ML_Functions/ML_Plots.py:367
+    - ML_Functions/ML_Plots.py:558
+
+'generate_all_catchment_date_pairs':
+  Defined in:
+    - ML_Functions/ML_functions.py:380
+  Called from (3 locations):
+    - 1Exploring_Reservoirs.ipynb#cell29:5
+    - 1Exploring_Reservoirs.ipynb#cell29:13
+    - 1Exploring_Reservoirs.ipynb#cell29:21
+
+'generate_report':
+  Defined in:
+    - Cleaning_Code.ipynb#cell1::FunctionUsageAnalyzer:291
+  Called from (1 locations):
+    - Cleaning_Code.ipynb#cell1:554
+
+'get':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (27 locations):
+    - ML_Functions/ML_functions.py:417
+    - ML_Functions/ML_Plots.py:133
+    - ML_Functions/ML_Plots.py:439
+    - ML_Functions/ML_Plots.py:440
+    - ML_Functions/ML_Plots.py:468
+    - ML_Functions/ML_Plots.py:470
+    - ML_Functions/ML_Plots.py:529
+    - ML_Functions/ML_Plots.py:530
+    - 1Exploring_Reservoirs.ipynb#cell19:31
+    - 1Exploring_Reservoirs.ipynb#cell19:39
+    ... and 17 more
+
+'get_actual_data_range':
+  Defined in:
+    - 1Exploring_Reservoirs.ipynb#cell22:1
+  Called from (1 locations):
+    - 1Exploring_Reservoirs.ipynb#cell22:97
+
+'get_basin_name':
+  Defined in:
+    - ML_Functions/ML_Metrics.py:66
+    - ML_Functions/ML_Training.py:445
+    - 3Training_LSTMs.ipynb#cell24:1
+  Called from (1 locations):
+    - 3Training_LSTMs.ipynb#cell29:7
+
+'get_closest_landcover_year':
+  Defined in:
+    - ML_Functions/ML_functions.py:59
+  Called from (1 locations):
+    - ML_Functions/ML_functions.py:96
+
+'get_cmap':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Plots.py:283
+
+'get_component_stats':
+  Defined in:
+    - ML_Functions/ML_Plots.py:316
+  Called from (1 locations):
+    - 1Exploring_Reservoirs.ipynb#cell44:2
+
+'get_component_stats_distance':
+  Defined in:
+    - ML_Functions/ML_Plots.py:494
+  Called from (1 locations):
+    - 1Exploring_Reservoirs.ipynb#cell43:3
+
+'get_consecutive_gauge_indices':
+  Defined in:
+    - ML_Functions/ML_Metrics.py:48
+  Called from (1 locations):
+    - 3Training_LSTMs.ipynb#cell3:11
+
+'get_docstring':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - Cleaning_Code.ipynb#cell0:16
+    - Cleaning_Code.ipynb#cell0:28
+
+'get_gauge_date_range':
+  Defined in:
+    - 6Comparing_Catchment_Splits.ipynb#cell9:1
+  Called from (6 locations):
+    - 6Comparing_Catchment_Splits.ipynb#cell9:10
+    - 6Comparing_Catchment_Splits.ipynb#cell9:11
+    - 6Comparing_Catchment_Splits.ipynb#cell9:12
+    - 6Comparing_Catchment_Splits.ipynb#cell9:13
+    - 6Comparing_Catchment_Splits.ipynb#cell9:14
+    - 6Comparing_Catchment_Splits.ipynb#cell9:15
+
+'get_gauge_date_set':
+  Defined in:
+    - 6Comparing_Catchment_Splits.ipynb#cell3:1
+  Called from (4 locations):
+    - 6Comparing_Catchment_Splits.ipynb#cell3:6
+    - 6Comparing_Catchment_Splits.ipynb#cell3:7
+    - 6Comparing_Catchment_Splits.ipynb#cell3:8
+    - 6Comparing_Catchment_Splits.ipynb#cell3:9
+
+'get_height':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (6 locations):
+    - 1Exploring_Reservoirs.ipynb#cell57:37
+    - 1Exploring_Reservoirs.ipynb#cell57:105
+    - 1Exploring_Reservoirs.ipynb#cell57:136
+    - 1Exploring_Reservoirs.ipynb#cell61:73
+    - 1Exploring_Reservoirs.ipynb#cell62:86
+    - 1Exploring_Reservoirs.ipynb#cell62:128
+
+'get_last_lr':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Training.py:265
+
+'get_legend_handles_labels':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - 1Exploring_Reservoirs.ipynb#cell47:88
+
+'get_metadata':
+  Defined in:
+    - UK_Batch_Scripts/Getting_tensor_metadata.py:35
+  Called from (6 locations):
+    - UK_Batch_Scripts/Getting_tensor_metadata.py:64
+    - UK_Batch_Scripts/Getting_tensor_metadata.py:65
+    - UK_Batch_Scripts/Getting_tensor_metadata.py:74
+    - UK_Batch_Scripts/Getting_tensor_metadata.py:75
+    - UK_Batch_Scripts/Getting_tensor_metadata.py:84
+    - UK_Batch_Scripts/Getting_tensor_metadata.py:85
+
+'get_node_attributes':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Plots.py:293
+
+'get_width':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (6 locations):
+    - 1Exploring_Reservoirs.ipynb#cell57:38
+    - 1Exploring_Reservoirs.ipynb#cell57:107
+    - 1Exploring_Reservoirs.ipynb#cell57:137
+    - 1Exploring_Reservoirs.ipynb#cell61:74
+    - 1Exploring_Reservoirs.ipynb#cell62:88
+    - 1Exploring_Reservoirs.ipynb#cell62:129
+
+'get_x':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (6 locations):
+    - 1Exploring_Reservoirs.ipynb#cell57:38
+    - 1Exploring_Reservoirs.ipynb#cell57:107
+    - 1Exploring_Reservoirs.ipynb#cell57:137
+    - 1Exploring_Reservoirs.ipynb#cell61:74
+    - 1Exploring_Reservoirs.ipynb#cell62:88
+    - 1Exploring_Reservoirs.ipynb#cell62:129
+
+'getattr':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (4 locations):
+    - Cleaning_Code.ipynb#cell1:154
+    - Cleaning_Code.ipynb#cell1:175
+    - Cleaning_Code.ipynb#cell1:165
+    - Cleaning_Code.ipynb#cell1:192
+
+'glob':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (3 locations):
+    - ML_Functions/ML_Plots.py:788
+    - ML_Functions/ML_Plots.py:790
+    - 2Normalising_Temporal_Data.ipynb#cell1:7
+
+'grid':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (21 locations):
+    - ML_Functions/ML_Plots.py:775
+    - ML_Functions/ML_Plots.py:835
+    - ML_Functions/ML_Plots.py:161
+    - 1Exploring_Reservoirs.ipynb#cell15:36
+    - 1Exploring_Reservoirs.ipynb#cell47:86
+    - 1Exploring_Reservoirs.ipynb#cell57:46
+    - 1Exploring_Reservoirs.ipynb#cell57:115
+    - 1Exploring_Reservoirs.ipynb#cell57:146
+    - 1Exploring_Reservoirs.ipynb#cell60:30
+    - 1Exploring_Reservoirs.ipynb#cell61:68
+    ... and 11 more
+
+'groupby':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (28 locations):
+    - ML_Functions/ML_Metrics.py:57
+    - ML_Functions/ML_Plots.py:640
+    - ML_Functions/ML_Plots.py:272
+    - ML_Functions/ML_Plots.py:336
+    - ML_Functions/ML_Plots.py:407
+    - ML_Functions/ML_Plots.py:502
+    - ML_Functions/ML_Plots.py:577
+    - ML_Functions/ML_Plots.py:419
+    - ML_Functions/ML_Plots.py:513
+    - 1Exploring_Reservoirs.ipynb#cell1:18
+    ... and 18 more
+
+'has_edge':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - ML_Functions/ML_Plots.py:436
+    - ML_Functions/ML_Plots.py:527
+
+'haversine_distance':
+  Defined in:
+    - ML_Functions/ML_functions.py:455
+  Called from (1 locations):
+    - 1Exploring_Reservoirs.ipynb#cell14:3
+
+'head':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (7 locations):
+    - ML_Functions/ML_Models.py:497
+    - 2Normalising_Temporal_Data.ipynb#cell6:81
+    - 2Normalising_Temporal_Data.ipynb#cell7:103
+    - 2Normalising_Temporal_Data.ipynb#cell7:48
+    - 1Exploring_Reservoirs.ipynb#cell12:109
+    - 1Exploring_Reservoirs.ipynb#cell24:59
+    - 1Exploring_Reservoirs.ipynb#cell45:25
+
+'head_default':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Models.py:484
+
+'heatmap':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - Evaluation.ipynb#cell4:56
+
+'hindcast':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Models.py:253
+
+'hist':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (4 locations):
+    - 1Exploring_Reservoirs.ipynb#cell54:18
+    - 1Exploring_Reservoirs.ipynb#cell54:43
+    - 1Exploring_Reservoirs.ipynb#cell55:19
+    - 1Exploring_Reservoirs.ipynb#cell55:40
+
+'idxmax':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (5 locations):
+    - ML_Functions/ML_Plots.py:51
+    - ML_Functions/ML_Plots.py:52
+    - ML_Functions/ML_Plots.py:53
+    - ML_Functions/ML_Plots.py:54
+    - 1Exploring_Reservoirs.ipynb#cell7:3
+
+'idxmin':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (11 locations):
+    - ML_Functions/ML_Plots.py:55
+    - ML_Functions/ML_Plots.py:56
+    - ML_Functions/ML_Plots.py:57
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:241
+    - UK_Batch_Scripts/Reservoir_Hyperparameter_Training.py:244
+    - UK_Batch_Scripts/Natural_Hyperparameter_Training.py:233
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:394
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:264
+    - 1Exploring_Reservoirs.ipynb#cell7:7
+    - Evaluation.ipynb#cell13:32
+    ... and 1 more
+
+'int':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (20 locations):
+    - ML_Functions/ML_Models.py:267
+    - ML_Functions/ML_functions.py:444
+    - ML_Functions/ML_Plots.py:850
+    - ML_Functions/ML_Plots.py:851
+    - ML_Functions/ML_Plots.py:268
+    - ML_Functions/ML_Plots.py:333
+    - ML_Functions/ML_Plots.py:372
+    - ML_Functions/ML_Plots.py:402
+    - ML_Functions/ML_Plots.py:498
+    - ML_Functions/ML_Plots.py:557
+    ... and 10 more
+
+'inverse_transform':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (8 locations):
+    - ML_Functions/ML_Training.py:334
+    - ML_Functions/ML_Training.py:345
+    - 3Training_LSTMs.ipynb#cell33:24
+    - 3Training_LSTMs.ipynb#cell33:30
+    - 3Training_LSTMs.ipynb#cell33:43
+    - 3Training_LSTMs.ipynb#cell33:61
+    - 3Training_LSTMs.ipynb#cell33:79
+    - 3Training_LSTMs.ipynb#cell34:97
+
+'is_available':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (10 locations):
+    - ML_Functions/ML_Training.py:107
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:49
+    - UK_Batch_Scripts/Training_LSTM.py:81
+    - UK_Batch_Scripts/Reservoir_Hyperparameter_Training.py:42
+    - UK_Batch_Scripts/Natural_Hyperparameter_Training.py:40
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:48
+    - UK_Batch_Scripts/Evaluation_Script.py:61
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:49
+    - 3Training_LSTMs.ipynb#cell1:8
+    - 3Training_LSTMs.ipynb#cell29:2
+
+'isin':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (4 locations):
+    - 1Exploring_Reservoirs.ipynb#cell52:2
+    - 1Exploring_Reservoirs.ipynb#cell59:3
+    - 1Exploring_Reservoirs.ipynb#cell59:7
+    - 3Training_LSTMs.ipynb#cell34:25
+
+'isinstance':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (24 locations):
+    - ML_Functions/ML_Training.py:126
+    - ML_Functions/ML_Training.py:183
+    - ML_Functions/ML_Training.py:278
+    - ML_Functions/ML_Training.py:375
+    - ML_Functions/ML_Training.py:379
+    - ML_Functions/ML_Plots.py:361
+    - ML_Functions/ML_Plots.py:549
+    - ML_Functions/ML_Plots.py:650
+    - 3Training_LSTMs.ipynb#cell34:87
+    - Cleaning_Code.ipynb#cell0:13
+    ... and 14 more
+
+'isna':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (8 locations):
+    - 2Normalising_Temporal_Data.ipynb#cell7:34
+    - 2Normalising_Temporal_Data.ipynb#cell7:34
+    - 2Normalising_Temporal_Data.ipynb#cell7:44
+    - 2Normalising_Temporal_Data.ipynb#cell7:44
+    - 1Exploring_Reservoirs.ipynb#cell9:36
+    - 1Exploring_Reservoirs.ipynb#cell22:60
+    - 1Exploring_Reservoirs.ipynb#cell22:28
+    - 1Exploring_Reservoirs.ipynb#cell22:55
+
+'isupper':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - Cleaning_Code.ipynb#cell1:199
+
+'item':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (10 locations):
+    - ML_Functions/ML_Training.py:250
+    - ML_Functions/ML_Training.py:251
+    - ML_Functions/ML_Training.py:283
+    - ML_Functions/ML_Training.py:434
+    - ML_Functions/ML_Training.py:435
+    - ML_Functions/ML_Training.py:436
+    - ML_Functions/ML_Training.py:437
+    - ML_Functions/ML_Training.py:438
+    - ML_Functions/ML_Training.py:439
+    - ML_Functions/ML_Training.py:440
+
+'items':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (46 locations):
+    - ML_Functions/ML_Plots.py:36
+    - ML_Functions/ML_Plots.py:235
+    - ML_Functions/ML_Plots.py:119
+    - 2Normalising_Temporal_Data.ipynb#cell6:12
+    - 2Normalising_Temporal_Data.ipynb#cell6:18
+    - 2Normalising_Temporal_Data.ipynb#cell6:25
+    - 2Normalising_Temporal_Data.ipynb#cell7:30
+    - 1Exploring_Reservoirs.ipynb#cell56:4
+    - 1Exploring_Reservoirs.ipynb#cell56:11
+    - 1Exploring_Reservoirs.ipynb#cell57:55
+    ... and 36 more
+
+'iterrows':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (19 locations):
+    - ML_Functions/ML_functions.py:411
+    - ML_Functions/ML_Plots.py:217
+    - ML_Functions/ML_Plots.py:265
+    - ML_Functions/ML_Plots.py:332
+    - ML_Functions/ML_Plots.py:401
+    - ML_Functions/ML_Plots.py:497
+    - ML_Functions/ML_Plots.py:569
+    - ML_Functions/ML_Plots.py:422
+    - ML_Functions/ML_Plots.py:516
+    - ML_Functions/ML_Plots.py:719
+    ... and 9 more
+
+'itertuples':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - 6Comparing_Catchment_Splits.ipynb#cell10:17
+
+'join':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (24 locations):
+    - ML_Functions/ML_Metrics.py:69
+    - ML_Functions/ML_Training.py:448
+    - ML_Functions/ML_Training.py:43
+    - ML_Functions/ML_Training.py:47
+    - ML_Functions/ML_Training.py:51
+    - ML_Functions/ML_Plots.py:649
+    - 1Exploring_Reservoirs.ipynb#cell1:10
+    - Evaluation.ipynb#cell11:14
+    - Evaluation.ipynb#cell11:15
+    - Evaluation.ipynb#cell11:16
+    ... and 14 more
+
+'keys':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (31 locations):
+    - ML_Functions/ML_Plots.py:868
+    - ML_Functions/ML_Plots.py:224
+    - UK_Batch_Scripts/Making_Tensors.py:53
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:94
+    - UK_Batch_Scripts/Reservoir_Hyperparameter_Training.py:97
+    - UK_Batch_Scripts/Natural_Hyperparameter_Training.py:86
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:98
+    - UK_Batch_Scripts/Getting_tensor_metadata.py:29
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:102
+    - 2Normalising_Temporal_Data.ipynb#cell6:45
+    ... and 21 more
+
+'ks_2samp':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - 1Exploring_Reservoirs.ipynb#cell56:5
+    - 1Exploring_Reservoirs.ipynb#cell56:12
+
+'layers':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Models.py:83
+
+'legend':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (21 locations):
+    - ML_Functions/ML_Plots.py:776
+    - ML_Functions/ML_Plots.py:152
+    - 1Exploring_Reservoirs.ipynb#cell4:77
+    - 1Exploring_Reservoirs.ipynb#cell5:69
+    - 1Exploring_Reservoirs.ipynb#cell12:54
+    - 1Exploring_Reservoirs.ipynb#cell15:35
+    - 1Exploring_Reservoirs.ipynb#cell47:89
+    - 1Exploring_Reservoirs.ipynb#cell54:22
+    - 1Exploring_Reservoirs.ipynb#cell54:47
+    - 1Exploring_Reservoirs.ipynb#cell55:24
+    ... and 11 more
+
+'len':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (214 locations):
+    - ML_Functions/ML_Models.py:178
+    - ML_Functions/ML_Models.py:304
+    - ML_Functions/ML_Metrics.py:58
+    - ML_Functions/ML_functions.py:43
+    - ML_Functions/ML_functions.py:157
+    - ML_Functions/ML_functions.py:196
+    - ML_Functions/ML_functions.py:125
+    - ML_Functions/ML_functions.py:87
+    - ML_Functions/ML_functions.py:90
+    - ML_Functions/ML_functions.py:128
+    ... and 204 more
+
+'linear_h0':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Models.py:303
+
+'linspace':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (3 locations):
+    - ML_Functions/ML_Plots.py:283
+    - ML_Functions/ML_Plots.py:459
+    - ML_Functions/ML_Plots.py:590
+
+'list':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (49 locations):
+    - ML_Functions/ML_Models.py:534
+    - ML_Functions/ML_Metrics.py:58
+    - ML_Functions/ML_Plots.py:282
+    - ML_Functions/ML_Plots.py:346
+    - ML_Functions/ML_Plots.py:458
+    - ML_Functions/ML_Plots.py:542
+    - ML_Functions/ML_Plots.py:587
+    - ML_Functions/ML_Plots.py:788
+    - ML_Functions/ML_Plots.py:275
+    - ML_Functions/ML_Plots.py:339
+    ... and 39 more
+
+'listdir':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - 1Exploring_Reservoirs.ipynb#cell1:6
+    - 6Comparing_Catchment_Splits.ipynb#cell7:4
+
+'load':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (91 locations):
+    - ML_Functions/ML_functions.py:49
+    - ML_Functions/ML_Training.py:42
+    - ML_Functions/ML_Training.py:46
+    - ML_Functions/ML_Training.py:50
+    - UK_Batch_Scripts/Making_Tensors.py:135
+    - UK_Batch_Scripts/Making_Tensors.py:37
+    - UK_Batch_Scripts/Making_Tensors.py:51
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:20
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:26
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:31
+    ... and 81 more
+
+'load_and_filter_catchments':
+  Defined in:
+    - ML_Functions/ML_Plots.py:783
+  Called from (1 locations):
+    - 1Exploring_Reservoirs.ipynb#cell39:7
+
+'load_list':
+  Defined in:
+    - Evaluation.ipynb#cell11:5
+  Called from (6 locations):
+    - Evaluation.ipynb#cell11:14
+    - Evaluation.ipynb#cell11:15
+    - Evaluation.ipynb#cell11:16
+    - Evaluation.ipynb#cell11:18
+    - Evaluation.ipynb#cell11:19
+    - Evaluation.ipynb#cell11:20
+
+'load_state_dict':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (4 locations):
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:239
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:240
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:302
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:303
+
+'log10':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (4 locations):
+    - 1Exploring_Reservoirs.ipynb#cell54:18
+    - 1Exploring_Reservoirs.ipynb#cell54:43
+    - 1Exploring_Reservoirs.ipynb#cell55:19
+    - 1Exploring_Reservoirs.ipynb#cell55:40
+
+'log_artifact':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:203
+
+'log_metric':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:193
+
+'log_param':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (9 locations):
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:122
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:123
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:124
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:125
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:126
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:127
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:128
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:129
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:130
+
+'lower':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - Evaluation.ipynb#cell11:37
+
+'lstm':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (6 locations):
+    - ML_Functions/ML_Models.py:56
+    - ML_Functions/ML_Models.py:133
+    - ML_Functions/ML_Models.py:193
+    - ML_Functions/ML_Models.py:237
+    - ML_Functions/ML_Models.py:315
+    - ML_Functions/ML_Models.py:456
+
+'makedirs':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (3 locations):
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:318
+    - UK_Batch_Scripts/Evaluation_Script.py:192
+    - UK_Batch_Scripts/Evaluation_Script.py:193
+
+'map':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (12 locations):
+    - ML_Functions/ML_functions.py:462
+    - ML_Functions/ML_Training.py:93
+    - ML_Functions/ML_Plots.py:241
+    - 1Exploring_Reservoirs.ipynb#cell4:49
+    - 1Exploring_Reservoirs.ipynb#cell5:43
+    - 1Exploring_Reservoirs.ipynb#cell45:18
+    - 1Exploring_Reservoirs.ipynb#cell45:19
+    - 1Exploring_Reservoirs.ipynb#cell45:21
+    - 1Exploring_Reservoirs.ipynb#cell45:22
+    - 1Exploring_Reservoirs.ipynb#cell49:2
+    ... and 2 more
+
+'max':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (14 locations):
+    - ML_Functions/ML_Plots.py:228
+    - 1Exploring_Reservoirs.ipynb#cell12:84
+    - 1Exploring_Reservoirs.ipynb#cell14:17
+    - 1Exploring_Reservoirs.ipynb#cell22:13
+    - 1Exploring_Reservoirs.ipynb#cell22:79
+    - 1Exploring_Reservoirs.ipynb#cell22:111
+    - 1Exploring_Reservoirs.ipynb#cell22:36
+    - 1Exploring_Reservoirs.ipynb#cell23:47
+    - 1Exploring_Reservoirs.ipynb#cell24:28
+    - 1Exploring_Reservoirs.ipynb#cell24:32
+    ... and 4 more
+
+'mean':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (62 locations):
+    - ML_Functions/ML_Metrics.py:9
+    - ML_Functions/ML_Metrics.py:10
+    - ML_Functions/ML_Metrics.py:16
+    - ML_Functions/ML_Metrics.py:17
+    - ML_Functions/ML_Metrics.py:25
+    - ML_Functions/ML_Metrics.py:26
+    - ML_Functions/ML_Metrics.py:28
+    - ML_Functions/ML_Metrics.py:46
+    - ML_Functions/ML_Metrics.py:29
+    - ML_Functions/ML_Metrics.py:30
+    ... and 52 more
+
+'median':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (7 locations):
+    - 1Exploring_Reservoirs.ipynb#cell12:82
+    - 1Exploring_Reservoirs.ipynb#cell14:14
+    - 1Exploring_Reservoirs.ipynb#cell14:67
+    - 1Exploring_Reservoirs.ipynb#cell24:26
+    - 1Exploring_Reservoirs.ipynb#cell24:52
+    - Evaluation.ipynb#cell4:13
+    - Evaluation.ipynb#cell10:23
+
+'merge':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (3 locations):
+    - 2Normalising_Temporal_Data.ipynb#cell6:57
+    - 1Exploring_Reservoirs.ipynb#cell52:6
+    - 6Comparing_Catchment_Splits.ipynb#cell9:38
+
+'min':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (15 locations):
+    - ML_Functions/ML_functions.py:60
+    - ML_Functions/ML_Plots.py:533
+    - ML_Functions/ML_Plots.py:446
+    - 1Exploring_Reservoirs.ipynb#cell12:83
+    - 1Exploring_Reservoirs.ipynb#cell14:16
+    - 1Exploring_Reservoirs.ipynb#cell22:13
+    - 1Exploring_Reservoirs.ipynb#cell22:78
+    - 1Exploring_Reservoirs.ipynb#cell22:36
+    - 1Exploring_Reservoirs.ipynb#cell23:48
+    - 1Exploring_Reservoirs.ipynb#cell24:27
+    ... and 5 more
+
+'model':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - ML_Functions/ML_Training.py:141
+    - ML_Functions/ML_Training.py:144
+
+'models':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Training.py:149
+
+'nlargest':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - 1Exploring_Reservoirs.ipynb#cell14:85
+
+'no_grad':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Training.py:310
+
+'norm':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - 1Exploring_Reservoirs.ipynb#cell12:76
+
+'notna':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (12 locations):
+    - ML_Functions/ML_functions.py:414
+    - ML_Functions/ML_functions.py:414
+    - ML_Functions/ML_functions.py:421
+    - ML_Functions/ML_functions.py:421
+    - ML_Functions/ML_Plots.py:363
+    - ML_Functions/ML_Plots.py:551
+    - 1Exploring_Reservoirs.ipynb#cell22:107
+    - 1Exploring_Reservoirs.ipynb#cell24:7
+    - 1Exploring_Reservoirs.ipynb#cell24:35
+    - 1Exploring_Reservoirs.ipynb#cell24:59
+    ... and 2 more
+
+'nsmallest':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - 1Exploring_Reservoirs.ipynb#cell14:76
+
+'numpy':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (10 locations):
+    - ML_Functions/ML_Training.py:334
+    - ML_Functions/ML_Training.py:346
+    - 3Training_LSTMs.ipynb#cell27:62
+    - 3Training_LSTMs.ipynb#cell27:69
+    - 3Training_LSTMs.ipynb#cell33:25
+    - 3Training_LSTMs.ipynb#cell33:30
+    - 3Training_LSTMs.ipynb#cell33:44
+    - 3Training_LSTMs.ipynb#cell33:62
+    - 3Training_LSTMs.ipynb#cell33:80
+    - 3Training_LSTMs.ipynb#cell34:98
+
+'open':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (19 locations):
+    - UK_Batch_Scripts/Making_Tensors.py:34
+    - UK_Batch_Scripts/Making_Tensors.py:50
+    - UK_Batch_Scripts/Getting_tensor_metadata.py:10
+    - UK_Batch_Scripts/Getting_tensor_metadata.py:26
+    - UK_Batch_Scripts/Evaluation_Script.py:258
+    - 2Normalising_Temporal_Data.ipynb#cell6:5
+    - 1Exploring_Reservoirs.ipynb#cell18:1
+    - 1Exploring_Reservoirs.ipynb#cell21:1
+    - 1Exploring_Reservoirs.ipynb#cell29:41
+    - 1Exploring_Reservoirs.ipynb#cell31:1
+    ... and 9 more
+
+'open_dataset':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - Evaluation.ipynb#cell17:13
+
+'output_layer':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - ML_Functions/ML_Models.py:461
+    - ML_Functions/ML_Models.py:465
+
+'parameters':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (10 locations):
+    - ML_Functions/ML_Models.py:534
+    - ML_Functions/ML_Training.py:281
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:131
+    - UK_Batch_Scripts/Training_LSTM.py:99
+    - UK_Batch_Scripts/Reservoir_Hyperparameter_Training.py:134
+    - UK_Batch_Scripts/Natural_Hyperparameter_Training.py:123
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:173
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:166
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:167
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:151
+
+'parse':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (3 locations):
+    - Cleaning_Code.ipynb#cell0:7
+    - Cleaning_Code.ipynb#cell1:78
+    - Cleaning_Code.ipynb#cell1:112
+
+'partial_fit':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (3 locations):
+    - 2Normalising_Temporal_Data.ipynb#cell1:26
+    - 2Normalising_Temporal_Data.ipynb#cell6:14
+    - 2Normalising_Temporal_Data.ipynb#cell6:19
+
+'percentile':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - ML_Functions/ML_Plots.py:124
+    - ML_Functions/ML_Plots.py:125
+
+'permutation':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Plots.py:201
+
+'pie':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (6 locations):
+    - 1Exploring_Reservoirs.ipynb#cell57:18
+    - 1Exploring_Reservoirs.ipynb#cell57:87
+    - 1Exploring_Reservoirs.ipynb#cell61:19
+    - 1Exploring_Reservoirs.ipynb#cell61:28
+    - 1Exploring_Reservoirs.ipynb#cell62:32
+    - 1Exploring_Reservoirs.ipynb#cell62:41
+
+'pivot':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - Evaluation.ipynb#cell4:49
+
+'plot':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (35 locations):
+    - ML_Functions/ML_Plots.py:290
+    - ML_Functions/ML_Plots.py:740
+    - ML_Functions/ML_Plots.py:748
+    - ML_Functions/ML_Plots.py:759
+    - ML_Functions/ML_Plots.py:823
+    - ML_Functions/ML_Plots.py:135
+    - 1Exploring_Reservoirs.ipynb#cell4:55
+    - 1Exploring_Reservoirs.ipynb#cell4:58
+    - 1Exploring_Reservoirs.ipynb#cell5:49
+    - 1Exploring_Reservoirs.ipynb#cell5:52
+    ... and 25 more
+
+'plot_catchment_sets_distance':
+  Defined in:
+    - ML_Functions/ML_Plots.py:383
+  Called from (1 locations):
+    - 1Exploring_Reservoirs.ipynb#cell43:2
+
+'plot_catchments_only':
+  Defined in:
+    - ML_Functions/ML_Plots.py:819
+  Called from (1 locations):
+    - 1Exploring_Reservoirs.ipynb#cell39:11
+
+'plot_model_comparison_timeseries':
+  Defined in:
+    - 3Training_LSTMs.ipynb#cell27:14
+  Called from (1 locations):
+    - 3Training_LSTMs.ipynb#cell29:22
+
+'plot_score_cdfs':
+  Defined in:
+    - ML_Functions/ML_Plots.py:78
+  Called from (8 locations):
+    - 3Training_LSTMs.ipynb#cell22:1
+    - 3Training_LSTMs.ipynb#cell22:9
+    - 3Training_LSTMs.ipynb#cell22:18
+    - 3Training_LSTMs.ipynb#cell22:26
+    - 3Training_LSTMs.ipynb#cell23:2
+    - 3Training_LSTMs.ipynb#cell23:11
+    - 3Training_LSTMs.ipynb#cell23:20
+    - 3Training_LSTMs.ipynb#cell23:29
+
+'points_from_xy':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - 1Exploring_Reservoirs.ipynb#cell4:10
+    - 1Exploring_Reservoirs.ipynb#cell5:4
+
+'popen':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Training.py:93
+
+'prepare_gauge_data':
+  Defined in:
+    - ML_Functions/ML_Plots.py:658
+  Called from (1 locations):
+    - 1Exploring_Reservoirs.ipynb#cell39:21
+
+'preprocess_to_tensors':
+  Defined in:
+    - ML_Functions/ML_functions.py:63
+  Called from (2 locations):
+    - UK_Batch_Scripts/Making_Tensors.py:124
+    - UK_Batch_Scripts/Making_Tensors.py:126
+
+'print':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (490 locations):
+    - ML_Functions/ML_functions.py:87
+    - ML_Functions/ML_functions.py:90
+    - ML_Functions/ML_functions.py:117
+    - ML_Functions/ML_functions.py:118
+    - ML_Functions/ML_functions.py:119
+    - ML_Functions/ML_functions.py:120
+    - ML_Functions/ML_functions.py:121
+    - ML_Functions/ML_functions.py:122
+    - ML_Functions/ML_functions.py:433
+    - ML_Functions/ML_functions.py:127
+    ... and 480 more
+
+'print_summary':
+  Defined in:
+    - Cleaning_Code.ipynb#cell1::FunctionUsageAnalyzer:474
+  Called from (1 locations):
+    - Cleaning_Code.ipynb#cell1:551
+
+'process_validation_batches':
+  Defined in:
+    - ML_Functions/ML_Training.py:291
+  Called from (2 locations):
+    - ML_Functions/ML_Training.py:400
+    - 3Training_LSTMs.ipynb#cell29:10
+
+'product':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (6 locations):
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:96
+    - UK_Batch_Scripts/Reservoir_Hyperparameter_Training.py:99
+    - UK_Batch_Scripts/Natural_Hyperparameter_Training.py:88
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:100
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:104
+    - 1Exploring_Reservoirs.ipynb#cell48:10
+
+'ptp':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - Evaluation.ipynb#cell5:45
+
+'quantile':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (3 locations):
+    - Evaluation.ipynb#cell4:53
+    - Evaluation.ipynb#cell4:54
+    - Evaluation.ipynb#cell8:4
+
+'rainbow':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - ML_Functions/ML_Plots.py:459
+    - ML_Functions/ML_Plots.py:590
+
+'randint':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - 1Exploring_Reservoirs.ipynb#cell45:1
+
+'range':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (33 locations):
+    - ML_Functions/ML_Models.py:520
+    - ML_Functions/ML_Metrics.py:60
+    - ML_Functions/ML_functions.py:441
+    - ML_Functions/ML_Training.py:181
+    - ML_Functions/ML_Training.py:417
+    - ML_Functions/ML_Plots.py:860
+    - ML_Functions/ML_Plots.py:433
+    - ML_Functions/ML_Plots.py:525
+    - ML_Functions/ML_Plots.py:277
+    - ML_Functions/ML_Plots.py:341
+    ... and 23 more
+
+'read':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - Cleaning_Code.ipynb#cell0:7
+    - Cleaning_Code.ipynb#cell1:76
+
+'read_csv':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (15 locations):
+    - ML_Functions/ML_Metrics.py:70
+    - ML_Functions/ML_Training.py:449
+    - UK_Batch_Scripts/Making_Tensors.py:58
+    - 2Normalising_Temporal_Data.ipynb#cell1:19
+    - 2Normalising_Temporal_Data.ipynb#cell3:9
+    - 1Exploring_Reservoirs.ipynb#cell1:12
+    - 1Exploring_Reservoirs.ipynb#cell32:1
+    - 1Exploring_Reservoirs.ipynb#cell35:1
+    - 1Exploring_Reservoirs.ipynb#cell53:1
+    - Evaluation.ipynb#cell11:47
+    ... and 5 more
+
+'read_file':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - ML_Functions/ML_Plots.py:797
+    - 1Exploring_Reservoirs.ipynb#cell4:3
+
+'readlines':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - ML_Functions/ML_Training.py:93
+    - Evaluation.ipynb#cell11:7
+
+'reindex':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - 3Training_LSTMs.ipynb#cell34:26
+
+'relative_to':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (3 locations):
+    - Cleaning_Code.ipynb#cell1:27
+    - Cleaning_Code.ipynb#cell1:79
+    - Cleaning_Code.ipynb#cell1:98
+
+'remove':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - 1Exploring_Reservoirs.ipynb#cell11:45
+
+'rename':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (9 locations):
+    - ML_Functions/ML_Plots.py:678
+    - ML_Functions/ML_Plots.py:698
+    - ML_Functions/ML_Plots.py:635
+    - 2Normalising_Temporal_Data.ipynb#cell7:85
+    - 1Exploring_Reservoirs.ipynb#cell16:13
+    - 1Exploring_Reservoirs.ipynb#cell16:28
+    - Evaluation.ipynb#cell8:4
+    - 3Training_LSTMs.ipynb#cell34:41
+    - 6Comparing_Catchment_Splits.ipynb#cell9:4
+
+'repeat':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - ML_Functions/ML_Models.py:129
+    - ML_Functions/ML_Models.py:387
+
+'reset_index':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (20 locations):
+    - ML_Functions/ML_Plots.py:199
+    - ML_Functions/ML_Plots.py:201
+    - ML_Functions/ML_Plots.py:635
+    - ML_Functions/ML_Plots.py:272
+    - ML_Functions/ML_Plots.py:336
+    - ML_Functions/ML_Plots.py:407
+    - ML_Functions/ML_Plots.py:502
+    - ML_Functions/ML_Plots.py:577
+    - 1Exploring_Reservoirs.ipynb#cell1:18
+    - 1Exploring_Reservoirs.ipynb#cell6:28
+    ... and 10 more
+
+'rglob':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - Cleaning_Code.ipynb#cell1:49
+    - Cleaning_Code.ipynb#cell1:50
+
+'round':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (3 locations):
+    - ML_Functions/ML_Training.py:94
+    - ML_Functions/ML_Plots.py:455
+    - Evaluation.ipynb#cell4:11
+
+'run_model_pipeline':
+  Defined in:
+    - ML_Functions/ML_Training.py:112
+  Called from (4 locations):
+    - ML_Functions/ML_Training.py:233
+    - ML_Functions/ML_Training.py:339
+    - 3Training_LSTMs.ipynb#cell34:88
+    - 3Training_LSTMs.ipynb#cell34:92
+
+'sample_batch':
+  Defined in:
+    - ML_Functions/ML_functions.py:38
+    - 1Exploring_Reservoirs.ipynb#cell30:1
+  Called from (2 locations):
+    - 1Exploring_Reservoirs.ipynb#cell30:17
+    - 1Exploring_Reservoirs.ipynb#cell34:2
+
+'save':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (23 locations):
+    - UK_Batch_Scripts/Making_Tensors.py:129
+    - UK_Batch_Scripts/Making_Tensors.py:130
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:184
+    - UK_Batch_Scripts/Training_LSTM.py:128
+    - UK_Batch_Scripts/Reservoir_Hyperparameter_Training.py:185
+    - UK_Batch_Scripts/Natural_Hyperparameter_Training.py:177
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:325
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:326
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:327
+    - UK_Batch_Scripts/Getting_tensor_metadata.py:66
+    ... and 13 more
+
+'savefig':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - 3Training_LSTMs.ipynb#cell27:122
+
+'scale_data':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - 3Training_LSTMs.ipynb#cell34:54
+
+'scatter':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - 1Exploring_Reservoirs.ipynb#cell47:47
+
+'seed':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - ML_Functions/ML_functions.py:41
+    - 1Exploring_Reservoirs.ipynb#cell30:4
+
+'sel':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (5 locations):
+    - Evaluation.ipynb#cell19:5
+    - Evaluation.ipynb#cell21:4
+    - Evaluation.ipynb#cell22:4
+    - Evaluation.ipynb#cell23:4
+    - 3Training_LSTMs.ipynb#cell34:36
+
+'select_dtypes':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (14 locations):
+    - UK_Batch_Scripts/Making_Tensors.py:63
+    - UK_Batch_Scripts/Making_Tensors.py:56
+    - UK_Batch_Scripts/Getting_tensor_metadata.py:32
+    - 2Normalising_Temporal_Data.ipynb#cell1:20
+    - 2Normalising_Temporal_Data.ipynb#cell6:13
+    - 1Exploring_Reservoirs.ipynb#cell8:2
+    - 1Exploring_Reservoirs.ipynb#cell9:9
+    - 1Exploring_Reservoirs.ipynb#cell32:6
+    - 1Exploring_Reservoirs.ipynb#cell53:6
+    - Evaluation.ipynb#cell11:63
+    ... and 4 more
+
+'sequential_processor':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Models.py:394
+
+'set':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (15 locations):
+    - ML_Functions/ML_Plots.py:275
+    - ML_Functions/ML_Plots.py:339
+    - ML_Functions/ML_Plots.py:410
+    - ML_Functions/ML_Plots.py:505
+    - ML_Functions/ML_Plots.py:580
+    - 2Normalising_Temporal_Data.ipynb#cell6:45
+    - 2Normalising_Temporal_Data.ipynb#cell6:46
+    - 1Exploring_Reservoirs.ipynb#cell11:21
+    - Evaluation.ipynb#cell11:30
+    - Cleaning_Code.ipynb#cell1:14
+    ... and 5 more
+
+'set_alpha':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - 1Exploring_Reservoirs.ipynb#cell60:26
+
+'set_array':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - 6Comparing_Catchment_Splits.ipynb#cell10:33
+
+'set_aspect':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (5 locations):
+    - 1Exploring_Reservoirs.ipynb#cell4:92
+    - 1Exploring_Reservoirs.ipynb#cell5:87
+    - 1Exploring_Reservoirs.ipynb#cell12:63
+    - 1Exploring_Reservoirs.ipynb#cell15:37
+    - 1Exploring_Reservoirs.ipynb#cell47:85
+
+'set_experiment':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:24
+
+'set_facecolor':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - 1Exploring_Reservoirs.ipynb#cell60:25
+
+'set_index':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (6 locations):
+    - UK_Batch_Scripts/Making_Tensors.py:62
+    - UK_Batch_Scripts/Making_Tensors.py:55
+    - UK_Batch_Scripts/Getting_tensor_metadata.py:31
+    - 1Exploring_Reservoirs.ipynb#cell32:5
+    - 1Exploring_Reservoirs.ipynb#cell49:1
+    - 1Exploring_Reservoirs.ipynb#cell53:5
+
+'set_palette':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - Evaluation.ipynb#cell5:7
+
+'set_postfix':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Training.py:259
+
+'set_seeds':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (4 locations):
+    - 3Training_LSTMs.ipynb#cell33:11
+    - 3Training_LSTMs.ipynb#cell33:33
+    - 3Training_LSTMs.ipynb#cell33:51
+    - 3Training_LSTMs.ipynb#cell33:69
+
+'set_tag':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:227
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:228
+
+'set_title':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (32 locations):
+    - ML_Functions/ML_Plots.py:310
+    - ML_Functions/ML_Plots.py:769
+    - ML_Functions/ML_Plots.py:829
+    - 1Exploring_Reservoirs.ipynb#cell4:87
+    - 1Exploring_Reservoirs.ipynb#cell5:79
+    - 1Exploring_Reservoirs.ipynb#cell12:55
+    - 1Exploring_Reservoirs.ipynb#cell15:32
+    - 1Exploring_Reservoirs.ipynb#cell54:12
+    - 1Exploring_Reservoirs.ipynb#cell54:21
+    - 1Exploring_Reservoirs.ipynb#cell54:37
+    ... and 22 more
+
+'set_tracking_uri':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:23
+
+'set_xlabel':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (19 locations):
+    - ML_Functions/ML_Plots.py:773
+    - ML_Functions/ML_Plots.py:833
+    - 1Exploring_Reservoirs.ipynb#cell4:90
+    - 1Exploring_Reservoirs.ipynb#cell5:85
+    - 1Exploring_Reservoirs.ipynb#cell12:61
+    - 1Exploring_Reservoirs.ipynb#cell15:30
+    - 1Exploring_Reservoirs.ipynb#cell47:83
+    - 1Exploring_Reservoirs.ipynb#cell54:13
+    - 1Exploring_Reservoirs.ipynb#cell54:19
+    - 1Exploring_Reservoirs.ipynb#cell54:38
+    ... and 9 more
+
+'set_xscale':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - Evaluation.ipynb#cell5:82
+    - Evaluation.ipynb#cell5:86
+
+'set_xticklabels':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (8 locations):
+    - 1Exploring_Reservoirs.ipynb#cell55:15
+    - 1Exploring_Reservoirs.ipynb#cell55:36
+    - 1Exploring_Reservoirs.ipynb#cell57:44
+    - 1Exploring_Reservoirs.ipynb#cell57:113
+    - 1Exploring_Reservoirs.ipynb#cell57:144
+    - 1Exploring_Reservoirs.ipynb#cell61:66
+    - 1Exploring_Reservoirs.ipynb#cell62:79
+    - 1Exploring_Reservoirs.ipynb#cell62:121
+
+'set_xticks':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (6 locations):
+    - 1Exploring_Reservoirs.ipynb#cell57:43
+    - 1Exploring_Reservoirs.ipynb#cell57:112
+    - 1Exploring_Reservoirs.ipynb#cell57:143
+    - 1Exploring_Reservoirs.ipynb#cell61:65
+    - 1Exploring_Reservoirs.ipynb#cell62:78
+    - 1Exploring_Reservoirs.ipynb#cell62:120
+
+'set_ylabel':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (22 locations):
+    - ML_Functions/ML_Plots.py:774
+    - ML_Functions/ML_Plots.py:834
+    - 1Exploring_Reservoirs.ipynb#cell4:91
+    - 1Exploring_Reservoirs.ipynb#cell5:86
+    - 1Exploring_Reservoirs.ipynb#cell12:62
+    - 1Exploring_Reservoirs.ipynb#cell15:31
+    - 1Exploring_Reservoirs.ipynb#cell47:84
+    - 1Exploring_Reservoirs.ipynb#cell54:20
+    - 1Exploring_Reservoirs.ipynb#cell54:45
+    - 1Exploring_Reservoirs.ipynb#cell55:22
+    ... and 12 more
+
+'set_ylim':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - Evaluation.ipynb#cell5:107
+    - 6Comparing_Catchment_Splits.ipynb#cell10:26
+
+'set_yscale':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (4 locations):
+    - 1Exploring_Reservoirs.ipynb#cell54:11
+    - 1Exploring_Reservoirs.ipynb#cell54:36
+    - 1Exploring_Reservoirs.ipynb#cell55:13
+    - 1Exploring_Reservoirs.ipynb#cell55:34
+
+'set_yticks':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - Evaluation.ipynb#cell5:108
+
+'shape':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - ML_Functions/ML_Models.py:178
+    - ML_Functions/ML_Models.py:304
+
+'shift':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - 1Exploring_Reservoirs.ipynb#cell22:68
+
+'show':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (36 locations):
+    - ML_Functions/ML_Plots.py:313
+    - ML_Functions/ML_Plots.py:491
+    - ML_Functions/ML_Plots.py:619
+    - ML_Functions/ML_Plots.py:779
+    - ML_Functions/ML_Plots.py:838
+    - ML_Functions/ML_Plots.py:164
+    - 1Exploring_Reservoirs.ipynb#cell12:65
+    - 1Exploring_Reservoirs.ipynb#cell15:40
+    - 1Exploring_Reservoirs.ipynb#cell47:105
+    - 1Exploring_Reservoirs.ipynb#cell54:26
+    ... and 26 more
+
+'simplefilter':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - 3Training_LSTMs.ipynb#cell33:9
+
+'sin':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - ML_Functions/ML_functions.py:467
+    - ML_Functions/ML_functions.py:467
+
+'size':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (7 locations):
+    - ML_Functions/ML_Models.py:45
+    - ML_Functions/ML_Models.py:118
+    - ML_Functions/ML_Models.py:128
+    - ML_Functions/ML_Models.py:383
+    - ML_Functions/ML_Models.py:180
+    - ML_Functions/ML_Models.py:183
+    - ML_Functions/ML_Models.py:306
+
+'sjoin_nearest':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Plots.py:633
+
+'slice':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (5 locations):
+    - Evaluation.ipynb#cell19:5
+    - Evaluation.ipynb#cell21:4
+    - Evaluation.ipynb#cell22:4
+    - Evaluation.ipynb#cell23:4
+    - 3Training_LSTMs.ipynb#cell34:36
+
+'sort':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Plots.py:129
+
+'sort_index':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (4 locations):
+    - 1Exploring_Reservoirs.ipynb#cell3:1
+    - 1Exploring_Reservoirs.ipynb#cell3:2
+    - 1Exploring_Reservoirs.ipynb#cell4:99
+    - 1Exploring_Reservoirs.ipynb#cell5:94
+
+'sort_values':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (13 locations):
+    - ML_Functions/ML_Plots.py:653
+    - ML_Functions/ML_Plots.py:199
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:227
+    - UK_Batch_Scripts/Reservoir_Hyperparameter_Training.py:228
+    - UK_Batch_Scripts/Natural_Hyperparameter_Training.py:219
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:378
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:248
+    - 1Exploring_Reservoirs.ipynb#cell6:23
+    - 1Exploring_Reservoirs.ipynb#cell11:4
+    - 1Exploring_Reservoirs.ipynb#cell48:30
+    ... and 3 more
+
+'sorted':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (19 locations):
+    - Evaluation.ipynb#cell11:78
+    - Cleaning_Code.ipynb#cell1:559
+    - Cleaning_Code.ipynb#cell1:566
+    - Cleaning_Code.ipynb#cell1:393
+    - Cleaning_Code.ipynb#cell1:418
+    - Cleaning_Code.ipynb#cell1:427
+    - Cleaning_Code.ipynb#cell1:452
+    - Cleaning_Code.ipynb#cell1:315
+    - Cleaning_Code.ipynb#cell1:344
+    - Cleaning_Code.ipynb#cell1:359
+    ... and 9 more
+
+'split':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (10 locations):
+    - ML_Functions/ML_Training.py:93
+    - 2Normalising_Temporal_Data.ipynb#cell3:13
+    - Evaluation.ipynb#cell11:34
+    - Evaluation.ipynb#cell17:6
+    - 3Training_LSTMs.ipynb#cell34:6
+    - Cleaning_Code.ipynb#cell1:242
+    - Cleaning_Code.ipynb#cell1:274
+    - Cleaning_Code.ipynb#cell1:247
+    - Cleaning_Code.ipynb#cell1:278
+    - Cleaning_Code.ipynb#cell1:247
+
+'spring_layout':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - ML_Functions/ML_Plots.py:473
+    - ML_Functions/ML_Plots.py:601
+
+'sqrt':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (11 locations):
+    - ML_Functions/ML_Metrics.py:29
+    - ML_Functions/ML_Metrics.py:30
+    - ML_Functions/ML_functions.py:311
+    - ML_Functions/ML_functions.py:375
+    - ML_Functions/ML_functions.py:468
+    - ML_Functions/ML_functions.py:468
+    - ML_Functions/ML_Training.py:429
+    - Evaluation.ipynb#cell2:6
+    - 3Training_LSTMs.ipynb#cell31:10
+    - 3Training_LSTMs.ipynb#cell31:11
+    ... and 1 more
+
+'squeeze':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (5 locations):
+    - ML_Functions/ML_Training.py:238
+    - ML_Functions/ML_Training.py:340
+    - 3Training_LSTMs.ipynb#cell34:88
+    - 3Training_LSTMs.ipynb#cell34:92
+    - 3Training_LSTMs.ipynb#cell34:108
+
+'stack':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - 1Exploring_Reservoirs.ipynb#cell47:65
+
+'start_run':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:113
+
+'startswith':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (3 locations):
+    - ML_Functions/ML_functions.py:84
+    - Cleaning_Code.ipynb#cell1:232
+    - Cleaning_Code.ipynb#cell1:265
+
+'state_dict':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (4 locations):
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:230
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:231
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:293
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:294
+
+'static_embedding':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - ML_Functions/ML_Models.py:121
+    - ML_Functions/ML_Models.py:380
+
+'std':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (8 locations):
+    - ML_Functions/ML_functions.py:362
+    - ML_Functions/ML_functions.py:363
+    - ML_Functions/ML_functions.py:298
+    - ML_Functions/ML_functions.py:299
+    - 2Normalising_Temporal_Data.ipynb#cell7:53
+    - 2Normalising_Temporal_Data.ipynb#cell7:56
+    - 1Exploring_Reservoirs.ipynb#cell14:15
+    - 1Exploring_Reservoirs.ipynb#cell14:68
+
+'step':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - ML_Functions/ML_Training.py:262
+    - ML_Functions/ML_Training.py:248
+
+'str':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (37 locations):
+    - ML_Functions/ML_Metrics.py:60
+    - ML_Functions/ML_functions.py:92
+    - ML_Functions/ML_Training.py:23
+    - ML_Functions/ML_Plots.py:307
+    - ML_Functions/ML_Plots.py:480
+    - ML_Functions/ML_Plots.py:613
+    - UK_Batch_Scripts/Making_Tensors.py:117
+    - UK_Batch_Scripts/Making_Tensors.py:24
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:12
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:219
+    ... and 27 more
+
+'strftime':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - 3Training_LSTMs.ipynb#cell34:128
+    - 3Training_LSTMs.ipynb#cell34:133
+
+'strip':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - Evaluation.ipynb#cell11:7
+
+'subplots':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (27 locations):
+    - ML_Functions/ML_Plots.py:287
+    - ML_Functions/ML_Plots.py:737
+    - ML_Functions/ML_Plots.py:821
+    - 1Exploring_Reservoirs.ipynb#cell4:52
+    - 1Exploring_Reservoirs.ipynb#cell5:46
+    - 1Exploring_Reservoirs.ipynb#cell12:2
+    - 1Exploring_Reservoirs.ipynb#cell15:13
+    - 1Exploring_Reservoirs.ipynb#cell47:25
+    - 1Exploring_Reservoirs.ipynb#cell54:4
+    - 1Exploring_Reservoirs.ipynb#cell54:31
+    ... and 17 more
+
+'sum':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (24 locations):
+    - ML_Functions/ML_functions.py:331
+    - ML_Functions/ML_Plots.py:209
+    - ML_Functions/ML_Plots.py:249
+    - ML_Functions/ML_Plots.py:250
+    - ML_Functions/ML_Plots.py:355
+    - ML_Functions/ML_Plots.py:545
+    - ML_Functions/ML_Plots.py:875
+    - ML_Functions/ML_Plots.py:879
+    - ML_Functions/ML_Plots.py:881
+    - ML_Functions/ML_Plots.py:641
+    ... and 14 more
+
+'super':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (14 locations):
+    - ML_Functions/ML_Models.py:25
+    - ML_Functions/ML_Models.py:75
+    - ML_Functions/ML_Models.py:101
+    - ML_Functions/ML_Models.py:149
+    - ML_Functions/ML_Models.py:210
+    - ML_Functions/ML_Models.py:245
+    - ML_Functions/ML_Models.py:271
+    - ML_Functions/ML_Models.py:346
+    - ML_Functions/ML_Models.py:422
+    - ML_Functions/ML_Models.py:473
+    ... and 4 more
+
+'suptitle':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (4 locations):
+    - 1Exploring_Reservoirs.ipynb#cell54:24
+    - 1Exploring_Reservoirs.ipynb#cell54:49
+    - 1Exploring_Reservoirs.ipynb#cell55:26
+    - 1Exploring_Reservoirs.ipynb#cell55:47
+
+'tensor':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (3 locations):
+    - 3Training_LSTMs.ipynb#cell34:29
+    - 3Training_LSTMs.ipynb#cell34:51
+    - 3Training_LSTMs.ipynb#cell34:52
+
+'text':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (6 locations):
+    - 1Exploring_Reservoirs.ipynb#cell57:38
+    - 1Exploring_Reservoirs.ipynb#cell57:107
+    - 1Exploring_Reservoirs.ipynb#cell57:137
+    - 1Exploring_Reservoirs.ipynb#cell61:74
+    - 1Exploring_Reservoirs.ipynb#cell62:88
+    - 1Exploring_Reservoirs.ipynb#cell62:129
+
+'tick_params':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - ML_Functions/ML_Plots.py:149
+    - 3Training_LSTMs.ipynb#cell27:103
+
+'tight_layout':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (36 locations):
+    - ML_Functions/ML_Plots.py:312
+    - ML_Functions/ML_Plots.py:490
+    - ML_Functions/ML_Plots.py:618
+    - ML_Functions/ML_Plots.py:778
+    - ML_Functions/ML_Plots.py:837
+    - ML_Functions/ML_Plots.py:163
+    - 1Exploring_Reservoirs.ipynb#cell4:94
+    - 1Exploring_Reservoirs.ipynb#cell5:89
+    - 1Exploring_Reservoirs.ipynb#cell12:64
+    - 1Exploring_Reservoirs.ipynb#cell15:38
+    ... and 26 more
+
+'time':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (20 locations):
+    - UK_Batch_Scripts/Making_Tensors.py:163
+    - UK_Batch_Scripts/Making_Tensors.py:179
+    - UK_Batch_Scripts/Training_LSTM.py:50
+    - UK_Batch_Scripts/Training_LSTM.py:65
+    - 1Exploring_Reservoirs.ipynb#cell47:8
+    - 1Exploring_Reservoirs.ipynb#cell47:28
+    - 1Exploring_Reservoirs.ipynb#cell47:33
+    - 1Exploring_Reservoirs.ipynb#cell47:38
+    - 1Exploring_Reservoirs.ipynb#cell47:54
+    - 1Exploring_Reservoirs.ipynb#cell47:76
+    ... and 10 more
+
+'title':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (12 locations):
+    - ML_Functions/ML_Plots.py:484
+    - ML_Functions/ML_Plots.py:616
+    - ML_Functions/ML_Plots.py:139
+    - Evaluation.ipynb#cell19:10
+    - Evaluation.ipynb#cell21:9
+    - Evaluation.ipynb#cell22:9
+    - Evaluation.ipynb#cell23:9
+    - 3Training_LSTMs.ipynb#cell33:160
+    - 3Training_LSTMs.ipynb#cell34:127
+    - 3Training_LSTMs.ipynb#cell34:132
+    ... and 2 more
+
+'to':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (23 locations):
+    - ML_Functions/ML_Models.py:46
+    - ML_Functions/ML_Models.py:49
+    - ML_Functions/ML_Models.py:533
+    - ML_Functions/ML_Models.py:179
+    - ML_Functions/ML_Models.py:182
+    - ML_Functions/ML_Models.py:186
+    - ML_Functions/ML_Models.py:189
+    - ML_Functions/ML_Models.py:305
+    - ML_Functions/ML_Models.py:309
+    - ML_Functions/ML_Training.py:227
+    ... and 13 more
+
+'to_array':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - 3Training_LSTMs.ipynb#cell34:50
+
+'to_crs':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (8 locations):
+    - ML_Functions/ML_Plots.py:706
+    - ML_Functions/ML_Plots.py:707
+    - ML_Functions/ML_Plots.py:629
+    - 1Exploring_Reservoirs.ipynb#cell4:18
+    - 1Exploring_Reservoirs.ipynb#cell5:12
+    - 1Exploring_Reservoirs.ipynb#cell15:10
+    - 1Exploring_Reservoirs.ipynb#cell16:36
+    - 1Exploring_Reservoirs.ipynb#cell16:37
+
+'to_csv':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (6 locations):
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:237
+    - UK_Batch_Scripts/Reservoir_Hyperparameter_Training.py:238
+    - UK_Batch_Scripts/Natural_Hyperparameter_Training.py:229
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:388
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:258
+    - 1Exploring_Reservoirs.ipynb#cell51:1
+
+'to_datetime':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (12 locations):
+    - UK_Batch_Scripts/Making_Tensors.py:54
+    - UK_Batch_Scripts/Getting_tensor_metadata.py:30
+    - 1Exploring_Reservoirs.ipynb#cell22:12
+    - 1Exploring_Reservoirs.ipynb#cell22:21
+    - 1Exploring_Reservoirs.ipynb#cell22:47
+    - 1Exploring_Reservoirs.ipynb#cell22:103
+    - 1Exploring_Reservoirs.ipynb#cell22:104
+    - 1Exploring_Reservoirs.ipynb#cell22:35
+    - 3Training_LSTMs.ipynb#cell34:34
+    - 6Comparing_Catchment_Splits.ipynb#cell9:3
+    ... and 2 more
+
+'to_dict':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (4 locations):
+    - ML_Functions/ML_Plots.py:419
+    - ML_Functions/ML_Plots.py:513
+    - ML_Functions/ML_Plots.py:865
+    - 3Training_LSTMs.ipynb#cell19:25
+
+'to_string':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (5 locations):
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:233
+    - UK_Batch_Scripts/Reservoir_Hyperparameter_Training.py:234
+    - UK_Batch_Scripts/Natural_Hyperparameter_Training.py:225
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:384
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:254
+
+'tolist':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (8 locations):
+    - 2Normalising_Temporal_Data.ipynb#cell1:20
+    - 2Normalising_Temporal_Data.ipynb#cell6:13
+    - 1Exploring_Reservoirs.ipynb#cell4:104
+    - 1Exploring_Reservoirs.ipynb#cell4:106
+    - 1Exploring_Reservoirs.ipynb#cell8:2
+    - 1Exploring_Reservoirs.ipynb#cell9:9
+    - Evaluation.ipynb#cell11:78
+    - 3Training_LSTMs.ipynb#cell20:25
+
+'tqdm':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - ML_Functions/ML_Training.py:306
+    - ML_Functions/ML_Training.py:195
+
+'train':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - ML_Functions/ML_Training.py:187
+    - ML_Functions/ML_Training.py:185
+
+'train_model':
+  Defined in:
+    - ML_Functions/ML_Training.py:152
+  Called from (13 locations):
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:139
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:157
+    - UK_Batch_Scripts/Training_LSTM.py:106
+    - UK_Batch_Scripts/Reservoir_Hyperparameter_Training.py:142
+    - UK_Batch_Scripts/Reservoir_Hyperparameter_Training.py:160
+    - UK_Batch_Scripts/Natural_Hyperparameter_Training.py:131
+    - UK_Batch_Scripts/Natural_Hyperparameter_Training.py:149
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:191
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:208
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:252
+    ... and 3 more
+
+'transform':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - 2Normalising_Temporal_Data.ipynb#cell3:17
+    - 2Normalising_Temporal_Data.ipynb#cell6:27
+
+'transpose':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - 3Training_LSTMs.ipynb#cell34:50
+
+'unique':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (11 locations):
+    - ML_Functions/ML_Plots.py:642
+    - 1Exploring_Reservoirs.ipynb#cell14:62
+    - Evaluation.ipynb#cell4:38
+    - Evaluation.ipynb#cell5:34
+    - Evaluation.ipynb#cell5:39
+    - Evaluation.ipynb#cell6:1
+    - Evaluation.ipynb#cell8:30
+    - Evaluation.ipynb#cell8:23
+    - Evaluation.ipynb#cell8:23
+    - Evaluation.ipynb#cell14:2
+    ... and 1 more
+
+'unsqueeze':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (8 locations):
+    - ML_Functions/ML_Models.py:385
+    - ML_Functions/ML_Models.py:129
+    - ML_Functions/ML_functions.py:302
+    - ML_Functions/ML_functions.py:303
+    - ML_Functions/ML_Training.py:212
+    - ML_Functions/ML_Training.py:321
+    - 3Training_LSTMs.ipynb#cell34:51
+    - 3Training_LSTMs.ipynb#cell34:52
+
+'unstack':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - Evaluation.ipynb#cell8:4
+    - Evaluation.ipynb#cell10:23
+
+'upper':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - ML_Functions/ML_Plots.py:252
+    - 1Exploring_Reservoirs.ipynb#cell15:46
+
+'use':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - Evaluation.ipynb#cell5:6
+    - Evaluation.ipynb#cell5:8
+
+'validate_model':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (4 locations):
+    - 3Training_LSTMs.ipynb#cell33:14
+    - 3Training_LSTMs.ipynb#cell33:34
+    - 3Training_LSTMs.ipynb#cell33:52
+    - 3Training_LSTMs.ipynb#cell33:70
+
+'validate_model_scores':
+  Defined in:
+    - ML_Functions/ML_Training.py:364
+  Called from (8 locations):
+    - UK_Batch_Scripts/Evaluation_Script.py:197
+    - UK_Batch_Scripts/Evaluation_Script.py:210
+    - UK_Batch_Scripts/Evaluation_Script.py:224
+    - UK_Batch_Scripts/Evaluation_Script.py:237
+    - 3Training_LSTMs.ipynb#cell11:4
+    - 3Training_LSTMs.ipynb#cell11:18
+    - 3Training_LSTMs.ipynb#cell11:32
+    - 3Training_LSTMs.ipynb#cell11:46
+
+'value_counts':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (5 locations):
+    - ML_Functions/ML_Plots.py:865
+    - 1Exploring_Reservoirs.ipynb#cell3:1
+    - 1Exploring_Reservoirs.ipynb#cell3:2
+    - 1Exploring_Reservoirs.ipynb#cell4:99
+    - 1Exploring_Reservoirs.ipynb#cell5:94
+
+'values':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (6 locations):
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:95
+    - UK_Batch_Scripts/Reservoir_Hyperparameter_Training.py:98
+    - UK_Batch_Scripts/Natural_Hyperparameter_Training.py:87
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:99
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:103
+    - 1Exploring_Reservoirs.ipynb#cell29:38
+
+'view':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - ML_Functions/ML_Models.py:305
+    - ML_Functions/ML_Models.py:309
+
+'walk':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (4 locations):
+    - Cleaning_Code.ipynb#cell1:132
+    - Cleaning_Code.ipynb#cell1:150
+    - Cleaning_Code.ipynb#cell1:178
+    - Cleaning_Code.ipynb#cell1:180
+
+'within':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - ML_Functions/ML_Plots.py:720
+    - ML_Functions/ML_Plots.py:807
+
+'write':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (73 locations):
+    - Cleaning_Code.ipynb#cell1:294
+    - Cleaning_Code.ipynb#cell1:295
+    - Cleaning_Code.ipynb#cell1:298
+    - Cleaning_Code.ipynb#cell1:299
+    - Cleaning_Code.ipynb#cell1:300
+    - Cleaning_Code.ipynb#cell1:301
+    - Cleaning_Code.ipynb#cell1:304
+    - Cleaning_Code.ipynb#cell1:305
+    - Cleaning_Code.ipynb#cell1:306
+    - Cleaning_Code.ipynb#cell1:312
+    ... and 63 more
+
+'xavier_uniform_':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (2 locations):
+    - ML_Functions/ML_Models.py:52
+    - ML_Functions/ML_Models.py:53
+
+'xlabel':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (7 locations):
+    - ML_Functions/ML_Plots.py:145
+    - Evaluation.ipynb#cell19:11
+    - Evaluation.ipynb#cell21:10
+    - Evaluation.ipynb#cell22:10
+    - Evaluation.ipynb#cell23:10
+    - 3Training_LSTMs.ipynb#cell33:161
+    - 3Training_LSTMs.ipynb#cell34:123
+
+'ylabel':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (7 locations):
+    - ML_Functions/ML_Plots.py:146
+    - Evaluation.ipynb#cell19:12
+    - Evaluation.ipynb#cell21:11
+    - Evaluation.ipynb#cell22:11
+    - Evaluation.ipynb#cell23:11
+    - 3Training_LSTMs.ipynb#cell33:162
+    - 3Training_LSTMs.ipynb#cell34:124
+
+'zero_grad':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (1 locations):
+    - ML_Functions/ML_Training.py:249
+
+'zeros':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (6 locations):
+    - ML_Functions/ML_Models.py:46
+    - ML_Functions/ML_Models.py:49
+    - ML_Functions/ML_Models.py:179
+    - ML_Functions/ML_Models.py:182
+    - ML_Functions/ML_Models.py:186
+    - ML_Functions/ML_Models.py:189
+
+'zip':
+  ⚠️  Not defined in this project (external/builtin)
+  Called from (25 locations):
+    - ML_Functions/ML_Training.py:338
+    - ML_Functions/ML_Plots.py:664
+    - ML_Functions/ML_Plots.py:685
+    - UK_Batch_Scripts/Full_Hyperparameter_Training.py:103
+    - UK_Batch_Scripts/Reservoir_Hyperparameter_Training.py:106
+    - UK_Batch_Scripts/Natural_Hyperparameter_Training.py:95
+    - UK_Batch_Scripts/Hydra_Hyperparameter_Training.py:107
+    - UK_Batch_Scripts/mlflow_Reservoir_Hyperparameter_Training.py:110
+    - 1Exploring_Reservoirs.ipynb#cell12:41
+    - 1Exploring_Reservoirs.ipynb#cell12:75
+    ... and 15 more

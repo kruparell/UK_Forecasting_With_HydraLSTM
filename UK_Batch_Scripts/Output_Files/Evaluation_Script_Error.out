@@ -1,0 +1,45 @@
+[ECMWF-INFO -ecprofile] /usr/bin/bash NON_INTERACTIVE on ab6-122 at 20261108_215356.663, PID: 1056641, JOBID: 28243777
+[ECMWF-INFO -ecprofile] $SCRATCH=/ec/res4/scratch/mokr
+[ECMWF-INFO -ecprofile] $PERM=/perm/mokr
+[ECMWF-INFO -ecprofile] $HPCPERM=/ec/res4/hpcperm/mokr
+[ECMWF-INFO -ecprofile] $TMPDIR=/etc/ecmwf/ssd/ssd1/tmpdirs/mokr.28243777
+[ECMWF-INFO -ecprofile] $SCRATCHDIR=/ec/res4/scratchdir/mokr/1/28243777
+Traceback (most recent call last):
+  File "/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/run_evaluation.py", line 61, in <module>
+    main()
+    ~~~~^^
+  File "/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/run_evaluation.py", line 28, in main
+    model_names, models = load_selected_models(config.MODELS_TO_EVALUATE)
+                          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/etc/ecmwf/nfs/dh2_home_a/mokr/Reservoir_Modelling/UK_Batch_Scripts/evaluation_functions.py", line 79, in load_selected_models
+    body = load_complete_model(Path(f"{full_base}_Body.pt"))
+  File "/etc/ecmwf/nfs/dh2_home_a/mokr/Reservoir_Modelling/UK_Batch_Scripts/evaluation_functions.py", line 30, in load_complete_model
+    raise FileNotFoundError(f"Model checkpoint not found: {path}")
+FileNotFoundError: Model checkpoint not found: /home/mokr/Reservoir_Modelling/CamelsGB_Models/Hydra/Hydra_Body_Main_NonRes_Res_Epochs1_LR0.001_ResLR0.001.pt_Body.pt
+[ECMWF-INFO -ecepilog] ----------------------------------------------------------------------------------------------------
+[ECMWF-INFO -ecepilog] This is the ECMWF job Epilogue
+[ECMWF-INFO -ecepilog] +++ Please report issues using the Support portal +++
+[ECMWF-INFO -ecepilog] +++ https://support.ecmwf.int                     +++
+[ECMWF-INFO -ecepilog] ----------------------------------------------------------------------------------------------------
+[ECMWF-INFO -ecepilog] Run at 2026-11-08T21:54:01 on ab
+[ECMWF-INFO -ecepilog] JobName                   : Evaluation_Script
+[ECMWF-INFO -ecepilog] JobID                     : 28243777
+[ECMWF-INFO -ecepilog] Submit                    : 2026-11-08T21:53:52
+[ECMWF-INFO -ecepilog] Start                     : 2026-11-08T21:53:53
+[ECMWF-INFO -ecepilog] End                       : 2026-11-08T21:54:01
+[ECMWF-INFO -ecepilog] QueuedTime                : 1.0
+[ECMWF-INFO -ecepilog] ElapsedRaw                : 8
+[ECMWF-INFO -ecepilog] ExitCode                  : 1:0
+[ECMWF-INFO -ecepilog] DerivedExitCode           : 0:0
+[ECMWF-INFO -ecepilog] State                     : FAILED
+[ECMWF-INFO -ecepilog] Account                   : ecrvis
+[ECMWF-INFO -ecepilog] QOS                       : nf
+[ECMWF-INFO -ecepilog] User                      : mokr
+[ECMWF-INFO -ecepilog] StdOut                    : /home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Evaluation_Script.out
+[ECMWF-INFO -ecepilog] StdErr                    : /home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Evaluation_Script_Error.out
+[ECMWF-INFO -ecepilog] NNodes                    : 1
+[ECMWF-INFO -ecepilog] NCPUS                     : 2
+[ECMWF-INFO -ecepilog] SBU                       : 0.038
+[ECMWF-INFO -ecepilog] jobtag                    : mokr-Evaluation_Script-1x2-/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Evaluation_Script.out
+[ECMWF-INFO -ecepilog] ----------------------------------------------------------------------------------------------------
+

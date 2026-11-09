@@ -1,0 +1,37 @@
+[ECMWF-INFO -ecprofile] /usr/bin/bash NON_INTERACTIVE on ac6-160 at 20260518_160638.059, PID: 3390272, JOBID: 34104778
+[ECMWF-INFO -ecprofile] $SCRATCH=/ec/res4/scratch/mokr
+[ECMWF-INFO -ecprofile] $PERM=/perm/mokr
+[ECMWF-INFO -ecprofile] $HPCPERM=/ec/res4/hpcperm/mokr
+[ECMWF-INFO -ecprofile] $TMPDIR=/etc/ecmwf/ssd/ssd1/tmpdirs/mokr.34104778
+[ECMWF-INFO -ecprofile] $SCRATCHDIR=/ec/res4/scratchdir/mokr/2/34104778
+  File "/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Gradient_Importance.py", line 497
+    No_Flow_Full_Embedded_LSTM = torch.load("/home/mokr/Reservoir_Modelling/CamelsGB_Models/Full/89Warmup_No_Lat__Full_LSTM_Numlayers1_LSTMhs128_Embhs128_Embos16_Epochs2_Gamma0.95.pt_0.001_0
+                                            ^
+SyntaxError: unterminated string literal (detected at line 497)
+[ECMWF-INFO -ecepilog] ----------------------------------------------------------------------------------------------------
+[ECMWF-INFO -ecepilog] This is the ECMWF job Epilogue
+[ECMWF-INFO -ecepilog] +++ Please report issues using the Support portal +++
+[ECMWF-INFO -ecepilog] +++ https://support.ecmwf.int                     +++
+[ECMWF-INFO -ecepilog] ----------------------------------------------------------------------------------------------------
+[ECMWF-INFO -ecepilog] Run at 2026-05-18T16:06:39 on ac
+[ECMWF-INFO -ecepilog] JobName                   : Gradient_Importance
+[ECMWF-INFO -ecepilog] JobID                     : 34104778
+[ECMWF-INFO -ecepilog] Submit                    : 2026-05-18T16:06:12
+[ECMWF-INFO -ecepilog] Start                     : 2026-05-18T16:06:34
+[ECMWF-INFO -ecepilog] End                       : 2026-05-18T16:06:39
+[ECMWF-INFO -ecepilog] QueuedTime                : 22.0
+[ECMWF-INFO -ecepilog] ElapsedRaw                : 5
+[ECMWF-INFO -ecepilog] ExitCode                  : 1:0
+[ECMWF-INFO -ecepilog] DerivedExitCode           : 0:0
+[ECMWF-INFO -ecepilog] State                     : FAILED
+[ECMWF-INFO -ecepilog] Account                   : ecrvis
+[ECMWF-INFO -ecepilog] QOS                       : nf
+[ECMWF-INFO -ecepilog] User                      : mokr
+[ECMWF-INFO -ecepilog] StdOut                    : /home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Gradient_Importance.out
+[ECMWF-INFO -ecepilog] StdErr                    : /home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Gradient_Importance_Error.out
+[ECMWF-INFO -ecepilog] NNodes                    : 1
+[ECMWF-INFO -ecepilog] NCPUS                     : 2
+[ECMWF-INFO -ecepilog] SBU                       : 0.024
+[ECMWF-INFO -ecepilog] jobtag                    : mokr-Gradient_Importance-1x2-/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Gradient_Importance.out
+[ECMWF-INFO -ecepilog] ----------------------------------------------------------------------------------------------------
+

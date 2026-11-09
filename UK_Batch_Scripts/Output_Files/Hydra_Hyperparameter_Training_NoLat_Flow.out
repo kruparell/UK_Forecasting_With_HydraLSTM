@@ -1,0 +1,204 @@
+[ECMWF-INFO -ecsbatch] - -------------------------------------------------------------------------------------
+[ECMWF-INFO -ecsbatch] -  This is the ECMWF jobfilter
+[ECMWF-INFO -ecsbatch] -  +++ Please report issues using the Support portal +++
+[ECMWF-INFO -ecsbatch] -  +++ https://support.ecmwf.int                     +++
+[ECMWF-INFO -ecsbatch] -  /usr/local/bin/ecsbatch: size: 55091, mtime: Thu Oct  8 12:05:06 2026
+[ECMWF-INFO -ecsbatch] - -------------------------------------------------------------------------------------
+[ECMWF-INFO -ecsbatch] - Time at submit: Mon Nov  9 09:42:03 2026 (1794217323.1644642) on ab6-205.bullx:/etc/ecmwf/nfs/dh2_home_a/mokr
+[ECMWF-INFO -ecsbatch] - --- SLURM VARIABLES ---
+[ECMWF-INFO -ecsbatch] - SLURM_NODEID=0
+[ECMWF-INFO -ecsbatch] - SLURM_TASK_PID=373949
+[ECMWF-INFO -ecsbatch] - SLURM_PRIO_PROCESS=0
+[ECMWF-INFO -ecsbatch] - SLURM_SUBMIT_DIR=/etc/ecmwf/nfs/dh2_home_a/mokr
+[ECMWF-INFO -ecsbatch] - SLURM_CPUS_PER_TASK=32
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_LICENSES=h2resw01
+[ECMWF-INFO -ecsbatch] - SLURM_PROCID=0
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_GID=1222
+[ECMWF-INFO -ecsbatch] - SLURMD_NODENAME=ab6-205
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_END_TIME=1794479550
+[ECMWF-INFO -ecsbatch] - SLURM_TASKS_PER_NODE=1
+[ECMWF-INFO -ecsbatch] - SLURM_NNODES=1
+[ECMWF-INFO -ecsbatch] - SLURM_GET_USER_ENV=1
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_START_TIME=1793874750
+[ECMWF-INFO -ecsbatch] - SLURM_NTASKS_PER_NODE=1
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_NODELIST=ab6-205
+[ECMWF-INFO -ecsbatch] - SLURM_CLUSTER_NAME=ab
+[ECMWF-INFO -ecsbatch] - SLURM_NODELIST=ab6-205
+[ECMWF-INFO -ecsbatch] - SLURM_NTASKS=1
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_CPUS_PER_NODE=32
+[ECMWF-INFO -ecsbatch] - SLURM_TOPOLOGY_ADDR=root_switch.gpil.isw6-b12zg-l1.ab6-205
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_NAME=mokr-jupyterhub
+[ECMWF-INFO -ecsbatch] - SLURM_JOBID=27394690
+[ECMWF-INFO -ecsbatch] - SLURM_CONF=/etc/slurm/slurm.conf
+[ECMWF-INFO -ecsbatch] - EC_CLUSTER=ab
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_QOS=ni
+[ECMWF-INFO -ecsbatch] - SLURM_TOPOLOGY_ADDR_PATTERN=switch.switch.switch.node
+[ECMWF-INFO -ecsbatch] - SLURM_CPUS_ON_NODE=32
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_NUM_NODES=1
+[ECMWF-INFO -ecsbatch] - SLURM_MEM_PER_NODE=32768
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_UID=25848
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_PARTITION=inter
+[ECMWF-INFO -ecsbatch] - SLURM_SCRIPT_CONTEXT=prolog_task
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_USER=mokr
+[ECMWF-INFO -ecsbatch] - SLURM_NPROCS=1
+[ECMWF-INFO -ecsbatch] - SLURM_SUBMIT_HOST=ac6-209.bullx
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_ACCOUNT=ecrvis
+[ECMWF-INFO -ecsbatch] - SLURM_EXPORT_ENV=ALL
+[ECMWF-INFO -ecsbatch] - SLURM_TRES_PER_TASK=cpu=32
+[ECMWF-INFO -ecsbatch] - SLURM_GTIDS=0
+[ECMWF-INFO -ecsbatch] - SLURM_JOB_ID=27394690
+[ECMWF-INFO -ecsbatch] - SBATCH_EXPORT=NONE
+[ECMWF-INFO -ecsbatch] - SLURM_OOM_KILL_STEP=0
+[ECMWF-INFO -ecsbatch] - SLURM_LOCALID=0
+[ECMWF-INFO -ecsbatch] - -----------------------
+[ECMWF-INFO -ecsbatch] - jobscript: /etc/ecmwf/nfs/dh2_home_a/mokr/Reservoir_Modelling/UK_Batch_Scripts/Hydra_Hyperparameter_Training.sh
+[ECMWF-INFO -ecsbatch] - --- SCRIPT OPTIONS ---
+[ECMWF-INFO -ecsbatch] - #SBATCH --qos=ng
+[ECMWF-INFO -ecsbatch] - #SBATCH --nodes=1
+[ECMWF-INFO -ecsbatch] - #SBATCH --ntasks-per-node=1
+[ECMWF-INFO -ecsbatch] - #SBATCH --gpus-per-node=1
+[ECMWF-INFO -ecsbatch] - #SBATCH --cpus-per-task=16
+[ECMWF-INFO -ecsbatch] - #SBATCH --mem=64G
+[ECMWF-INFO -ecsbatch] - #SBATCH --time=24:00:00
+[ECMWF-INFO -ecsbatch] - #SBATCH --job-name=Hydra_Hyperparameter_Training_Flow
+[ECMWF-INFO -ecsbatch] - #SBATCH --output=/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Hydra_Hyperparameter_Training_NoLat_Flow.out
+[ECMWF-INFO -ecsbatch] - #SBATCH --error=/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Hydra_Hyperparameter_Training_NoLat_Flow_Error.out
+[ECMWF-INFO -ecsbatch] - -----------------------
+[ECMWF-INFO -ecsbatch] - --- POST-PROCESSED OPTIONS ---
+[ECMWF-INFO -ecsbatch] - ARG --positional=['/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Hydra_Hyperparameter_Training.sh']
+[ECMWF-INFO -ecsbatch] - ARG --cpus_per_task=16
+[ECMWF-INFO -ecsbatch] - ARG --error=/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Hydra_Hyperparameter_Training_NoLat_Flow_Error.out
+[ECMWF-INFO -ecsbatch] - ARG --job_name=Hydra_Hyperparameter_Training_Flow
+[ECMWF-INFO -ecsbatch] - ARG --ntasks_per_node=1
+[ECMWF-INFO -ecsbatch] - ARG --nodes=1
+[ECMWF-INFO -ecsbatch] - ARG --output=/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Hydra_Hyperparameter_Training_NoLat_Flow.out
+[ECMWF-INFO -ecsbatch] - ARG --qos=ng
+[ECMWF-INFO -ecsbatch] - ARG --time=24:00:00
+[ECMWF-INFO -ecsbatch] - ARG --mem=64G
+[ECMWF-INFO -ecsbatch] - ARG --gpus_per_node=1
+[ECMWF-INFO -ecsbatch] - ------------------------------
+[ECMWF-INFO -ecsbatch] - jobtag: mokr-Hydra_Hype_ining_Flow-1x16-/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Hydra_Hyperparameter_Training_NoLat_Flow.out
+[ECMWF-INFO -ecsbatch] - ------------------------------
+[ECMWF-INFO -ecsbatch] - Average Walltime 7922 with a Standard Deviation 2156
+[ECMWF-INFO -ecsbatch] - Runtime history
+[ECMWF-INFO -ecsbatch] -   Date               | Cores   Cluster   Walltime       Mem
+[ECMWF-INFO -ecsbatch] -   06.11.2026 - 20:41 | 16         ac         9256       64G       
+[ECMWF-INFO -ecsbatch] -   05.11.2026 - 14:34 | 16         ac         4884       64G       
+[ECMWF-INFO -ecsbatch] -   18.09.2026 - 22:06 | 16         ac         9628       64G       
+[ECMWF-INFO -ecsbatch] - ['/usr/bin/sbatch', '--cpus-per-task=16', '--error=/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Hydra_Hyperparameter_Training_NoLat_Flow_Error.out', '--job-name=Hydra_Hyperparameter_Training_Flow', '--ntasks-per-node=1', '--nodes=1', '--output=/home/mokr/Reservoir_Modelling/UK_Batch_Scripts/Output_Files/Hydra_Hyperparameter_Training_NoLat_Flow.out', '--qos=ng', '--time=24:00:00', '--mem=64G', '--gpus-per-node=1', '--licenses=h2resw01', '--export=EC_user_time_limit=24:00:00', '/etc/ecmwf/nfs/dh2_home_a/mokr/Reservoir_Modelling/UK_Batch_Scripts/Hydra_Hyperparameter_Training.sh']
+[ECMWF-INFO -ecsbatch] - ecsbatch executed on ab
+[ECMWF-INFO -ecsbatch] - Job queued on ac using method local
+[ECMWF-INFO -ecsbatch] - Submitted batch job 38020263
+Dropped 3836/873231 samples containing NaN targets.
+Dropped 3562/820660 samples containing NaN targets.
+Dropped 940/175019 samples containing NaN targets.
+Dropped 1649/161912 samples containing NaN targets.
+  [Hydra-Main] Epoch 1/8
+  [Hydra-Main] Validation Loss: 1.113334
+  [Hydra-Main] Epoch 2/8
+  [Hydra-Main] Validation Loss: 1.524504
+  [Hydra-Main] Epoch 3/8
+  [Hydra-Main] Validation Loss: 1.573964
+  [Hydra-Main] Early stopping triggered at epoch 3
+  [NonRes-Head] Epoch 1/8
+  [NonRes-Head] Validation Loss: 0.183681
+  [NonRes-Head] Epoch 2/8
+  [NonRes-Head] Validation Loss: 0.199211
+  [NonRes-Head] Epoch 3/8
+  [NonRes-Head] Validation Loss: 0.201607
+  [NonRes-Head] Early stopping triggered at epoch 3
+  [Res-Head] Epoch 1/8
+  [Res-Head] Validation Loss: 0.153988
+  [Res-Head] Epoch 2/8
+  [Res-Head] Validation Loss: 0.163566
+  [Res-Head] Epoch 3/8
+  [Res-Head] Validation Loss: 0.158880
+  [Res-Head] Early stopping triggered at epoch 3
+Hydra trial failed: name 'copy' is not defined
+  [Hydra-Main] Epoch 1/8
+  [Hydra-Main] Validation Loss: 1.523746
+  [Hydra-Main] Epoch 2/8
+  [Hydra-Main] Validation Loss: 1.936588
+  [Hydra-Main] Epoch 3/8
+  [Hydra-Main] Validation Loss: 2.087632
+  [Hydra-Main] Early stopping triggered at epoch 3
+  [NonRes-Head] Epoch 1/8
+  [NonRes-Head] Validation Loss: 0.190664
+  [NonRes-Head] Epoch 2/8
+  [NonRes-Head] Validation Loss: 0.191065
+  [NonRes-Head] Epoch 3/8
+  [NonRes-Head] Validation Loss: 0.180276
+  [NonRes-Head] Epoch 4/8
+  [NonRes-Head] Validation Loss: 0.180204
+  [NonRes-Head] Epoch 5/8
+  [NonRes-Head] Validation Loss: 0.185593
+  [NonRes-Head] Epoch 6/8
+  [NonRes-Head] Validation Loss: 0.185044
+  [NonRes-Head] Early stopping triggered at epoch 6
+  [Res-Head] Epoch 1/8
+  [Res-Head] Validation Loss: 0.204130
+  [Res-Head] Epoch 2/8
+  [Res-Head] Validation Loss: 0.188906
+  [Res-Head] Epoch 3/8
+  [Res-Head] Validation Loss: 0.188930
+  [Res-Head] Epoch 4/8
+  [Res-Head] Validation Loss: 0.181681
+  [Res-Head] Epoch 5/8
+  [Res-Head] Validation Loss: 0.178924
+  [Res-Head] Epoch 6/8
+  [Res-Head] Validation Loss: 0.176819
+  [Res-Head] Epoch 7/8
+  [Res-Head] Validation Loss: 0.176003
+  [Res-Head] Epoch 8/8
+  [Res-Head] Validation Loss: 0.173947
+Hydra trial failed: name 'copy' is not defined
+  [Hydra-Main] Epoch 1/8
+  [Hydra-Main] Validation Loss: 1.248067
+  [Hydra-Main] Epoch 2/8
+  [Hydra-Main] Validation Loss: 1.690788
+  [Hydra-Main] Epoch 3/8
+  [Hydra-Main] Validation Loss: 1.950027
+  [Hydra-Main] Early stopping triggered at epoch 3
+  [NonRes-Head] Epoch 1/8
+  [NonRes-Head] Validation Loss: 0.190854
+  [NonRes-Head] Epoch 2/8
+  [NonRes-Head] Validation Loss: 0.188429
+  [NonRes-Head] Epoch 3/8
+  [NonRes-Head] Validation Loss: 0.191302
+  [NonRes-Head] Epoch 4/8
+  [NonRes-Head] Validation Loss: 0.233547
+  [NonRes-Head] Early stopping triggered at epoch 4
+  [Res-Head] Epoch 1/8
+  [Res-Head] Validation Loss: 0.178191
+  [Res-Head] Epoch 2/8
+  [Res-Head] Validation Loss: 0.185738
+  [Res-Head] Epoch 3/8
+  [Res-Head] Validation Loss: 0.184279
+  [Res-Head] Early stopping triggered at epoch 3
+Hydra trial failed: name 'copy' is not defined
+  [Hydra-Main] Epoch 1/8
+  [Hydra-Main] Validation Loss: 1.190594
+  [Hydra-Main] Epoch 2/8
+  [Hydra-Main] Validation Loss: 1.499429
+  [Hydra-Main] Epoch 3/8
+  [Hydra-Main] Validation Loss: 1.510327
+  [Hydra-Main] Early stopping triggered at epoch 3
+  [NonRes-Head] Epoch 1/8
+  [NonRes-Head] Validation Loss: 0.185973
+  [NonRes-Head] Epoch 2/8
+  [NonRes-Head] Validation Loss: 0.181749
+  [NonRes-Head] Epoch 3/8
+  [NonRes-Head] Validation Loss: 0.183697
+  [NonRes-Head] Epoch 4/8
+  [NonRes-Head] Validation Loss: 0.191279
+  [NonRes-Head] Early stopping triggered at epoch 4
+  [Res-Head] Epoch 1/8
+  [Res-Head] Validation Loss: 0.231422
+  [Res-Head] Epoch 2/8
+  [Res-Head] Validation Loss: 0.191252
+  [Res-Head] Epoch 3/8
+  [Res-Head] Validation Loss: 0.195015
+  [Res-Head] Epoch 4/8
+  [Res-Head] Validation Loss: 0.192305
+  [Res-Head] Early stopping triggered at epoch 4
+Hydra trial failed: name 'copy' is not defined
